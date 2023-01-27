@@ -18,20 +18,20 @@ super + d
 
 # decrease gap window
 super + minus 
-        ~/dotfiles/bspwm/toggle_border_width.sh gap dec
+        ~/dotfiles/bspwm/toggle_border_width gap dec
 
 # increase gap window
 super + equal
-        ~/dotfiles/bspwm/toggle_border_width.sh gap inc
+        ~/dotfiles/bspwm/toggle_border_width gap inc
 
 
 # toggle border width of focused window
 super + a
-	~/dotfiles/bspwm/toggle_border_width.sh single
+	~/dotfiles/bspwm/toggle_border_width single
 
 # toggle border width of all windows
 super + shift + a
-	~/dotfiles/bspwm/toggle_border_width.sh
+	~/dotfiles/bspwm/toggle_border_width
 
 
 # make sxhkd reload its configuration files:
@@ -57,7 +57,7 @@ super + alt + r
 
 # close and kill window
 super + w
-        ~/dotfiles/bspwm/kill_window.sh
+        ~/dotfiles/bspwm/kill_window
 
 
 # hide focused window
@@ -66,7 +66,7 @@ super + e
 
 # list hidden windows
 super + x
-	~/dotfiles/bspwm/list_hidden_windows.sh
+	~/dotfiles/bspwm/list_hidden_windows
 
 
 # swap the current node and the marked window 
@@ -86,6 +86,10 @@ super + ctrl + {x,z}
 	bspc node -g {locked,private}
 
 
+super + alt + c
+    ~/dotfiles/bspwm/toggle_layer
+
+
 # set the window state (tiled, pseudo_tiled, floating, fullscreen)
 super + {t,shift + t,s,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
@@ -101,15 +105,15 @@ super + {_,shift + }{h,j,k,l}
 
 # focus the next tiled window (neither hidden nor locked)
 super + c
-        ~/dotfiles/bspwm/toggle_tiled_window.sh
+        ~/dotfiles/bspwm/toggle_tiled_window
 
 # focus the next/previous floating windows in the current desktop
 super + v
-	~/dotfiles/bspwm/toggle_floating_window.sh
+	~/dotfiles/bspwm/toggle_floating_window
 
 # focus the previous floating window
 super + alt + v
-        ~/dotfiles/bspwm/toggle_floating_window.sh previous
+        ~/dotfiles/bspwm/toggle_floating_window previous
 
 # focus the next/previous window in the current desktop
 super + bracket{left,right}
@@ -123,7 +127,7 @@ super + {_,alt +}{1-4}
 
 # add marked windows to tabbed
 super + i
-        ~/dotfiles/bspwm/marked_nodes.sh move tabbed
+        ~/dotfiles/bspwm/marked_nodes move tabbed
 
 # remove from tabbed
 super + alt + i
@@ -132,11 +136,11 @@ super + alt + i
 
 # retrieve date information 
 super + Escape
-        ~/dotfiles/bspwm/notification_info.sh date
+        ~/dotfiles/bspwm/notification_info date
 
 # retrieve windows with flags
 super + backslash
-        ~/dotfiles/bspwm/notification_info.sh all
+        ~/dotfiles/bspwm/notification_info all
 
 # close all notifications
 super + Tab
@@ -180,19 +184,19 @@ super + {Left,Down,Up,Right}
 
 # move window to the center
 super + 9
-        ~/dotfiles/bspwm/center_window.sh center
+        ~/dotfiles/bspwm/center_window center
 
 # move window to the left of the screen
 super + ctrl + 9
-        ~/dotfiles/bspwm/center_window.sh left
+        ~/dotfiles/bspwm/center_window left
 
 # move window to the right of the screen
 super + alt + 9
-        ~/dotfiles/bspwm/center_window.sh right
+        ~/dotfiles/bspwm/center_window right
 
 # resize window
 super + 8
-        ~/dotfiles/bspwm/resize_window.sh
+        ~/dotfiles/bspwm/resize_window
 
 # print a selected space of screen
 super + 0
@@ -208,27 +212,27 @@ super + shift + 0
 # toggle the audio between mute and the last volume value
 super + F10
     	amixer set Master toggle; \
-        ~/dotfiles/bspwm/notification_info.sh volume
+        ~/dotfiles/bspwm/notification_info volume
 
 # lower volume
 super + F11
         amixer set Master 5%-; \
-        ~/dotfiles/bspwm/notification_info.sh volume
+        ~/dotfiles/bspwm/notification_info volume
 
 # raise volume
 super + F12
         amixer set Master 5%+; \
-        ~/dotfiles/bspwm/notification_info.sh volume
+        ~/dotfiles/bspwm/notification_info volume
 
 # play previous song
 super + comma
         mocp -r; \
-        ~/dotfiles/bspwm/notification_info.sh song temp
+        ~/dotfiles/bspwm/notification_info song temp
 
 # play next song
 super + period
         mocp -f; \
-        ~/dotfiles/bspwm/notification_info.sh song temp
+        ~/dotfiles/bspwm/notification_info song temp
 
 # toggle play/pause
 super + slash
@@ -236,7 +240,7 @@ super + slash
 
 # information about the current song
 super + alt + slash
-        if [[ -z $(~/dotfiles/bspwm/notification_info.sh song) ]];then dunstify -h string:bgcolor:#000000 -h string:hlcolor:#6F0000 -h string:frcolor:#000000 "no song";fi
+        if [[ -z $(~/dotfiles/bspwm/notification_info song) ]];then dunstify -h string:bgcolor:#000000 -h string:hlcolor:#6F0000 -h string:frcolor:#000000 "no song";fi
 
 # backwards 5 seconds
 super + alt + comma
@@ -245,13 +249,13 @@ super + alt + comma
 # forwards 5 seconds
 super + alt + period
         mocp -k 5; \
-        ~/dotfiles/bspwm/notification_info.sh song temp
+        ~/dotfiles/bspwm/notification_info song temp
 
 
 # set keymap
 
 super + b
-        ~/dotfiles/bspwm/setkmap.sh
+        ~/dotfiles/bspwm/setkmap
 
 super + alt + b
-        ~/dotfiles/bspwm/setkmap.sh reset
+        ~/dotfiles/bspwm/setkmap reset

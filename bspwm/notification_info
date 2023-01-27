@@ -2,7 +2,7 @@
 
 if [[ $1 = "all" ]];then
     for p in {windows,flags};do
-        ~/dotfiles/bspwm/notification_info.sh $p
+        ~/dotfiles/bspwm/notification_info $p
     done
     exit
 fi
@@ -18,8 +18,8 @@ if [[ $1 = "windows" ]];then
     dunstify \
         -h "string:bgcolor:#000000" \
         -h "string:x-dunst-stack-tag:windows" \
-        "$(printf "windows:\n$(~/dotfiles/bspwm/nodes.sh info | sort)\
-        \nhidden:\n$(~/dotfiles/bspwm/nodes.sh info hidden | sort)") " 
+        "$(printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\
+        \nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)") " 
     exit
 fi
 
@@ -58,9 +58,9 @@ if [[ $1 = "song" ]];then
 fi
 
 if [[ $1 = "flags" ]];then
-    marked=$(~/dotfiles/bspwm/nodes.sh info marked)
-    sticky=$(~/dotfiles/bspwm/nodes.sh info sticky)
-    locked=$(~/dotfiles/bspwm/nodes.sh info locked)
+    marked=$(~/dotfiles/bspwm/nodes info marked)
+    sticky=$(~/dotfiles/bspwm/nodes info sticky)
+    locked=$(~/dotfiles/bspwm/nodes info locked)
     
     dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:flags "$(printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked")"
     exit

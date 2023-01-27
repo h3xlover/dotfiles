@@ -11,4 +11,4 @@ selected=$(echo -e "$window" | dmenu -sb "#000000" -sf red -sb "#3f0000" -l 15 -
 
 bspc node $(echo $selected | awk '{print $1}') --flag hidden=off
 
-~/dotfiles/bspwm/toggle_floating_window.sh $(echo $selected | awk '{print $1}')
+~/dotfiles/bspwm/toggle_floating_window $(echo $selected | awk '{print $1}')

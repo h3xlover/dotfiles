@@ -3,7 +3,7 @@
 marked_nodes=$(bspc query -N -n .marked)
 
 is_tabbed() {
-    ~/dotfiles/bspwm/nodes.sh
+    ~/dotfiles/bspwm/nodes
     if $?;then
         return 1
     fi
@@ -22,7 +22,7 @@ if [[ $1 = "move" ]];then
     
     if [[ $2 = "tabbed" ]];then
         focused=$(bspc query -N -n)
-        tabbed=$(~/dotfiles/bspwm/nodes.sh class tabbed)
+        tabbed=$(~/dotfiles/bspwm/nodes class tabbed)
 
         if [[ $? = 0 ]];then
             tabbed=$(tabbed -d)

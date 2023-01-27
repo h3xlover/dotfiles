@@ -1,0 +1,13 @@
+#!/bin/bash
+
+f=$(bspc query -N -n .window.local.floating)
+
+if [[ -n $(bspc query -N -n focused.floating) ]];then
+    for w in $f;do
+        bspc node "$f" -l normal
+    done
+else
+    for w in $f;do
+        bspc node "$f" -l below
+    done
+fi
