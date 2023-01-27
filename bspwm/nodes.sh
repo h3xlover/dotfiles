@@ -29,9 +29,9 @@ if [[ $1 = "info" ]];then
         desktop=$(bspc query -D -n $node --names)
 
         if [[ $focused_desktop = $(bspc query -D -n "$node") ]];then
-            printf "* %10s | %s\n" "$desktop" "$info"
+            printf "* %2s | %s\n" "$desktop" "$info"
         else
-            printf "  %10s | %s\n" "$desktop" "$info"
+            printf "  %2s | %s\n" "$desktop" "$info"
         fi
     done
 

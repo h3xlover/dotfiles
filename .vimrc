@@ -37,7 +37,6 @@ nnoremap DD "+dd
 nnoremap <c-j> <c-e>j
 nnoremap <c-k> <c-y>k
 inoremap jj <esc>l
-inoremap JJ <esc>:w<CR>
 vnoremap YY "+y
 nnoremap PP "+p
 set tabstop=8 softtabstop=4 expandtab shiftwidth=4 smarttab

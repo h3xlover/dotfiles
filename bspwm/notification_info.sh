@@ -1,52 +1,25 @@
 #!/bin/bash
 
 if [[ $1 = "all" ]];then
-    #calendar
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:cal "$(cal) "
-    #desktops
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:desktops "$(printf "desktops:\n$(~/dotfiles/bspwm/desktops.sh query | sort)") "
-    #windows
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:windows "$(printf "windows:\n$(~/dotfiles/bspwm/nodes.sh info | sort)\nhidden:\n$(~/dotfiles/bspwm/nodes.sh info hidden | sort)") " 
-    marked=$(~/dotfiles/bspwm/nodes.sh info marked)
-    sticky=$(~/dotfiles/bspwm/nodes.sh info sticky)
-    locked=$(~/dotfiles/bspwm/nodes.sh info locked)
-    #flags
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:flags "$(printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked")"
-    exit
-fi
-
-if [[ $1 = "test" ]];then
-    
-    c=$(cal)
-    d=$(~/dotfiles/bspwm/desktops.sh query | sort)
-    pr=$(printf "\t$c\t$d\t")
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:test "$pr"
-    exit
-fi
-
-if [[ $1 = "cal" ]];then
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:cal "$(cal) "
-    exit
-fi
-
-if [[ $1 = "desktops" ]];then
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:desktops "$(printf "desktops:\n$(~/dotfiles/bspwm/desktops.sh query | sort)") "
+    for p in {windows,flags};do
+        ~/dotfiles/bspwm/notification_info.sh $p
+    done
     exit
 fi
 
 if [[ $1 = "date" ]];then
-    top=$(top -b -n 1 | grep %Cpu)
-    us=$(echo $top | awk '{ print $2 }' | sed 's/\.//')
-    sy=$(echo $top | awk '{ print $4 }' | sed 's/\.//')
-    avg=$(($us + $sy))
-
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:date "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | grep Mem: | awk '{print $3}') cpu: $(($avg / 10)).$(($avg % 10))"
-    #$(sensors | grep Tctl | sed 's/[^0-9.°C]//g')"
+    dunstify -h "string:bgcolor:#000000" -h "string:x-dunst-stack-tag:date" \
+    "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -h | grep Mem: | awk '{print $3}')" \
+    "$(printf "$(cal)")" \
     exit
 fi
 
 if [[ $1 = "windows" ]];then
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:windows "$(printf "windows:\n$(~/dotfiles/bspwm/nodes.sh info | sort)\nhidden:\n$(~/dotfiles/bspwm/nodes.sh info hidden | sort)") " 
+    dunstify \
+        -h "string:bgcolor:#000000" \
+        -h "string:x-dunst-stack-tag:windows" \
+        "$(printf "windows:\n$(~/dotfiles/bspwm/nodes.sh info | sort)\
+        \nhidden:\n$(~/dotfiles/bspwm/nodes.sh info hidden | sort)") " 
     exit
 fi
 

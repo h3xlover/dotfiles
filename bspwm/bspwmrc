@@ -2,17 +2,7 @@
 
 pgrep -x sxhkd > /dev/null || sxhkd &
 
-w1="1 $RANDOM"
-w2="2 $RANDOM"
-w3="3 $RANDOM"
-w4="4 $RANDOM"
-
-mkdir /tmp/bspwm
-bspc monitor -d 1 2 3 4 "$w1" "$w2" "$w3" "$w4"
-echo "$w1" > /tmp/bspwm/1
-echo "$w2" > /tmp/bspwm/2
-echo "$w3" > /tmp/bspwm/3
-echo "$w4" > /tmp/bspwm/4
+bspc monitor -d 1 2 3 4
 
 bspc config border_width         0
 bspc config window_gap           11
@@ -48,8 +38,5 @@ picom -b -c --corner-radius 4 --blur-background --backend glx
 setxkbmap -layout us,ru -option grp:shifts_toggle -option grp_led:caps
 xsetroot -cursor_name left_ptr
 unclutter -jitter 15 -idle 5 -root &
-
-~/dotfiles/bspwm/nodes-daemon.sh &
-~/dotfiles/bspwm/node-focus-daemon.sh &
 
 #st -t htop -e htop &
