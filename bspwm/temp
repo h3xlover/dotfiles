@@ -1,0 +1,36 @@
+#!/bin/bash
+
+if [[ -f .temp ]];then
+    s=$(cat ~/.temp)
+else   
+    s=0
+fi
+
+if [[ -n $1 ]];then
+    if [[ $1 = "clear" ]];then
+        echo > ~/.temp
+        exit
+    fi
+
+    if [[ $1 = "save" ]];then
+        s=$(($s + 1))
+        m=$(($s / 60))
+        h=$(($m / 60))
+        echo "$h"h:"$(($m % 60))"m:"$(($s % 60))"s >> ~/.temp_list
+        exit
+    fi
+
+    if [[ $1 = "set" ]];then
+        s=$2
+    fi
+fi
+
+while true;do
+        s=$(($s + 1))
+        m=$(($s / 60))
+        h=$(($m / 60))
+        echo "$h"h:"$(($m % 60))"m:"$(($s % 60))"s
+        echo $s > ~/.temp
+        sleep 1
+        clear
+done

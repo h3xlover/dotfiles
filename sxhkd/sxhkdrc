@@ -1,0 +1,305 @@
+# terminal emulator
+super + Return
+	st
+
+# terminal floating, check bspwmrc
+super + apostrophe
+        st -t stfloat
+
+# program launcher
+super + n
+        dmenu_run -sb "#000000" -sf red -sb "#3f0000" -l 15
+
+# launch ranger
+super + d
+	st ranger
+
+# decrease gap window
+super + minus 
+        ~/dotfiles/bspwm/toggle_border_width.sh gap dec
+
+super + equal
+        ~/dotfiles/bspwm/toggle_border_width.sh gap inc
+
+# toggle border width of focused window
+super + a
+	~/dotfiles/bspwm/toggle_border_width.sh single
+
+# toggle border width of all windows
+super + shift + a
+	~/dotfiles/bspwm/toggle_border_width.sh
+
+# make sxhkd reload its configuration files:
+super + grave
+	pkill -USR1 -x sxhkd
+
+# quit/restart bspwm
+super + {q,r}
+	bspc {quit,wm -r}
+
+# poweroff
+super + alt + q
+        st -t stfloat sudo poweroff
+
+# suspend 2 ram
+super + alt + s
+        st -t stfloat sudo /usr/bin/suspend
+
+# reboot
+super + alt + r
+        st -t stfloat sudo shutdown -r now
+
+# close and kill window
+super + {_,shift + }w
+	bspc node -{c,k}
+
+# alternate between the tiled and monocle layout
+super + m
+	bspc desktop -l next
+
+# hide focused window
+super + e
+	bspc node --flag hidden=on
+
+# list hidden windows
+super + x
+	~/dotfiles/bspwm/list_hidden_windows.sh
+
+# swap the current node and the marked window 
+super + g
+	bspc node -s $(bspc query -N -n .marked) && bspc node $(bspc query -N -n .marked) -g marked
+
+# move a marked node to the focused desktop
+super + alt + semicolon
+        ~/dotfiles/bspwm/marked_nodes.sh move desktop
+
+# set the node flag sticky
+super + y
+        bspc node -g sticky
+
+# set the node flag marked
+super + u
+        bspc node -g marked
+
+# set the node flags (locked, private)
+super + ctrl + {x,z}
+	bspc node -g {locked,private}
+
+# set the window state (tiled, pseudo_tiled, floating, fullscreen)
+super + {t,shift + t,s,f}
+	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
+
+# focus the node in the given direction
+super + {_,shift + }{h,j,k,l}
+	bspc node -{f,s} {west,south,north,east}
+
+# focus the next tiled window (neither hidden nor locked)
+super + c
+        ~/dotfiles/bspwm/toggle_tiled_window.sh
+
+# focus the next/previous floating windows in the current desktop
+super + v
+	~/dotfiles/bspwm/toggle_floating_window.sh
+
+# focus the next/previous window in the current desktop
+super + shift + bracket{left,right}
+	bspc node -f {prev,next}.local.!hidden.!floating
+
+# focus the next/previous floating windows in the current desktop
+super + alt + bracket{left,right}
+        bspc node -f {prev,next}.local.!hidden.floating 
+
+# add a child desktop
+super + semicolon
+        ~/dotfiles/bspwm/desktops.sh add
+
+# remove a desktop
+super + alt + d
+        d=$(bspc query -D -d); \
+        ~/dotfiles/bspwm/desktops.sh toggle; \
+        bspc desktop "$d" -r
+
+# toggle between children desktops
+super + z
+        ~/dotfiles/bspwm/desktops.sh toggle	
+
+super + alt + z
+        ~/dotfiles/bspwm/desktops.sh toggle previous
+
+# focus on the parent of the focused child desktop
+super + shift + z
+        ~/dotfiles/bspwm/desktops.sh focus parent
+
+# focus on the parent node itself
+super + alt + {1-4}
+        ~/dotfiles/bspwm/desktops.sh focus parent '^{1-4}'
+
+# focus on the first child desktop of a parent node
+super + {1-4}
+	~/dotfiles/bspwm/desktops.sh focus '^{1-4}'
+
+# add marked windows to tabbed
+super + i
+        ~/dotfiles/bspwm/marked_nodes.sh move tabbed
+
+# remove from tabbed
+super + alt + i
+        xdotool windowreparent $(pfw) $(lsw -r)
+
+
+# retrieve date information 
+super + Escape
+        ~/dotfiles/bspwm/notification_info.sh date
+
+# retrieve windows information
+super + shift + Escape
+        ~/dotfiles/bspwm/notification_info.sh windows
+
+# retrieve desktops information
+super + alt + Escape
+        ~/dotfiles/bspwm/notification_info.sh desktops
+
+super + ctrl + Escape
+        ~/dotfiles/bspwm/notification_info.sh cal
+
+# retrieve windows with flags
+super + backslash
+        ~/dotfiles/bspwm/notification_info.sh all
+
+# close all notifications
+super + Tab
+        dunstctl close-all
+
+# close the last notification
+super + alt + Tab
+        dunstctl close
+
+# preselect the direction
+super + ctrl + {h,j,k,l}
+	bspc node -p {west,south,north,east}
+
+# cancel the preselection for the focused node
+super + ctrl + space
+	bspc node -p cancel
+
+# Move current window to a pre-selected space
+super + shift + m
+     	bspc node -n last.!automatic
+
+# create receptacle (in the preselected space, if any)
+super + o
+        bspc node -i -n 'last.!automatic'
+
+# kill receptacles in the local desktop
+super + alt + o
+        bspc node 'any.local.leaf.!window' -k
+
+# expand a window by moving one of its side outward
+super + alt + {h,j,k,l}
+	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
+
+# contract a window by moving one of its side inward
+super + alt + shift + {h,j,k,l}
+	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
+# move a floating window
+super + {Left,Down,Up,Right}
+	bspc node -v {-20 0,0 20,0 -20,20 0}
+
+# move window to the center
+super + 9
+        ~/dotfiles/bspwm/center_window.sh center
+
+# move window to the left of the screen
+super + ctrl + 9
+        ~/dotfiles/bspwm/center_window.sh left
+
+# move window to the right of the screen
+super + alt + 9
+        ~/dotfiles/bspwm/center_window.sh right
+
+# resize window
+super + 8
+        ~/dotfiles/bspwm/resize_window.sh
+
+# print a selected space of screen
+super + 0
+	sleep 0.2; \
+	scrot '/mnt/ext/images/sc/%Y-%m-%d_%H-%M_scrot.png' -s -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
+
+# print the entire screen
+super + shift + 0
+	sleep 0.2; \
+	scrot '/mnt/ext/images/sc/%Y-%m-%d_%H-%M_scrot.png' -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
+
+# toggle the audio between mute and the last volume value
+super + F10
+    	amixer set Master toggle; \
+        ~/dotfiles/bspwm/notification_info.sh volume
+
+# lower volume
+super + F11
+        amixer set Master 5%-; \
+        ~/dotfiles/bspwm/notification_info.sh volume
+
+# raise volume
+super + F12
+        amixer set Master 5%+; \
+        ~/dotfiles/bspwm/notification_info.sh volume
+
+# play previous song
+super + comma
+        mocp -r; \
+        ~/dotfiles/bspwm/notification_info.sh song temp
+
+# play next song
+super + period
+        mocp -f; \
+        ~/dotfiles/bspwm/notification_info.sh song temp
+
+# toggle play/pause
+super + slash
+        mocp -G
+
+# information about the current song
+super + alt + slash
+        ~/dotfiles/bspwm/notification_info.sh song
+
+# backwards 5 seconds
+super + alt + comma
+        mocp -k -5; \
+        ~/dotfiles/bspwm/notification_info.sh song temp
+
+# forwards 5 seconds
+super + alt + period
+        mocp -k 5; \
+        ~/dotfiles/bspwm/notification_info.sh song temp
+
+# additional button down turns off brightness
+super + button8
+        polychromatic-cli -o brightness -p 0
+
+# additional button up turns on brightness
+super + button9
+        polychromatic-cli -o brightness -p 100
+
+# mouse_middle_button changes between tiled and floating window state
+super + button2
+        if [[ -z $(bspc query -N -n 'focused.!floating') ]]; then bspc node -t tiled; \
+        else bspc node -t floating; fi
+
+# mouse_scroll_up toggle tiled window
+super + button4
+        ~/dotfiles/bspwm/toggle_tiled_window.sh
+
+# mouse_scroll_down toggle floating window
+super + button5
+        ~/dotfiles/bspwm/toggle_floating_window.sh
+
+# set keymap
+
+super + b
+        ~/dotfiles/bspwm/setkmap.sh
+
+super + alt + b
+        ~/dotfiles/bspwm/setkmap.sh reset
