@@ -2,7 +2,7 @@
 
 bspc node -c
 
-if [[ $(bspc query -N -n .floating) ]];then
+if [[ -n $(bspc query -N -n focused.floating) ]];then
     ~/dotfiles/bspwm/toggle_floating_window
 fi
 

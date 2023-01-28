@@ -5,7 +5,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 bspc monitor -d 1 2 3 4
 
 bspc config border_width         0
-bspc config window_gap           11
+bspc config window_gap           0
 bspc config focused_border_color "#DC143C"
 bspc config split_ratio          0.52
 bspc config borderless_monocle   true
@@ -32,7 +32,7 @@ fi
 
 feh --no-fehbg --bg-fill ~/images/cover.$f
 
-picom -b -c --corner-radius 4 --blur-background --backend glx
+picom -b --blur-background --backend glx
 #nice xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --no-osc --no-input-builtin-bindings --loop --panscan="1.0" "${HOME}/images/gifs/cover.$m" &
 
 setxkbmap -layout us,ru -option grp:shifts_toggle -option grp_led:caps

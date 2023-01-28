@@ -4,10 +4,10 @@ f=$(bspc query -N -n .window.local.floating)
 
 if [[ -n $(bspc query -N -n focused.floating) ]];then
     for w in $f;do
-        bspc node "$f" -l normal
+        bspc node "$w" -l normal
     done
 else
     for w in $f;do
-        bspc node "$f" -l below
+        bspc node "$w" -l below
     done
 fi

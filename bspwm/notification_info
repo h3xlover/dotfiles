@@ -9,7 +9,7 @@ fi
 
 if [[ $1 = "date" ]];then
     dunstify -h "string:bgcolor:#000000" -h "string:x-dunst-stack-tag:date" \
-    "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -h | grep Mem: | awk '{print $3}')" \
+    "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | grep Mem: | awk '{print $3}')" \
     "$(printf "$(cal)")" \
     exit
 fi

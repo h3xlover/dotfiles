@@ -35,7 +35,7 @@ super + shift + a
 
 
 # make sxhkd reload its configuration files:
-super + grave
+super + alt + w
 	pkill -USR1 -x sxhkd
 
 
@@ -86,8 +86,6 @@ super + ctrl + {x,z}
 	bspc node -g {locked,private}
 
 
-super + alt + c
-    ~/dotfiles/bspwm/toggle_layer
 
 
 # set the window state (tiled, pseudo_tiled, floating, fullscreen)
@@ -106,6 +104,9 @@ super + {_,shift + }{h,j,k,l}
 # focus the next tiled window (neither hidden nor locked)
 super + c
         ~/dotfiles/bspwm/toggle_tiled_window
+
+super + z
+    ~/dotfiles/bspwm/toggle_layer
 
 # focus the next/previous floating windows in the current desktop
 super + v
