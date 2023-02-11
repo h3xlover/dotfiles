@@ -82,7 +82,7 @@ super + u
         bspc node -g marked
 
 # set the node flags (locked, private)
-super + alt + {x,z}
+super + ctrl + {x,z}
 	bspc node -g {locked,private}
 
 
@@ -140,12 +140,12 @@ super + Escape
         ~/dotfiles/bspwm/notification_info date
 
 # retrieve windows with flags
-super + backslash
+super + Tab
         ~/dotfiles/bspwm/notification_info all
 
 # close all notifications
-super + Tab
-        dunstctl close-all
+#super + Tab
+#        dunstctl close-all
 
 # close the last notification
 super + shift + Tab
