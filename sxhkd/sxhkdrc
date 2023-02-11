@@ -35,7 +35,7 @@ super + shift + a
 
 
 # make sxhkd reload its configuration files:
-super + alt + w
+super + grave
 	pkill -USR1 -x sxhkd
 
 
@@ -82,7 +82,7 @@ super + u
         bspc node -g marked
 
 # set the node flags (locked, private)
-super + ctrl + {x,z}
+super + alt + {x,z}
 	bspc node -g {locked,private}
 
 

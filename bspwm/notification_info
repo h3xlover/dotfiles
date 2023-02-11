@@ -8,18 +8,22 @@ if [[ $1 = "all" ]];then
 fi
 
 if [[ $1 = "date" ]];then
-    dunstify -h "string:bgcolor:#000000" -h "string:x-dunst-stack-tag:date" \
-    "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | grep Mem: | awk '{print $3}')" \
-    "$(printf "$(cal)")" \
+    #dunstify -h "string:bgcolor:#000000" -h "string:x-dunst-stack-tag:date" \
+    #"$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | grep Mem: | awk '{print $3}')" \
+    #"$(printf "$(cal)")" \
+
+    printf "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | awk 'NR==2{print $3}')\n$(cal)" | dmenu -l 15
     exit
 fi
 
 if [[ $1 = "windows" ]];then
-    dunstify \
-        -h "string:bgcolor:#000000" \
-        -h "string:x-dunst-stack-tag:windows" \
-        "$(printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\
-        \nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)") " 
+    #dunstify \
+    #    -h "string:bgcolor:#000000" \
+    #    -h "string:x-dunst-stack-tag:windows" \
+    #    "$(printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\
+    #    \nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)") " 
+
+    printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)" | dmenu -l 20
     exit
 fi
 

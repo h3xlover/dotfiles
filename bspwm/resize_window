@@ -8,4 +8,4 @@ if [[ -z $(bspc query -N -n focused.floating) ]];then
     exit
 fi
 
-wtp $WX $WY 720 450 $WID
+wtp $WX $WY 490 298 $WID

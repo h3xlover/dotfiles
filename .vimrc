@@ -3,6 +3,7 @@ syntax on
 filetype plugin indent on
 let NERDTreeShowHidden=1
 
+set noswapfile
 set nobackup
 set wildmenu
 set wildmode=list:longest
@@ -27,6 +28,7 @@ nnoremap <leader>- :res -3<CR>
 nnoremap <leader>= :res +3<CR>
 nnoremap <leader>, :vert res -3<CR>
 nnoremap <leader>. :vert res +3<CR>
+nnoremap <leader>; :bnext<CR>
 
 inoremap <leader>h <esc>:tabprevious<CR>
 inoremap <leader>l <esc>:tabnext<CR>
