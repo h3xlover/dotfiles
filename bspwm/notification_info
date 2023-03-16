@@ -12,7 +12,7 @@ if [[ $1 = "date" ]];then
     #"$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | grep Mem: | awk '{print $3}')" \
     #"$(printf "$(cal)")" \
 
-    printf "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | awk 'NR==2{print $3}')\n$(cal)" | dmenu -l 15
+    printf "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | awk 'NR==2{print $3}')\n$(cal)\n$(~/dotfiles/bspwm/notification_info volume)" | dmenu -l 20 -sf red -sb "#3f0000"
     exit
 fi
 
@@ -23,7 +23,7 @@ if [[ $1 = "windows" ]];then
     #    "$(printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\
     #    \nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)") " 
 
-    printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)" | dmenu -l 20
+    printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)\n$(~/dotfiles/bspwm/notification_info flags)" | dmenu -l 20 -sf red -sb "#3f0000"
     exit
 fi
 
@@ -35,7 +35,8 @@ if [[ $1 = "volume" ]];then
     if [[ $mute = "[on]" ]];then
         mute=
     fi
-    dunstify -t 1000 -h string:bgcolor:#000000 -h string:hlcolor:#6F0000 -h string:frcolor:#000000 -h string:x-dunst-stack-tag:volume -h int:value:"$volume" "$(printf "$sink_name\n$volume $mute")"
+    #dunstify -t 1000 -h string:bgcolor:#000000 -h string:hlcolor:#6F0000 -h string:frcolor:#000000 -h string:x-dunst-stack-tag:volume -h int:value:"$volume" "$(printf "$sink_name\n$volume $mute")"
+    printf "$sink_name\n$volume $mute"
     exit
 fi
 
@@ -66,6 +67,7 @@ if [[ $1 = "flags" ]];then
     sticky=$(~/dotfiles/bspwm/nodes info sticky)
     locked=$(~/dotfiles/bspwm/nodes info locked)
     
-    dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:flags "$(printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked")"
+    #dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:flags "$(printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked")"
+    printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked"
     exit
 fi
