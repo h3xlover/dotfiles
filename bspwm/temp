@@ -1,14 +1,14 @@
 #!/bin/bash
 
 if [[ -f .temp ]];then
-    s=$(cat ~/.temp)
+    s=$(cat /tmp/.temp)
 else   
     s=0
 fi
 
 if [[ -n $1 ]];then
     if [[ $1 = "clear" ]];then
-        echo > ~/.temp
+        echo > /tmp/.temp
         exit
     fi
 
@@ -30,7 +30,7 @@ while true;do
         m=$(($s / 60))
         h=$(($m / 60))
         echo "$h"h:"$(($m % 60))"m:"$(($s % 60))"s
-        echo $s > ~/.temp
+        echo $s > /tmp/.temp
         sleep 1
         clear
 done
