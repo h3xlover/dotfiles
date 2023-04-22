@@ -1,6 +1,4 @@
 
-
-
 *  Settings
 ** General
 
@@ -14,10 +12,12 @@
   (menu-bar-mode -1)
   (scroll-bar-mode -1)
 
+  ;; kill all buffers except for current 
   (defun kill-all-other-buffer ()
     (interactive)
     (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
-  
+
+  ;; reload config
   (defun config-reload ()
     (interactive)
     (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
@@ -32,9 +32,9 @@
 
 ** Theme
 #+BEGIN_SRC emacs-lisp
-(use-package darcula-theme
-  :ensure t
-  :config)
+  (use-package tron-legacy-theme
+  :config
+  (load-theme 'tron-legacy t))
 #+END_SRC
 
 ** which-key
@@ -86,5 +86,41 @@
 
 ** ivy
 #+BEGIN_SRC emacs-lisp
-(global-set-key "\C-s" 'swiper)
+  (global-set-key "\C-s" 'swiper)
+  (ivy-mode)
 #+END_SRC
+
+** org
+#+BEGIN_SRC emacs-lisp
+  (use-package org
+    :config
+    (setq org-ellipsis " ▾")
+    (setq org-agenda-start-with-log-mode t)
+    (setq org-log-done 'time)
+    (setq org-log-into-drawer t)
+
+    (setq org-directory "~/org")
+    (setq org-agenda-files '("tasks/birth.org" "tasks/tasks.org" "roadmap/roadmap.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org"))
+    (setq org-refile-targets
+	  '(("archive.org" :maxlevel . 1)))
+    (advice-add 'org-refile :after 'org-save-all-org-buffers)
+
+    (setq org-todo-keywords
+	  '((sequence "TODO(t)" "NEXT(n)" "ROUTINE(r)" "|" "DONE(d!)")))
+  (add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp")))
+
+#+END_SRC
+
+** org-bullets
+#+begin_src emacs-lisp
+(use-package org-bullets
+  :after org
+  :hook (org-mode . org-bullets-mode)
+  :custom
+  (org-bullets-bullet-list '("◉" "○" "●" "○" "●" "○" "●")))
+#+end_src
+
+** elfeed
+#+begin_src emacs-lisp
+(setq rmh-elfeed-org-files (list "~/org/elfeed.org"))
+#+end_src
