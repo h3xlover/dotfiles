@@ -8,7 +8,7 @@
    '("79586dc4eb374231af28bbc36ba0880ed8e270249b07f814b0e6555bdcb71fab" default))
  '(org-agenda-files '("/home/g/org/tasks/tasks.org"))
  '(package-selected-packages
-   '(elfeed-org org-bullets org-ql tron-legacy-theme swiper ivy ace-window avy ido-vertical-mode nov exwm which-key darcula-theme use-package)))
+   '(latex-preview-pane elfeed-org org-bullets org-ql tron-legacy-theme swiper ivy ace-window avy ido-vertical-mode nov exwm which-key darcula-theme use-package)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.

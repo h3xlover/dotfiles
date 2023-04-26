@@ -1,0 +1,3 @@
+#!/bin/bash
+
+xclip -selection clipboard -target image/png -i "/mnt/ext/images/sc/$(ls -l /mnt/ext/images/sc | tail -n1 | awk '{print $NF}')"
