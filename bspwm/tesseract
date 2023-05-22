@@ -1,0 +1,7 @@
+#!/bin/bash
+
+file=$(ls -l /mnt/ext/images/sc | tail -n1 | awk '{print $NF}')
+
+tesseract "/mnt/ext/images/sc/$file" /tmp/tesseract-output -l eng+rus+swe+jpn
+
+xclip -selection clipboard /tmp/tesseract-output.txt

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ -f .temp ]];then
+if [[ -f /tmp/.temp ]];then
     s=$(cat /tmp/.temp)
 else   
     s=0

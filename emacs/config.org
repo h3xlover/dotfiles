@@ -1,12 +1,13 @@
-
 *  Settings
 ** General
 
 #+BEGIN_SRC emacs-lisp
+  (add-hook 'text-mode-hook 'visual-line-mode)
   (defalias 'yes-or-no-p 'y-or-n-p)
   (setq inhibit-startup-screen t)
   (setq scroll-conservatively 100)
-  (setq make-backup-file nil)
+  (setq make-backup-files nil)
+  (setq create-lockfiles nil)
   (setq auto-save-default nil)
   (tool-bar-mode -1)
   (menu-bar-mode -1)
@@ -21,6 +22,7 @@
   (defun config-reload ()
     (interactive)
     (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
+
 #+END_SRC
 
 ** Melpa
@@ -92,19 +94,22 @@
 
 ** org
 #+BEGIN_SRC emacs-lisp
-  (use-package org
-    :config
-    (setq org-ellipsis " ▾")
-
-    (setq org-directory "~/org")
-    (setq org-agenda-files '("tasks/birth.org" "tasks/tasks.org" "roadmap/roadmap.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org"))
-    (setq org-refile-targets
-	  '(("archive.org" :maxlevel . 1)))
-    (advice-add 'org-refile :after 'org-save-all-org-buffers)
-
-    (setq org-todo-keywords
-	  '((sequence "TODO(t)" "NEXT(n)" "ROUTINE(r)" "|" "DONE(d!)")))
-  (add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp")))
+      (use-package org
+	:config
+	(setq org-log-done-with-time nil)
+	(setq org-log-done nil)
+	(setq org-log-repeat nil)
+	(setq org-ellipsis " ▾")
+	(setq org-directory "~/org")
+	(setq org-agenda-files '("tasks/birth.org" "tasks/tasks.org" "roadmap/roadmap.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org" "roadmap/physics.org"))
+	(setq org-refile-targets
+	      '(("archive.org" :maxlevel . 1)))
+	(advice-add 'org-refile :after 'org-save-all-org-buffers)
+	(setq org-todo-keywords
+	      '((sequence "TODO(t)" "ROAM-FILL(rf)" "NEXT(n)" "ROUTINE(r)" "|" "DONE(d)")))
+      (add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp"))
+      :bind
+      (("C-c a" . org-agenda)))
 
 #+END_SRC
 
@@ -130,4 +135,24 @@
   (use-package latex-preview-pane
   :load-path "~/dotfiles/emacs/latex-preview-pane"
   )
+#+end_src
+
+** org roam
+#+begin_src emacs-lisp
+      (use-package org-roam
+      :ensure t
+      :custom
+      (org-roam-directory "~/org/roam")
+      :bind (("C-c n l" . org-roam-buffer-toggle)
+	     ("C-c n f" . org-roam-node-find)
+	     ("C-c n i" . org-roam-node-insert)
+	     ("C-c n o" . org-roam-ui-mode))
+      :config
+      (org-roam-setup))
+#+end_src
+
+** org-download
+
+#+begin_src emacs-lisp
+  (require 'org-download)
 #+end_src

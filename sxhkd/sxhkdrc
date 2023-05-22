@@ -6,7 +6,9 @@ super + Return
 super + apostrophe
         st -t stfloat
 
-
+super + 7
+      	~/dotfiles/bspwm/tesseract
+	
 # program launcher
 super + n
         dmenu_run -sb "#000000" -sf red -sb "#3f0000" -l 15
@@ -15,7 +17,12 @@ super + n
 super + d
 	st ranger
 
+# launch emacs
+super + 5
+      	emacs
 
+super + 6
+      	~/dotfiles/bspwm/dmenu
 # decrease gap window
 super + minus 
         ~/dotfiles/bspwm/toggle_border_width gap dec
@@ -37,11 +44,6 @@ super + shift + a
 # make sxhkd reload its configuration files:
 super + grave
 	pkill -USR1 -x sxhkd
-
-
-# quit/restart bspwm
-super + {q,r}
-	bspc {quit,wm -r}
 
 # poweroff
 super + alt + q
@@ -103,7 +105,7 @@ super + {_,shift + }{h,j,k,l}
 
 # focus the next tiled window (neither hidden nor locked)
 super + c
-        ~/dotfiles/bspwm/toggle_tiled_window
+      	~/dotfiles/bspwm/toggle_tiled_window
 
 super + z
     ~/dotfiles/bspwm/toggle_layer
@@ -120,11 +122,34 @@ super + alt + v
 super + bracket{left,right}
 	bspc node -f {prev,next}.local.!hidden.!floating
 
+# focus the next monitor
 
-# focus on desktop
-super + {_,alt +}{1-4}
-        bspc {desktop -f,node -d} '^{1-4}'
+super + semicolon
+        bspc monitor -f next
 
+super + {_,alt +}1
+        bspc {desktop -f,node -d} 1
+
+super + {_,alt +}2
+        bspc {desktop -f,node -d} 2
+
+super + {_,alt +}3
+        bspc {desktop -f,node -d} 3
+
+super + {_,alt +}4
+        bspc {desktop -f,node -d} 4
+
+super + F1
+        bspc desktop -f 5
+
+super + F2
+        bspc desktop -f 6
+
+super + F3
+        bspc desktop -f 7
+
+super + F4
+        bspc desktop -f 8
 
 # add marked windows to tabbed
 super + i
@@ -200,28 +225,26 @@ super + 8
         ~/dotfiles/bspwm/resize_window
 
 # print a selected space of screen
-super + 0
+shift + Print
 	sleep 0.2; \
-	scrot '/mnt/ext/images/sc/%Y-%m-%d_%H-%M_scrot.png' -s -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
+	scrot '/mnt/ext/images/sc/%Y-%m-%d_%H-%M_scrot.png' -s --line opacity=0,mode=edge -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
 
-# print the entire screen
-super + shift + 0
-	sleep 0.2; \
-	scrot '/mnt/ext/images/sc/%Y-%m-%d_%H-%M_scrot.png' -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
-
+Print
+      	flameshot gui -p /mnt/ext/images/sc/; \
+        ~/dotfiles/bspwm/xclip
 
 # toggle the audio between mute and the last volume value
-super + F10
+XF86AudioMute
     	amixer set Master toggle; \
         ~/dotfiles/bspwm/notification_info volume
 
 # lower volume
-super + F11
+XF86AudioLowerVolume
         amixer set Master 5%-; \
         ~/dotfiles/bspwm/notification_info volume
 
 # raise volume
-super + F12
+XF86AudioRaiseVolume
         amixer set Master 5%+; \
         ~/dotfiles/bspwm/notification_info volume
 
