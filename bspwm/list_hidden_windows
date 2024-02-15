@@ -5,10 +5,18 @@ do
 	window+="$win - $(xprop -id $win | grep ^WM_NAME | awk '{for(i=3;i<=NF;++i) printf "%s ",$i;print ""}' | sed 's/"//g')\n"
 done
 
-selected=$(echo -e "$window" | dmenu -sb "#000000" -sf red -sb "#3f0000" -l 15 -p hidden)
+
+list_hidden () {
+    for n in $(bspc query -N -n .hidden.local.window);do
+	printf "$n - $(xprop -id "$n" WM_NAME | sed 's/.*=//' | sed 's/\"//g' 2>/dev/null)\n"
+    done
+}
+
+selected=$(list_hidden | ~/dotfiles/bspwm/dmenu -p hidden)
 
 [[ -z $selected ]] && exit;
 
 bspc node $(echo $selected | awk '{print $1}') --flag hidden=off
 
-~/dotfiles/bspwm/toggle_floating_window $(echo $selected | awk '{print $1}')
+bspc node -f $(echo $selected | awk '{print $1}')
+

@@ -1,28 +1,27 @@
 # terminal emulator
 super + Return
-	st
+	alacritty
 
 # terminal floating, check bspwmrc
 super + apostrophe
-        st -t stfloat
+        alacritty -T alacritty
 
 super + 7
       	~/dotfiles/bspwm/tesseract
 	
 # program launcher
 super + n
-        dmenu_run -sb "#000000" -sf red -sb "#3f0000" -l 15
+        ~/dotfiles/bspwm/dmenu_run
 
 # launch ranger
-super + d
-	st ranger
+super + c
+      	alacritty -T ranger -e ~/dotfiles/bspwm/ranger
+
 
 # launch emacs
-super + 5
+super + g
       	emacs
 
-super + 6
-      	~/dotfiles/bspwm/dmenu
 # decrease gap window
 super + minus 
         ~/dotfiles/bspwm/toggle_border_width gap dec
@@ -32,33 +31,25 @@ super + equal
         ~/dotfiles/bspwm/toggle_border_width gap inc
 
 
-# toggle border width of focused window
-super + a
-	~/dotfiles/bspwm/toggle_border_width single
-
-# toggle border width of all windows
-super + shift + a
-	~/dotfiles/bspwm/toggle_border_width
-
-
 # make sxhkd reload its configuration files:
 super + grave
 	pkill -USR1 -x sxhkd
 
 # poweroff
 super + alt + q
-        st -t stfloat sudo poweroff
+         sudo poweroff
 
-# suspend 2 ram
-super + alt + s
-        st -t stfloat sudo /usr/bin/suspend
+# suspend
+super + BackSpace
+      	sudo mem
 
 # reboot
 super + alt + r
-        st -t stfloat sudo shutdown -r now
+      	 sudo reboot
+#        sudo shutdown -r now
 
 # close and kill window
-super + w
+super + q
         ~/dotfiles/bspwm/kill_window
 
 
@@ -71,10 +62,6 @@ super + x
 	~/dotfiles/bspwm/list_hidden_windows
 
 
-# swap the current node and the marked window 
-super + g
-	bspc node -s $(bspc query -N -n .marked) && bspc node $(bspc query -N -n .marked) -g marked
-
 # set the node flag sticky
 super + y
         bspc node -g sticky
@@ -84,14 +71,15 @@ super + u
         bspc node -g marked
 
 # set the node flags (locked, private)
-super + ctrl + {x,z}
-	bspc node -g {locked,private}
+#super + ctrl + {x,z}
+#	bspc node -g {locked,private}
 
-
+super + semicolon
+      	bspc node -n last.!automatic
 
 
 # set the window state (tiled, pseudo_tiled, floating, fullscreen)
-super + {t,shift + t,s,f}
+super + {t,shift + t,r,f}
 	bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # alternate between the tiled and monocle layout
@@ -100,13 +88,16 @@ super + m
 
 
 # focus the node in the given direction
-super + {_,shift + }{h,j,k,l}
+super + {_,shift + }{a,s,w,d}
 	bspc node -{f,s} {west,south,north,east}
 
 # focus the next tiled window (neither hidden nor locked)
-super + c
+super + b
       	~/dotfiles/bspwm/toggle_tiled_window
 
+super + alt + b
+      	~/dotfiles/bspwm/toggle_tiled_window previous
+	
 super + z
     ~/dotfiles/bspwm/toggle_layer
 
@@ -122,10 +113,6 @@ super + alt + v
 super + bracket{left,right}
 	bspc node -f {prev,next}.local.!hidden.!floating
 
-# focus the next monitor
-
-super + semicolon
-        bspc monitor -f next
 
 super + {_,alt +}1
         bspc {desktop -f,node -d} 1
@@ -139,6 +126,9 @@ super + {_,alt +}3
 super + {_,alt +}4
         bspc {desktop -f,node -d} 4
 
+super + {_,alt +}5
+      	bspc {desktop -f,node -d} 5
+	
 super + F1
         bspc desktop -f 5
 
@@ -177,7 +167,7 @@ super + shift + Tab
         dunstctl close
 
 # preselect the direction
-super + ctrl + {h,j,k,l}
+super + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # cancel the preselection for the focused node
@@ -185,7 +175,7 @@ super + ctrl + space
 	bspc node -p cancel
 
 # Move current window to a pre-selected space
-super + shift + m
+super + ctrl + m
      	bspc node -n last.!automatic
 
 # create receptacle (in the preselected space, if any)
@@ -196,13 +186,15 @@ super + o
 super + alt + o
         bspc node 'any.local.leaf.!window' -k
 
+
 # expand a window by moving one of its side outward
-super + alt + {h,j,k,l}
+super + alt + {a,s,w,d}
 	bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {h,j,k,l}
+super + alt + shift + {a,s,w,d}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
+
 
 # move a floating window
 super + {Left,Down,Up,Right}
@@ -227,10 +219,10 @@ super + 8
 # print a selected space of screen
 shift + Print
 	sleep 0.2; \
-	scrot '/mnt/ext/images/sc/%Y-%m-%d_%H-%M_scrot.png' -s --line opacity=0,mode=edge -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
+	scrot '/mnt/hd1/images/sc/%Y-%m-%d_%H-%M_scrot.png' -q 100 -e 'xclip -selection clipboard -target image/png -i $f'
 
 Print
-      	flameshot gui -p /mnt/ext/images/sc/; \
+      	flameshot gui -p /mnt/hd1/images/sc/; \
         ~/dotfiles/bspwm/xclip
 
 # toggle the audio between mute and the last volume value
@@ -248,38 +240,26 @@ XF86AudioRaiseVolume
         amixer set Master 5%+; \
         ~/dotfiles/bspwm/notification_info volume
 
-# play previous song
+# toggle light bulb
 super + comma
-        mocp -r; \
-        ~/dotfiles/bspwm/notification_info song temp
+      	~/dotfiles/smart/light toggle
 
-# play next song
-super + period
-        mocp -f; \
-        ~/dotfiles/bspwm/notification_info song temp
-
-# toggle play/pause
-super + slash
-        mocp -G
-
-# information about the current song
-super + alt + slash
-        if [[ -z $(~/dotfiles/bspwm/notification_info song) ]];then dunstify -h string:bgcolor:#000000 -h string:hlcolor:#6F0000 -h string:frcolor:#000000 "no song";fi
-
-# backwards 5 seconds
+# set a color for the bulb
 super + alt + comma
-        mocp -k -5; \
+      	~/dotfiles/smart/light color $(cat ~/dotfiles/smart/colors | ~/dotfiles/bspwm/dmenu -p color)
+	
+# set white color
+super + period
+      	~/dotfiles/smart/light temp 153
 
-# forwards 5 seconds
+# set brightness
 super + alt + period
-        mocp -k 5; \
-        ~/dotfiles/bspwm/notification_info song temp
-
+	~/dotfiles/smart/light brightness $(~/dotfiles/bspwm/dmenu -p brightness)
 
 # set keymap
 
-super + b
+super + p
         ~/dotfiles/bspwm/setkmap
 
-super + alt + b
+super + alt + p
         ~/dotfiles/bspwm/setkmap reset

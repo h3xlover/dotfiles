@@ -1,34 +1,4 @@
 #!/bin/bash
 
-func="hide-all-other-windows hide-all-windows hide-no-window"
-window=$(bspc query -N -n .window.local)
-func=$(echo "$func" | sed 's/ /\n/g')
-
-if [[ -z $1 ]];then
-   f=$(printf "$func" | dmenu -l 15)
-   if [[ -z $f ]];then
-      exit
-   fi
-   ~/dotfiles/bspwm/dmenu "$f"
-   exit
-fi
-
-case "$1" in
-    hide-all-windows | hide-no-window)
-	if [[ $1 = "hide-no-window" ]];then h=off;else h=on;fi
-	for w in $window;do
-     	    bspc node "$w" --flag hidden="$h"
-     	done
-     	exit
-	;;
-	hide-all-other-windows)
-	    current=$(bspc query -N -n)
-
-	    for w in $window;do
-	        if [[ $current != $w ]];then
-		    bspc node "$w" --flag hidden=on
-		fi
-	    done
-	;;
-esac
-
+. ~/.cache/wal/colors.sh
+dmenu -sb "$color3" -l 15 -sf "$color0" "$@"

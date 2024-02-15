@@ -1,40 +1,46 @@
 #!/bin/bash
 
 windows=$(bspc query -N -n .window.!hidden)
-parent=$(bspc query -D -d --names | awk '{print $1}')
+desktops=$(bspc query -D --names)
 focused_desktop=$(bspc query -D -d)
 
+get_wm_name () {
+    echo $(xprop -id "$1" WM_NAME | sed 's/.*=//' | sed 's/\"//g' 2>/dev/null)
+}
 
-if [[ $1 = "info" ]];then
-    nodes=$windows
+get_wm_class () {
+    echo $(xprop -id "$1" WM_CLASS | awk '{print $NF}' | sed 's/\"//g' 2>/dev/null)
+}
 
-    if [[ $2 = "marked" ]];then
+wm_flags () {
+    if [[ $1 = "marked" ]];then
         nodes=$(bspc query -N -n .marked)
     fi
     
-    if [[ $2 = "sticky" ]];then
+    if [[ $1 = "sticky" ]];then
         nodes=$(bspc query -N -n .sticky)
     fi
 
-    if [[ $2 = "locked" ]];then
+    if [[ $1 = "locked" ]];then
         nodes=$(bspc query -N -n .locked)
     fi
 
-    if [[ $2 = "hidden" ]];then
-        nodes=$(bspc query -N -n .window.hidden)
+    if [[ $1 = "hidden" ]];then
+        nodes=$(bspc query -N -n .hidden)
     fi
-
-    for node in $nodes;do
-        info=$(xprop -id "$node" WM_NAME | sed 's/.*=//' | sed 's/\"//g' 2>/dev/null)
-        desktop=$(bspc query -D -n $node --names)
-
-        if [[ $focused_desktop = $(bspc query -D -n "$node") ]];then
-            printf "* %2s | %s\n" "$desktop" "$info"
-        else
-            printf "  %2s | %s\n" "$desktop" "$info"
-        fi
+    
+    [[ -z $nodes ]] && return 1
+    
+    for n in $nodes;do
+	info=$(get_wm_name "$n")
+	printf "$(bspc query -D -n $n --names): $info\n"
     done
 
+    return 0
+}
+
+if [[ $1 = "flags" ]];then
+    wm_flags "$2"
     exit
 fi
 
@@ -56,3 +62,22 @@ if [[ $1 = "class" ]];then
 
         exit 0
 fi
+
+for d in $desktops;do
+    nodes=$(bspc query -d "$d" -N -n .window.!hidden)
+    [[ -z $nodes ]] && continue
+    
+    printf "$d:\n"
+    for n in $nodes;do
+	info=$(get_wm_name "$n")
+	class=$(get_wm_class "$n")
+	
+	if [[ $class = "tabbed" ]];then
+	    printf "tabbed: "
+	fi
+	
+	printf "$info\n"
+    done
+    printf "\n"
+done
+

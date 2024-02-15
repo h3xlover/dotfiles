@@ -12,7 +12,7 @@ if [[ $1 = "date" ]];then
     #"$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | grep Mem: | awk '{print $3}')" \
     #"$(printf "$(cal)")" \
 
-    printf "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | awk 'NR==2{print $3}')\n$(cal)\n$(~/dotfiles/bspwm/notification_info volume)" | dmenu -l 20 -sf red -sb "#3f0000"
+    printf "$(date "+%d/%m %a/%h %H:%M:%S") mem: $(free -m | awk 'NR==2{print $3}')\n$(cal)\n$(~/dotfiles/bspwm/notification_info volume)" | ~/dotfiles/bspwm/dmenu -l 20 
     exit
 fi
 
@@ -23,7 +23,7 @@ if [[ $1 = "windows" ]];then
     #    "$(printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\
     #    \nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)") " 
 
-    printf "windows:\n$(~/dotfiles/bspwm/nodes info | sort)\nhidden:\n$(~/dotfiles/bspwm/nodes info hidden | sort)\n$(~/dotfiles/bspwm/notification_info flags)" | dmenu -l 20 -sf red -sb "#3f0000"
+    printf "$(~/dotfiles/bspwm/nodes)\n$(~/dotfiles/bspwm/notification_info flags)" | ~/dotfiles/bspwm/dmenu -l 20
     exit
 fi
 
@@ -40,34 +40,25 @@ if [[ $1 = "volume" ]];then
     exit
 fi
 
-if [[ $1 = "song" ]];then
-    mocp -i
-    err=$(echo $?)
-
-    if [[ $err -eq 2 ]];then
-        exit
-    fi
-
-    music=$(mocp -i | grep ^Title | sed 's/Title: //')
-    total=$(mocp -i | grep TotalTime: | sed 's/TotalTime: //')
-    current=$(mocp -i | grep CurrentTime: | sed 's/CurrentTime: //')
-    
-    if [[ $2 = "temp" ]];then
-        c="dunstify -t 2000"
-    else
-        c="dunstify"
-    fi
-    $c -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:song "$(printf "$music\n$current/$total")"
-
-    exit
-fi
-
 if [[ $1 = "flags" ]];then
-    marked=$(~/dotfiles/bspwm/nodes info marked)
-    sticky=$(~/dotfiles/bspwm/nodes info sticky)
-    locked=$(~/dotfiles/bspwm/nodes info locked)
+    hidden=$(~/dotfiles/bspwm/nodes flags hidden)
+    if [[ -n $hidden ]];then
+	printf "\nhidden:\n$hidden\n"
+    fi
+    marked=$(~/dotfiles/bspwm/nodes flags marked)
+    if [[ -n $marked ]];then
+	printf "\nmarked:\n$marked\n"
+    fi
+    sticky=$(~/dotfiles/bspwm/nodes flags sticky)
+    if [[ -n $sticky ]];then
+	printf "\nsticky:\n$sticky\n"
+    fi
+    locked=$(~/dotfiles/bspwm/nodes flags locked)
+    if [[ -n $locked ]];then
+	printf "\nlocked:\n$locked\n"
+    fi
     
+
     #dunstify -h string:bgcolor:#000000 -h string:x-dunst-stack-tag:flags "$(printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked")"
-    printf "marked:\n$marked\nsticky:\n$sticky\nlocked:\n$locked"
     exit
 fi

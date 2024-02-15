@@ -1,44 +1,28 @@
 #!/bin/bash
 
-marked_nodes=$(bspc query -N -n .marked)
+marked=$(bspc query -N -n .local.marked)
 
-is_tabbed() {
-    ~/dotfiles/bspwm/nodes
-    if $?;then
-        return 1
-    fi
-
-    return 0
+get_wm_class () {
+    echo $(xprop -id "$1" WM_CLASS | sed 's/.*=//' | sed 's/\"//g' | awk '{print $NF}' 2>/dev/null)
 }
 
-if [[ $1 = "move" ]];then
-    if [[ $2 = "desktop" ]];then
-        for marked_node in $marked_nodes;do
-            bspc node "$marked_node" -d focused
-            bspc node "$marked_node" -g marked
-        done
+if [[ $2 = "tabbed" ]];then
+    focused=$(bspc query -N -n)
+    tabbed="$focused"
+
+    if [[ $(get_wm_class "$focused") != "tabbed" ]];then
+	tabbed=$(tabbed -d)
+	xdotool windowreparent "$focused" "$tabbed"
+    fi
+
+    if [[ -z $marked ]];then
         exit
     fi
-    
-    if [[ $2 = "tabbed" ]];then
-        focused=$(bspc query -N -n)
-        tabbed=$(~/dotfiles/bspwm/nodes class tabbed)
 
-        if [[ $? = 0 ]];then
-            tabbed=$(tabbed -d)
-        fi
+    for m in $marked;do
+        xdotool windowreparent "$m" "$tabbed"
+        bspc node "$m" -g marked
+    done
 
-        if [[ -z $marked_nodes ]];then
-            xdotool windowreparent "$focused" "$tabbed"
-            exit
-        fi
-
-        for marked_node in $marked_nodes;do
-            xdotool windowreparent "$marked_node" "$tabbed"
-            bspc node "$marked_node" -g marked
-        done
-
-        exit
-    fi
+    exit
 fi
-

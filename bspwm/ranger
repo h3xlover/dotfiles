@@ -1,0 +1,4 @@
+#!/bin/bash
+
+wal -n -e -i ~/images/cover.png > /dev/null
+ranger

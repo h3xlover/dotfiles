@@ -1,0 +1,4 @@
+#!/bin/bash
+
+. ~/.cache/wal/colors.sh
+dmenu_run -sb "$color3" -l 15 -sf "$color0"

@@ -11,4 +11,9 @@ if [[ -n $(bspc query -N -n $(bspc query -N -n).floating) ]];then
     exit
 fi
 
+if [[ $1 == "previous" ]];then
+   bspc node -f prev.local.!hidden.window.!floating.!locked
+   exit
+fi
+
 bspc node -f next.local.!hidden.window.!floating.!locked
