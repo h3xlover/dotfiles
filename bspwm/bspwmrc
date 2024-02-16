@@ -1,10 +1,10 @@
-#! /bin/sh
+#!/bin/sh
 
 #pgrep -x sxhkd > /dev/null || sxhkd &
 
 
 #bspc monitor HDMI-A-0 -d 1 2 3 4 5
-bspc monitor DisplayPort-0 -d 1 2 3 4 5
+bspc monitor -d 1 2 3 4 5
 bspc desktop -f 1
 
 # config
