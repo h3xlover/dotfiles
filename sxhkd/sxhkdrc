@@ -1,9 +1,9 @@
 # terminal emulator
-super + Return
+super + e
 	alacritty
 
 # terminal floating, check bspwmrc
-super + apostrophe
+super + alt + e
         alacritty -T alacritty
 
 super + 7
@@ -54,11 +54,11 @@ super + q
 
 
 # hide focused window
-super + e
+super + x
 	bspc node --flag hidden=on
 
 # list hidden windows
-super + x
+super + alt + x
 	~/dotfiles/bspwm/list_hidden_windows
 
 
@@ -86,6 +86,10 @@ super + {t,shift + t,r,f}
 super + m
 	bspc desktop -l next
 
+# xorg-choose-window
+
+super + slash
+      	bspc node -f $(xorg-choose-window asdfjkl -f hexadecimal)
 
 # focus the node in the given direction
 super + {_,shift + }{a,s,w,d}
@@ -171,7 +175,7 @@ super + {h,j,k,l}
 	bspc node -p {west,south,north,east}
 
 # cancel the preselection for the focused node
-super + ctrl + space
+super + apostrophe
 	bspc node -p cancel
 
 # Move current window to a pre-selected space
@@ -257,7 +261,6 @@ super + alt + period
 	~/dotfiles/smart/light brightness $(~/dotfiles/bspwm/dmenu -p brightness)
 
 # set keymap
-
 super + p
         ~/dotfiles/bspwm/setkmap
 
