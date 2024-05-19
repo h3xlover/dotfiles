@@ -1,11 +1,17 @@
 #!/bin/bash
 
+if [[ -z "$1" ]];then
+    exit
+fi
+
 if [[ $1 = "reset" ]];then
     setxkbmap us
     exit
 fi
 
-kmap=$(~/dotfiles/bspwm/dmenu -p kmap)
+layout=$(echo "$1" | sed 's/ /\n/g')
+
+kmap=$(printf "$layout" | ~/dotfiles/bspwm/dmenu -p kmap)
 
 if [[ -z $kmap ]];then
     exit
