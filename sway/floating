@@ -1,0 +1,27 @@
+#!/bin/bash
+
+con_ids=$(swaymsg -t get_workspaces  | jq -r '.[] | select(.focused==true).floating_nodes[].id')
+
+if [[ -e /tmp/sway-workspc ]];then
+    workspc="$(cat /tmp/sway-workspc)"
+else
+    echo 1 > /tmp/sway-workspc
+    workspc=1
+fi
+
+echo $con_ids_hidden marked
+
+# Use con_id to iterate through containers from $con_ids instead of windows
+if [[ $1 = "toggle" ]];then
+    swaymsg [con_mark="^$workspc\s.*"] scratchpad show
+elif [[ $1 = "move" ]];then
+    for con_id in $con_ids;do
+	swaymsg [con_id="$con_id"] mark "$2 $con_id"
+	swaymsg [con_id="$con_id"] move scratchpad
+    done
+    echo $2 > /tmp/sway-workspc
+elif [[ $1 = "select" ]];then
+    echo $2 > /tmp/sway-workspc
+fi
+
+swaymsg mode "default"

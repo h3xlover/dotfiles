@@ -1,0 +1,22 @@
+#!/bin/bash
+
+date=$(date +'%Y-%m-%d %T')
+space=$(df -h | awk 'NR==2 {print $5}')
+news=$(eselect news count)
+cpu=$(sensors k10temp-pci-00c3 | awk 'NR==3 {print $2}')
+gpu=$(sensors amdgpu-pci-2800 | awk 'NR==5 {print $2}')
+scratchpad=$(swaymsg -t get_tree | jq -r '.. | select(.type?) | select(.name=="__i3_scratch").floating_nodes[] | length')
+mute=$(amixer get Master | tail -1 | awk '{print $6}')
+if [[ $mute = "[off]" ]];then
+	vol="muted"
+else
+    vol=$(awk -F"[][]" '/Left:/ { print $2 }' <(amixer sget Master))
+fi	 
+
+if [[ -n $scratchpad ]];then
+    scratchpad="yes"
+else
+    scratchpad="no"
+fi
+
+echo "gpu: $gpu | cpu: $cpu | scratchpad: $scratchpad | news: $news | root: $space | vol: $vol | $date"

@@ -1,0 +1,16 @@
+#!/bin/bash
+
+wal -c
+wal -e -n -i ~/images/cover.png
+
+. ~/dotfiles/ChromiumPywal/generate-theme.sh
+. ~/.cache/wal/colors.sh
+
+emacsclient --eval "(org-babel-load-file (expand-file-name \"~/.emacs.d/theme.org\")))"
+
+swaymsg client.focused "$color0" "$color3" "$color0" "$color0"
+
+swaymsg bar bar-0 colors statusline "$color3"
+swaymsg bar bar-0 colors background "$color0"
+swaymsg bar bar-0 colors inactive_workspace "$color0" "$color0" "$color3"
+swaymsg bar bar-0 colors focused_workspace "#32323200" "$color3" "$color0"
