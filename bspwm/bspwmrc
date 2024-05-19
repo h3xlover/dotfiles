@@ -29,7 +29,7 @@ bspc rule -a emacs:Emacs state=tiled
 #sleep 1.9
 #xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --framedrop=vo --no-osc --no-input-builtin-bindings /home/g/images/startup.mp4
 
-#nice xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --no-osc --no-input-builtin-bindings --loop --panscan="1.0" "${HOME}/images/gifs/cover.$m" &
+nice xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --no-osc --no-input-builtin-bindings --loop --panscan="1.0" "${HOME}/images/gifs/cover.mp4" &
 
 # load colors (imagemagick necessary)
 wal -c
@@ -37,7 +37,7 @@ wal -n -i ~/images/cover.png
 . ~/.cache/wal/colors.sh
 
 # set wallpaper
-feh --no-fehbg --bg-fill ~/images/cover.png
+#feh --no-fehbg --bg-fill ~/images/cover.png
 bspc config presel_feedback_color $color3
 
 # polybar
