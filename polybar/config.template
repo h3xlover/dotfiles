@@ -18,7 +18,7 @@
 
 [colors]
 ; background = ${wal.color1}
-background-alt = ${wal.color2}
+background-alt = ${wal.color1}
 foreground = ${wal.color4}
 primary = ${wal.color4}
 secondary = ${wal.color4}
@@ -34,6 +34,7 @@ margin-bottom = 0
 width = 100%
 height = 15pt
 radius = 0
+enable-ipc = true
 
 ; dpi = 96
 
@@ -56,12 +57,10 @@ separator-foreground = ${colors.separator}
 font-0 = "monospace:size=10:weight=bold;2"
 
 modules-left = xworkspaces xwindow
-modules-right = terminal emacs chromium telegram filesystem pulseaudio xkeyboard date
+modules-right = terminal emacs chromium tor telegram filesystem pulseaudio xkeyboard date
 
 cursor-click = pointer
 cursor-scroll = ns-resize
-
-enable-ipc = true
 
 ; tray-position = right
 
@@ -75,13 +74,18 @@ enable-ipc = true
 type = custom/menu
 label-open = "%{A1:ch:}ch%{A}"
 
+[module/tor]
+
+type = custom/menu
+label-open = "%{A1:tor-browser:}tor%{A}"
+
 [module/emacs]
 type = custom/menu
 label-open = "%{A1:em:}em%{A}"
 
 [module/terminal]
 type = custom/menu
-label-open = "%{A1:st -t stfloat:}st%{A}"
+label-open = "%{A1:alacritty -T alacritty:}al%{A}"
 
 [module/telegram]
 type = custom/menu
@@ -108,7 +112,7 @@ label-empty-padding = 1
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:60:...%
+label = %title:0:60:...% %{A1:bspc node -c:}[x]%{A}
 
 [module/filesystem]
 type = internal/fs

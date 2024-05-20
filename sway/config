@@ -1,0 +1,240 @@
+# Dependencies: jq, disable_titlebar.patch, fullscreen.patch, dmenu, alacritty, grim+slurp, setxkbmap, swayfocus, wal, mpvpaper, wl-clipboard
+
+# Borders, titlebars, gaps
+default_border pixel 2
+default_floating_border pixel 2
+gaps inner 4
+gaps outer -4
+smart_borders on
+titlebar_padding 1
+titlebar_border_thickness 1
+# titlebar patch
+disable_titlebar yes
+
+# Rules
+for_window {
+	   [class="ranger"] floating enable
+	   [class="feh"] fullscreen enable
+	   [class=".*"] opacity 0.95
+	   #
+	   [app_id=".*"] opacity 0.95
+	   [app_id="pavucontrol"] floating enable
+	   [app_id="org.pwmt.zathura"] floating enable
+}
+
+### Variables
+set $mod Mod4
+set $left a
+set $down s
+set $up w
+set $right d
+# launch app and auto set mode to default
+set $launch ~/dotfiles/sway/launch
+# multiple individual scratchpads using marks
+set $scratch ~/dotfiles/sway/floating
+# Set floating modifier
+floating_modifier $mod normal
+
+# Hide cursor
+seat seat0 hide_cursor 3000
+
+output DP-1 resolution 3440x1440@144Hz
+output * bg /home/g/images/cover.png fill
+#exec mpvpaper -vs -o "no-audio loop" DP-1 /home/g/images/gifs/cover.mp4
+
+    # Start a terminal
+    bindsym $mod+e exec alacritty
+
+    # Kill focused window
+    bindsym --no-repeat $mod+q kill
+
+    # Volume
+    bindsym XF86AudioLowerVolume exec amixer set Master 5%-
+    bindsym XF86AudioRaiseVolume exec amixer set Master 5%+
+    bindsym XF86AudioMute exec amixer set Master toggle
+    
+    # Disable/enable titlebars, including tabbed/stacked. From disable_titlebar patch.
+    bindsym $mod+bracketleft disable_titlebar no
+    bindsym $mod+bracketright disable_titlebar yes
+
+    # Print
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd1/images/sc/"$(date +%Y-%d-%H-%M-%S | tr A-Z a-z).png"
+
+    # Set keyboard layout
+    bindsym $mod+p exec ~/dotfiles/bspwm/setkmap "us ru"
+    bindsym $mod+Shift+p exec ~/dotfiles/bspwm/setkmap reset
+
+    # Reload the configuration file
+    bindsym $mod+Shift+c reload
+
+    # Exit sway (logs you out of your Wayland session)
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
+
+     # Switch to window, swayfocus
+     bindsym $mod+a exec sway-overfocus split-lt float-lt output-ls
+     bindsym $mod+s exec sway-overfocus split-dt float-dt output-ds
+     bindsym $mod+w exec sway-overfocus split-ut float-ut output-us
+     bindsym $mod+d exec sway-overfocus split-rt float-rt output-rs
+
+     # Move windows
+     bindsym $mod+Shift+$left move left
+     bindsym $mod+Shift+$down move down
+     bindsym $mod+Shift+$up move up
+     bindsym $mod+Shift+$right move right
+
+     # Center floating window
+     bindsym $mod+9 move position center
+
+     # Switch to workspace
+     bindsym $mod+1 workspace number 1
+     bindsym $mod+2 workspace number 2
+     bindsym $mod+3 workspace number 3
+     bindsym $mod+4 workspace number 4
+     bindsym $mod+5 workspace number 5
+
+     # Move window to workspace
+     bindsym $mod+Shift+1 move container to workspace number 1
+     bindsym $mod+Shift+2 move container to workspace number 2
+     bindsym $mod+Shift+3 move container to workspace number 3
+     bindsym $mod+Shift+4 move container to workspace number 4
+     bindsym $mod+Shift+5 move container to workspace number 5 
+
+     # Split layout
+     bindsym $mod+v splith
+     bindsym $mod+c splitv
+     bindsym $mod+Shift+v split none
+
+     # Focus to parent or child container
+     bindsym $mod+z focus parent
+     bindsym $mod+x focus child
+
+     # Change layout of container
+     bindsym $mod+t layout toggle tabbed split
+
+     # Switch between tabs in a container, swayoverfocus
+     bindsym $mod+b exec sway-overfocus group-rw group-dw
+
+     # Toggle window to fullscreen or floating/non-floating
+     bindsym $mod+f fullscreen
+     bindsym $mod+r floating toggle
+     
+     # Toggle focus between floating and non-floating windows
+     bindsym $mod+space focus mode_toggle
+
+     # Move to individual scratchpad 1-4
+     bindsym $mod+n mode "hide"
+     # Show individual scratchpad 1-4
+     bindsym $mod+Tab exec $scratch toggle
+
+# Resize windows/containers
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+
+    bindsym Shift+$left resize shrink width 35px
+    bindsym Shift+$down resize grow height 35px
+    bindsym Shift+$up resize shrink height 35px
+    bindsym Shift+$right resize grow width 35px
+
+    bindsym $mod+z focus parent
+    bindsym $mod+x focus child
+
+    bindsym $mod+g mode "move"
+    bindsym Ctrl+g mode "default"
+    bindsym Escape mode "default"
+}
+
+# Move windows/containers
+mode "move" {
+     bindsym $left move left
+     bindsym $down move down
+     bindsym $up move up
+     bindsym $right move right
+
+     bindsym Shift+$left move left 35
+     bindsym Shift+$down move down 35
+     bindsym Shift+$up move up 35
+     bindsym Shift+$right move right 35
+
+     bindsym $mod+z focus parent
+     bindsym $mod+x focus child
+
+     bindsym $mod+g mode "resize"
+     bindsym Ctrl+g mode "default"
+     bindsym Escape mode "default"
+}
+
+# Launch apps
+mode "apps" {
+    bindsym e exec $launch emacs
+    bindsym c exec $launch ch
+    bindsym t exec $launch tg
+    bindsym r exec $launch alacritty --class ranger -T ranger -e ~/dotfiles/bspwm/ranger
+    bindsym d exec swaymsg mode "default" && ~/dotfiles/bspwm/dmenu_run
+
+    bindsym Ctrl+g mode "default"
+    bindsym Escape mode "default"
+}
+
+# Power keybinds
+mode "power" {
+     bindsym r exec loginctl reboot
+     bindsym q exec loginctl poweroff
+     bindsym s exec $launch loginctl suspend
+     bindsym h exec $launch loginctl hibernate
+
+     bindsym Ctrl+g mode "default"
+     bindsym Escape mode "default"
+}
+
+mode "hide" {
+     bindsym a exec $scratch move 1
+     bindsym s exec $scratch move 2
+     bindsym d exec $scratch move 3
+     bindsym f exec $scratch move 4
+     
+     bindsym $mod+n mode "hide-select"
+     bindsym Ctrl+g mode "default"
+     bindsym Escape mode "default"
+}
+
+mode "hide-select" {
+     bindsym a exec $scratch select 1
+     bindsym s exec $scratch select 2
+     bindsym d exec $scratch select 3
+     bindsym f exec $scratch select 4
+
+     bindsym $mod+n mode "hide"
+     bindsym Ctrl+g mode "default"
+     bindsym Escape mode "default"
+}
+     
+# Bind modes
+bindsym $mod+Escape mode "apps"
+bindsym $mod+g mode "resize"
+bindsym $mod+h mode "power"
+bindsym $mod+m mode "move"
+
+# Bar config
+bar {
+    position top
+    status_padding 1
+    font pango:Iosevka 10
+    mode hide
+    modifier Mod4+Alt
+
+    # When the status_command prints a new line to stdout, swaybar updates.
+    status_command while /home/g/dotfiles/sway/bar; do sleep 1; done
+
+    colors {
+        statusline #ffffff
+        background #0f0f0f
+        inactive_workspace #32323200 #32323200 #5c5c5c
+    }
+}
+
+# misc
+exec_always . ~/dotfiles/sway/colors
+include /etc/sway/config.d/*

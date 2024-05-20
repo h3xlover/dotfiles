@@ -1,0 +1,4 @@
+set selection-clipboard clipboard
+map j feedkeys "<C-Down>"
+map k feedkeys "<C-Up>"
+set smooth-scroll "true"
