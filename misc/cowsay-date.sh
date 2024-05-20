@@ -16,3 +16,5 @@ case $1 in
     "min")
         echo $minutes;;
 esac
+
+cowsay "last emerge: $days days $hours hours $minutes minutes."
