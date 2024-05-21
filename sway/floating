@@ -22,6 +22,7 @@ elif [[ $1 = "move" ]];then
     echo $2 > /tmp/sway-workspc
 elif [[ $1 = "select" ]];then
     echo $2 > /tmp/sway-workspc
+    ~/dotfiles/sway/floating toggle
 fi
 
 swaymsg mode "default"

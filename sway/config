@@ -89,8 +89,6 @@ output * bg /home/g/images/cover.png fill
      bindsym $mod+1 workspace number 1
      bindsym $mod+2 workspace number 2
      bindsym $mod+3 workspace number 3
-     bindsym $mod+4 workspace number 4
-     bindsym $mod+5 workspace number 5
 
      # Move window to workspace
      bindsym $mod+Shift+1 move container to workspace number 1
@@ -103,7 +101,7 @@ output * bg /home/g/images/cover.png fill
      bindsym $mod+v splith
      bindsym $mod+c splitv
      bindsym $mod+Shift+v split none
-
+     bindsym $mod+y [con_id=__focused__] sticky toggle
      # Focus to parent or child container
      bindsym $mod+z focus parent
      bindsym $mod+x focus child
@@ -126,6 +124,13 @@ output * bg /home/g/images/cover.png fill
      # Show individual scratchpad 1-4
      bindsym $mod+Tab exec $scratch toggle
 
+     bindsym $mod+4 exec ~/dotfiles/sway/toggle_floating hide
+
+     bindsym $mod+Alt+a exec $scratch select 1			 
+     bindsym $mod+Alt+s exec $scratch select 2
+     bindsym $mod+Alt+d exec $scratch select 3
+     bindsym $mod+Alt+f exec $scratch select 4
+    
 # Resize windows/containers
 mode "resize" {
     bindsym $left resize shrink width 10px
