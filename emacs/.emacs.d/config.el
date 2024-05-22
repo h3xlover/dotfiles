@@ -14,6 +14,8 @@
 (global-set-key (kbd "C-x C-<down>") 'enlarge-window)
 (global-set-key (kbd "C-x C-<left>") 'shrink-window-horizontally)
 (global-set-key (kbd "C-x C-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "<prior>") 'good-scroll-down)
+(global-set-key (kbd "<next>") 'good-scroll-up)
 (global-set-key (kbd "C-S-n") 'good-scroll-up)
 (global-set-key (kbd "C-S-p") 'good-scroll-down)
 ;; kill all buffers except for current 
@@ -35,6 +37,8 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
+
+(use-package rmsbolt)
 
 (use-package ewal
   :init (setq ewal-use-built-in-always-p nil

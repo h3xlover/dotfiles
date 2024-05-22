@@ -18,6 +18,8 @@
   (global-set-key (kbd "C-x C-<down>") 'enlarge-window)
   (global-set-key (kbd "C-x C-<left>") 'shrink-window-horizontally)
   (global-set-key (kbd "C-x C-<right>") 'enlarge-window-horizontally)
+  (global-set-key (kbd "<prior>") 'good-scroll-down)
+  (global-set-key (kbd "<next>") 'good-scroll-up)
   (global-set-key (kbd "C-S-n") 'good-scroll-up)
   (global-set-key (kbd "C-S-p") 'good-scroll-down)
   ;; kill all buffers except for current 
@@ -45,6 +47,10 @@
 (package-initialize)
 #+END_SRC
 
+** rmsbolt
+#+begin_src emacs-lisp
+  (use-package rmsbolt)
+#+end_src
 ** ewal
 #+begin_src emacs-lisp
   (use-package ewal
