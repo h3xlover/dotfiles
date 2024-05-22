@@ -1,0 +1,312 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("/home/g/p-repo-forks/" . "sway-overfocus-0.2.3/")
+ ("/home/g/b/" . "src/")
+ ("/home/g/Hakurei/" . "src/")
+ ("/home/g/hakurei/hakurei/" . "src/")
+ ("/home/g/hakurei/" . "hakurei/")
+ ("/home/g/code/c/" . "sorting/")
+ ("/home/g/code/" . "c/")
+ ("/home/g/.icons/" . "default/")
+ ("/etc/X11/xinit/" . "xinitrc.d/")
+ ("/etc/X11/" . "xinit/")
+ ("/usr/share/" . "icons/")
+ ("/usr/" . "share/")
+ ("/home/g/.local/share/icons/" . "Simp1e-Adw-Dark/")
+ ("/home/g/.local/share/" . "ranger/")
+ ("/home/g/.local/" . "share/")
+ ("/mnt/hd1/" . "images/")
+ ("/mnt/" . "hd1/")
+ ("/home/g/sway/sway/" . "tree/")
+ ("/home/g/sway/" . "sway/")
+ ("/home/g/Downloads/Google_Cursor-main/bitmaps/" . "GoogleDot-Black/")
+ ("/home/g/Downloads/Google_Cursor-main/" . "bitmaps/")
+ ("/home/g/patches/" . "dmenu/")
+ ("/etc/" . "default/")
+ ("/home/g/boot_backup/" . "boot/")
+ ("/home/g/.emacs.d/elpa/" . "org-roam-ui-20221105.1040/")
+ ("/etc/portage/" . "env/")
+ ("/home/g/org/roadmap/" . "journal/")
+ ("/home/g/org/tasks/" . ".stfolder/")
+ ("/home/" . "g/")
+ ("/home/g/org/" . "roadmap/")
+ ("/" . "home/")
+ ("/home/g/dotfiles/" . "sway/")
+ ("/home/g/.config/" . "sway/")
+ ("/home/g/" . "code/")
+ ("/home/g/.emacs.d/" . "elpa/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "/home/g/code/c/sorting/"
+ "/home/g/.emacs.d/"
+ "/home/g/.config/sway/"
+ "/home/g/iosevka/"
+ "/home/g/p-repo-forks/sway-overfocus-0.2.3/"
+ "/home/g/"
+ "/home/g/b/src/"
+ "/home/g/Hakurei/src/"
+ "/home/g/hakurei/hakurei/src/"
+ "/home/g/dotfiles/sway/"
+ "/home/g/dotfiles/bspwm/"
+ "/home/g/dotfiles/portage/"
+ "/home/g/walogram/"
+ "/home/g/org/roadmap/"
+ "/home/g/dotfiles/smart/"
+ "/home/g/.icons/default/"
+ "/etc/X11/xinit/"
+ "/etc/X11/xorg.conf.d/"
+ "/home/g/.local/share/icons/Simp1e-Adw-Dark/"
+ "/home/g/.local/share/icons/Simp1e-Gruvbox-Dark/"
+ "/home/g/.local/share/icons/"
+ "/home/g/.config/ranger/"
+ "/home/g/.config/alacritty/"
+ "/home/g/.config/fontconfig/"
+ "/home/g/.config/"
+ "/home/g/org/"
+ "/"
+ "/mnt/"
+ "/home/g/.config/sxhkd/"
+ "/home/g/sway/sway/tree/"
+ "/home/g/sway/sway/desktop/"
+ "/home/g/dotfiles/"
+ "/home/g/.config/bspwm/"
+ "/home/g/.config/picom/"
+ "/home/g/.config/polybar/"
+ "/home/g/Downloads/Google_Cursor-main/"
+ "/home/g/org/tasks/"
+ "/home/g/images/"
+ "/home/g/patches/tabbed-0.7/"
+ "/home/g/patches/st-0.9/"
+ "/etc/init.d/"
+ "/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/"
+ "/etc/portage/env/"
+ "/home/g/org/roam/"
+ "/home/g/.config/gtk-3.0/"
+ "/home/g/config/"
+ "/home/g/notes/"
+ "/home/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "insertion.c"
+ "init.el"
+ "config"
+ "Makefile"
+ "Cargo.toml"
+ ".bashrc"
+ "test.cc"
+ "main.cc"
+ "fix.patch"
+ "int_gen.c"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("/tmp/rmsbolt-Y93TqH/" (26188 62934 21335 415000) "rmsbolt.s" "./" "../")
+
+ ("/home/g/" (26188 62115 99144 771000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" "2.1.14_0.crx" "2.1.14_0.pem" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" "p-repo-forks/" ".ssh/" "2024-05-21 16-14-42.mkv" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" ".bash_history" ".java/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+
+ ("/home/g/code/" (26186 36305 661088 610000) "kicad/" "vl/" "../" "c/" "./")
+
+ ("/home/g/iosevka/" (26187 40000 60161 151000) "Iosevka-ExtraBold.ttc" "Iosevka-Regular.ttc" "../" "Iosevka-Bold.ttc" "Iosevka-ExtraLight.ttc" "Iosevka-Heavy.ttc" "Iosevka-Medium.ttc" "Iosevka-SemiBold.ttc" "Iosevka-Light.ttc" "./" "Iosevka-Thin.ttc")
+
+ ("/home/g/.cargo/" (26168 63597 918917 367000) ".package-cache" "../" ".package-cache-mutate" "registry/" "./")
+
+ ("/etc/portage/env/" (26186 31608 243772 874000) "compiler-clang" "no-tmpfs" "compiler-clang~" "compiler-clang-lto~" "compiler-clang-lto" "./" "../")
+
+ ("/etc/init.d/" (26181 41450 692560 87000) "libvirtd" "savecache" "systemd-tmpfiles-setup" "procfs" "mount-ro" "sshd" "metalog" "cupsd" "net.wlp42s0f3u1" "tor" "consolefont" "hostname" "root" "bootlogd" "#amdfan#" "git-daemon" "modules" "virtlogd" "bootmisc" "net-online" "libvirt-guests" "loopback" "devfs" "osclock" "udev-settle" "termencoding" "lm_sensors" "udev-trigger" "localmount" "keymaps" "save-termencoding" "elogind" "ip6tables" "alsasound" "transmission-daemon" "virtlockd" "fuse" "swap" "ebtables" "cgroups" "fancontrol" "ntpd" "display-manager" "sysfs" "systemd-tmpfiles-setup-dev" "xdm" "dnsmasq" "swclock" "pydoc-3.12" "syncthing" "rsyncd" "wpa_supplicant~" "display-manager-setup" "dhcpcd" "runsvdir" "ntp-client" "fsck" "hwclock" "sysctl" "seedrng" "functions.sh" "dmesg" "numlock" "pciparm" "pydoc-3.11" "agetty" "mtab" "wpa_supplicant" "net.lo" "wpa" "udev" "sntp" "netmount" "kmod-static-nodes" "binfmt" "wpa~" "nullmailer" "radvd" "./" "s6-svscan" "../" "local" "killprocs" "qemu-binfmt" "dbus" "amdfan" "iptables" "save-keymaps")
+
+ ("/home/g/images/" (26186 42230 122588 863000) "2024-15-19-25-15.png" "../" "startup.mp4" "covers/" "gifs/" "cover.png" "2024-15-19-24-07.png" "2024-15-19-24-29.png" "./" "2024-15-19-25-59.png" "matrix.png")
+
+ ("/home/g/.config/polybar/" (26186 38226 85846 734000) "../" "config.template" "config_backup" "config.ini" "./")
+
+ ("/home/g/.config/picom/" (26186 38143 141192 535000) "../" "picom.conf" "./")
+
+ ("/home/g/dotfiles/" (26186 44082 964293 462000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "polybar/" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "ranger/" "./" "sxhkd/" "alacritty/")
+
+ ("/home/g/.config/fontconfig/" (26186 38048 849427 693000) "fonts.conf" "../" "./")
+
+ ("/home/g/.local/share/icons/" (26186 47761 42671 263000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
+
+ ("/home/g/dotfiles/smart/" (26186 43358 751249 229000) "api" "../" "light" "colors" "./")
+
+ ("/home/g/.emacs.d/" (26181 10597 791532 198000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/dotfiles/portage/" (26186 37542 209364 976000) "../" "package-size" "./")
+
+ ("/home/g/dotfiles/bspwm/" (26186 41578 55558 433000) "temp" "bspwmrc" "../" "dmenu" "toggle_floating_window" "xclip" "kill_window" "toggle_border_width" "resize_window" "dmenu_run" "toggle_layer" "nodes" "tesseract" "center_window" "toggle_tiled_window" "marked_nodes" "setkmap" "ranger" "list_hidden_windows" "./" "notification_info")
+
+ ("/home/g/dotfiles/sway/" (26186 41800 723894 545000) "config" "../" "floating" "bar" "colors" "./" "launch" "toggle_floating")
+
+ ("/home/g/p-repo-forks/sway-overfocus-0.2.3/" (26187 29590 455610 358000) "usage.md" ".gitignore" "../" "Cargo.toml" "LICENSE" "Cargo.lock" "vendor/" "README.md" ".rustfmt.toml" "./" "demo.gif" "src/")
+
+ ("/home/g/p-repo-forks/" (26187 29214 711140 142000) "../" ".git/" "sway-1.9.zip" "sway-overfocus.tar.xz" "./" "sway-overfocus-0.2.3/")
+
+ ("/home/g/.config/sway/" (26186 38942 348340 978000) "config" "../" "./")
+
+ ("/home/g/.config/" (26182 46495 792280 338000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
+
+ ("/home/g/b/src/" (26182 50737 248692 139000) "../" "test.cc" "xcdat/" "xcdat.hpp" "main" "main.cc" "./")
+
+ ("/home/g/b/" (26175 62678 0 0) "../" "LICENSE.txt" "res/" "README.md" "./" "src/")
+
+ ("/home/g/Hakurei/src/" (26182 47075 237612 437000) "../" "main.cc" "./")
+
+ ("/home/g/Hakurei/" (26182 47054 176449 299000) "fix.patch" "../" ".git/" "LICENSE.txt" "res/" "README.md" "./" "src/")
+
+ ("/home/g/hakurei/hakurei/src/" (26182 45793 767283 367000) "../" "xcdat/" "xcdat.hpp" "main" "main.cc" "./")
+
+ ("/home/g/hakurei/hakurei/" (26175 62678 0 0) "../" "LICENSE.txt" "res/" "README.md" "./" "src/")
+
+ ("/home/g/hakurei/" (26182 36502 930280 847000) "../" "./" "hakurei/")
+
+ ("/home/g/code/c/sorting/" (26182 36313 807897 854000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c")
+
+ ("/home/g/walogram/" (26180 51567 113808 565000) ".gitignore" "../" ".git/" "LICENSE" "walogram.1" "Makefile" "walogram" "README.md" "constants.tdesktop-theme" "./")
+
+ ("/home/g/code/c/" (26179 32184 518218 363000) "../" "sorting/" "./")
+
+ ("/home/g/.icons/" (26022 54466 174997 373000) "../" "default/" "./" "backup/" "GoogleDot-Black/")
+
+ ("/home/g/.local/share/TelegramDesktop/" (26175 48982 913419 910000) "log.txt" "../" "tdata/" "./")
+
+ ("/home/g/.local/share/ranger/" (26175 49506 843096 967000) "../" "bookmarks" "./" "tagged" "history")
+
+ ("/home/g/.local/share/xorg/" (26167 5357 392540 565000) "../" "Xorg.0.log" "Xorg.0.log.old" "./")
+
+ ("/etc/default/" (26067 49372 14991 637000) "useradd" "grub" "cdrecord" "rscsi" "./" "../" "grub~")
+
+ ("/etc/X11/xinit/xinitrc.d/" (25926 63200 225997 470000) "00-xhost" "80-dbus" "40-libcanberra-gtk-module" "./" "../")
+
+ ("/etc/X11/xinit/" (25926 47292 360997 888000) "xserverrc" "xinitrc" "xinitrc.d/" "./" "../")
+
+ ("/etc/X11/Sessions/" (25926 53235 494992 554000) "Xsession" "./" "../" "bspwm")
+
+ ("/etc/X11/xorg.conf.d/" (25926 54053 448991 820000) "amd.conf" "./" "../")
+
+ ("/home/g/.local/share/applications/" (26175 48982 853418 945000) "org.telegram.desktop._9b27531ae03cace6e83ac743980ed92a.desktop" "../" "mimeinfo.cache" "start-tor-browser.desktop" "./")
+
+ ("/home/g/.local/share/icons/Simp1e-Adw-Dark/" (25647 63546 0 0) "../" "cursors/" "index.theme" "./")
+
+ ("/home/g/.config/ranger/" (26174 53260 975524 704000) "../" "rc.conf" "plugins/" "rifle.conf" "./")
+
+ ("/usr/share/icons/" (25942 42684 248999 430000) "hicolor/" "breeze-dark/" "breeze/" "./" "../" "Adwaita/")
+
+ ("/usr/share/" (26174 53560 385830 638000) "wireplumber/" "cryptopp/" "defaults/" "vlc/" "xtables/" "gettext/" "licenses/" "solid/" "mpv/" "polkit-1/" "tor/" "elt-patches/" "ghostscript/" "factory/" "osinfo/" "grub/" "zsh/" "rlhc-js.lm" "drirc.d/" "glib-2.0/" "swig/" "ragel.lm" "ImageMagick-7/" "ril.lm" "gcc-data/" "sgml/" "qt6/" "gir-1.0/" "emacs/" "themes/" "metainfo/" "luajit-2.1.0-beta3/" "source-highlight/" "augeas/" "gtksourceview-4/" "iso-codes/" "pkgconfig/" "transmission/" "libvirt/" "bash-completion/" "awk/" "cmake/" "fonts/" "libtool/" "mime/" "binutils-data/" "vala/" "sounds/" "ss/" "keymaps/" "applications/" "unimaps/" "rlhc-julia.lm" "pipewire/" "qt6-doc/" "portage/" "icu/" "rlhc-c.lm" "rlhc-d.lm" "eselect/" "info/" "edk2-ovmf/" "hwdata/" "gdb/" "pixmaps/" "asciidoc/" "opencc/" "gnome-control-center/" "xsessions/" "vim/" "gst-plugins-base/" "gettext-0.22.4/" "poppler/" "ipxe/" "locale/" "virt-manager/" "ca-certificates/" "automake-1.16.5/" "doc/" "openpgp-keys/" "gnuconfig/" "nvim/" "man/" "tabset/" "ntp/" "qt5-doc/" "xmlto/" "dnsmasq/" "gdm/" "xml/" "terminfo/" "wayland/" "rlhc-go.lm" "fzf/" "libgpg-error/" "misc/" "i18n/" "imlib2/" "libthai/" "runtests" "out-go.lm" "wayland-protocols/" "dbus-1/" "intltool/" "sandbox/" "gstreamer-1.0/" "swtpm/" "rlhc-ruby.lm" "groff/" "rlhc-ocaml.lm" "seavgabios/" "libdrm/" "alsa/" "dhcpcd/" "gtk-doc/" "X11/" "feh/" "rlhc-csharp.lm" "cups/" "aclocal/" "consoletrans/" "libinput/" "fish/" "w3m/" "sgabios/" "openrc/" "thumbnailers/" "lua/" "flameshot/" "automake-1.16/" "texinfo/" "rlhc-java.lm" "ECM/" "android-tools/" "qemu/" "p11-kit/" "gtk-3.0/" "rlhc-crack.lm" "obs/" "pavucontrol/" "xdg-desktop-portal/" "ffmpeg/" "gobject-introspection-1.0/" "xcb/" "alacritty/" "gnupg/" "glade/" "git-core/" "rlhc-main.lm" "nghttp2/" "djvu/" "zoneinfo/" "iproute2/" "vala-0.56/" "et/" "qlogging-categories5/" "vulkan/" "seabios/" "gcc-config/" "gnome/" "re2c/" "alsa-card-profile/" "plasma-wayland-protocols/" "pulseaudio/" "baselayout/" "wayland-sessions/" "autoconf-2.71/" "b2/" "git/" "aclocal-1.16/" "icons/" "bison/" "./" "glvnd/" "fc-lang/" "devhelp/" "consolefonts/" "../" "cursors/" "rlhc-rust.lm" "imagemagick/" "GConf/")
+
+ ("/usr/" (25926 54738 781991 205000) "x86_64-pc-linux-gnu/" "lib64/" "libexec/" "bin/" "sbin/" "man/" "lib/" "src/" "include/" "share/" "./" "../" "local/")
+
+ ("/etc/X11/" (26113 55419 355984 453000) "startDM.sh" "Sessions/" "xorg.conf.d/" "xinit/" "chooser.sh" "./" "../")
+
+ ("/etc/" (26175 41026 604000 43000) "default/" "pulse/" "ssh/" "revdep-rebuild/" "dispatch-conf.conf~" "systemd/" "rc.conf" "chromium/" "sway/" "lessfilter.d/" "wgetrc" "gshadow-" "mpv/" "polkit-1/" "rpc" "npm/" "tor/" "sudoers.tmp~" "adjtime" "lsb-release" "hostname" "issue" "host.conf" "netconfig" "ntp.conf" "machine-id" "gai.conf" "inittab.d/" "swtpm_setup.conf" "wireless-regdb/" "ImageMagick-7/" "sgml/" "emacs/" "environment" "dispatch-conf.conf" "sandbox.d/" "timezone" "ssl/" "profile" "acpi/" "subgid" "shells" "environment.d/" "rhashrc" "clang/" "libvirt/" "passwd" "group-" "fonts/" "conf.d/" "ld.so.cache" "profile.env" "sudoers.dist" "protocols" "hosts" "DIR_COLORS" "cni/" "subgid-" "metalog.conf" "skel/" "runlevels/" "inputrc" "elogind/" "portage/" "ld.so.conf.d/" "bash/" "swtpm-localca.conf" "eselect/" "xinetd.d/" "inittab" "etc-update.conf" "xdg/" "init.d/" "grub.d/" "login.defs" "local.d/" "sandbox.conf" "ld.so.conf" "sudo.conf" "mime.types" "pam.d/" "swtpm-localca.options" "xml/" "env.d/" "#sudoers.tmp#" "sudoers~" "terminfo/" "sudo_logsrvd.conf" "fstab~" "dhcpcd.conf~" "filesystems" "rsyncd.conf" "fuse.conf" "python-exec/" "ethertypes" "csh.env" "shadow" "sysctl.d/" "man_db.conf" "dbus-1/" "gentoo-release" ".pwd.lock" "sensors3.conf" "#sudoers#" "services" "alsa/" "issue.logo" "X11/" "dnsmasq.conf" "nsswitch.conf" "fstab" "eclean/" "modules-load.d/" "cups/" "cron.daily/" "os-release" "libnl/" "w3m/" "shadow-" "e2scrub.conf" "qemu/" "paperspecs" "gtk-3.0/" "ca-certificates.conf" "security/" "logrotate.d/" "mke2fs.conf" "mtab" "polybar/" "wpa_supplicant/" "locale.gen" "pkcs11/" "subuid-" "xattr.conf" "udev/" "dhcpcd.conf" "gitconfig" "modprobe.d" "subuid" "sudoers" "vulkan/" "resolv.conf" "issue~" "group" "rmt" "nullmailer/" "networks" "profile.d/" "bindresvport.blacklist" "vdpau_wrapper.cfg" "./" "config-archive/" "gshadow" "localtime" "../" "e2fsck.conf" "passwd-")
+
+ ("/home/g/.local/share/icons/Simp1e-Gruvbox-Dark/" (25647 63582 0 0) "../" "cursors/" "index.theme" "./")
+
+ ("/home/g/.local/share/" (26173 44554 859177 107000) "man/" "fonts/" "nyxt/" "dbus-1/" "../" "Anki2/" "webkitgtk/" "TelegramDesktop/" "qutebrowser/" "xorg/" "zathura/" "libvirt/" "recently-used.xbel" "icons/" "gegl-0.4/" "godot/" "ranger/" "GoldenDict/" "./" "applications/" "goldendict/")
+
+ ("/home/g/.local/" (26173 43927 598691 58000) "../" "lib/" "share/" "bin/" "state/" "./")
+
+ ("/home/g/.android/" (25651 4542 138639 699000) "adb.5037" "../" "adbkey.pub" "adbkey" "./")
+
+ ("/home/g/dotfiles/alacritty/" (26062 15838 424755 195000) "../" "alacritty.yml" "./")
+
+ ("/mnt/hd1/images/" (25981 29335 739717 100000) "wallpapers/" "sc/" "my_prints/" "gifs/" ".stfolder/" "../" "./")
+
+ ("/mnt/hd1/" (26168 30198 164563 0) "System Volume Information/" "qemu/" "programs/" "pdfs/" "music/" "images/" "found.000/" "downloads/" "desktop.ini" "camera/" "$RECYCLE.BIN/" "../" "./")
+
+ ("/mnt/" (25927 37387 227999 810000) "hd1/" "hd2/" "./" "../")
+
+ ("/home/g/.elfeed/" (25706 7445 7190 812000) "../" "index" "data/" "./")
+
+ ("/home/g/sway/sway/tree/" (26168 27839 512182 118000) "root.c" "node.c" "../" "container.c" "arrange.c" "workspace.c" "view.c" "output.c" "./")
+
+ ("/home/g/sway/sway/desktop/" (26168 27839 509182 86000) "layer_shell.c" "xwayland.c" "../" "idle_inhibit_v1.c" "xdg_shell.c" "transaction.c" "launcher.c" "output.c" "./")
+
+ ("/home/g/sway/sway/" (26168 27839 512182 118000) "config.c" "sway.1.scd" "criteria.c" "config/" "../" "xdg_decoration.c" "xdg_activation_v1.c" "realtime.c" "commands/" "swaynag.c" "input/" "sway.5.scd" "main.c" "tree/" "lock.c" "sway-input.5.scd" "ipc-server.c" "meson.build" "scene_descriptor.c" "desktop/" "ipc-json.c" "./" "sway_text_node.c" "commands.c" "sway-bar.5.scd" "sway-output.5.scd" "sway-ipc.7.scd" "server.c" "decoration.c")
+
+ ("/home/g/sway/" (26168 27839 513182 128000) "README.pl.md" "README.gr.md" "README.ro.md" "swaynag/" "README.ko.md" ".gitignore" ".builds/" "README.ar.md" "README.it.md" "include/" "../" "README.de.md" "meson_options.txt" ".github/" "README.ir.md" ".git/" "LICENSE" "assets/" "README.ru.md" "README.sv.md" "client/" "README.uk.md" "common/" "README.zh-TW.md" "README.nl.md" "swaybar/" "README.dk.md" "CONTRIBUTING.md" "README.es.md" "sway/" "README.cs.md" "config.in" "README.no.md" "release.sh" "protocols/" "README.md" "README.pt.md" ".editorconfig" "README.hu.md" "meson.build" "swaymsg/" "README.zh-CN.md" "README.hi.md" "completions/" "README.tr.md" "./" "README.ge.md" "sway.desktop" ".mailmap" "README.fr.md" "README.ja.md")
+
+ ("/home/g/sway/include/" (26168 27839 504182 32000) "gesture.h" "stringop.h" "swaynag/" "util.h" "../" "list.h" "ipc-client.h" "pool-buffer.h" "swaybar/" "log.h" "pango.h" "sway/" "cairo_util.h" "loop.h" "ipc.h" "meson.build" "./")
+
+ ("/home/g/sway/include/sway/" (26168 27839 503182 22000) "swaynag.h" "scene_descriptor.h" "output.h" "../" "decoration.h" "input/" "ipc-json.h" "tree/" "criteria.h" "config.h" "commands.h" "sway_text_node.h" "desktop/" "layers.h" "server.h" "xwayland.h" "ipc-server.h" "./" "xdg_decoration.h")
+
+ ("/home/g/sway/include/sway/tree/" (26168 27839 503182 22000) "../" "arrange.h" "root.h" "container.h" "node.h" "workspace.h" "./" "view.h")
+
+ ("/home/g/org/roadmap/" (26113 32868 78998 800000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/patches/" (26039 40126 24837 162000) "dmenu-final.tar.xz" "wmutils.zip" "../" "dmenu/" ".git/" "tabbed-final.tar.xz" "st-0.9/" "tabbed/" "st/" "./" "st-final.tar.xz")
+
+ ("/home/g/.config/alacritty/" (26062 15878 757752 202000) "../" "alacritty.yml" "./")
+
+ ("/home/g/org/roam/" (26026 30463 801991 423000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20230913224932-partial_derivatives.org" "../" "./")
+
+ ("/home/g/.icons/default/" (26022 54424 573830 800000) "../" "cursors/" "index.theme" "cursor.theme" "./")
+
+ ("/home/g/Downloads/Google_Cursor-main/" (26022 54286 129345 0) "yarn.lock" "themes/" "svg/" "release.sh" "README.md" "pling.txt" "package.json" "LICENSE" "CONTRIBUTING.md" "CODE_OF_CONDUCT.md" "CHANGELOG.md" "build.toml" "bitmaps/" ".gitignore" ".github/" "../" "./")
+
+ ("/home/g/Downloads/Google_Cursor-main/bitmaps/GoogleDot-Black/" (25989 5543 0 0) "zoom-out.png" "zoom-in.png" "X_cursor.png" "xterm.png" "wayland-cursor.png" "wait-0058.png" "wait-0057.png" "wait-0056.png" "wait-0055.png" "wait-0054.png" "wait-0053.png" "wait-0052.png" "wait-0051.png" "wait-0050.png" "wait-0049.png" "wait-0048.png" "wait-0047.png" "wait-0046.png" "wait-0045.png" "wait-0044.png" "wait-0043.png" "wait-0042.png" "wait-0041.png" "wait-0040.png" "wait-0039.png" "wait-0038.png" "wait-0037.png" "wait-0036.png" "wait-0035.png" "wait-0034.png" "wait-0032.png" "wait-0031.png" "wait-0030.png" "wait-0029.png" "wait-0028.png" "wait-0027.png" "wait-0026.png" "wait-0025.png" "wait-0024.png" "wait-0023.png" "wait-0022.png" "wait-0021.png" "wait-0020.png" "wait-0019.png" "wait-0018.png" "wait-0017.png" "wait-0016.png" "wait-0014.png" "wait-0013.png" "wait-0012.png" "wait-0011.png" "wait-0010.png" "wait-0009.png" "wait-0008.png" "wait-0007.png" "wait-0006.png" "wait-0005.png" "wait-0004.png" "wait-0003.png" "wait-0002.png" "wait-0001.png" "vertical-text.png" "ur_angle.png" "ul_angle.png" "sb_v_double_arrow.png" "sb_up_arrow.png" "sb_right_arrow.png" "sb_left_arrow.png" "sb_h_double_arrow.png" "sb_down_arrow.png" "right_tee.png" "right_ptr.png" "question_arrow.png" "plus.png" "pencil.png" "move.png" "lr_angle.png" "ll_angle.png" "link.png" "left_tee.png" "left_ptr_watch-0055.png" "wait-0033.png" "wait-0015.png" "top_tee.png" "left_ptr_watch-0054.png" "left_ptr_watch-0037.png" "left_ptr_watch-0021.png" "left_ptr_watch-0005.png" "left_ptr_watch-0053.png" "left_ptr_watch-0052.png" "left_ptr_watch-0051.png" "left_ptr_watch-0050.png" "left_ptr_watch-0049.png" "left_ptr_watch-0048.png" "left_ptr_watch-0047.png" "left_ptr_watch-0046.png" "left_ptr_watch-0045.png" "left_ptr_watch-0044.png" "left_ptr_watch-0043.png" "left_ptr_watch-0042.png" "left_ptr_watch-0041.png" "left_ptr_watch-0040.png" "left_ptr_watch-0039.png" "left_ptr_watch-0038.png" "left_ptr_watch-0036.png" "left_ptr_watch-0035.png" "left_ptr_watch-0034.png" "left_ptr_watch-0033.png" "left_ptr_watch-0032.png" "left_ptr_watch-0031.png" "left_ptr_watch-0030.png" "left_ptr_watch-0029.png" "left_ptr_watch-0028.png" "left_ptr_watch-0027.png" "left_ptr_watch-0026.png" "left_ptr_watch-0025.png" "left_ptr_watch-0024.png" "left_ptr_watch-0023.png" "left_ptr_watch-0022.png" "left_ptr_watch-0020.png" "left_ptr_watch-0019.png" "left_ptr_watch-0018.png" "left_ptr_watch-0017.png" "left_ptr_watch-0016.png" "left_ptr_watch-0015.png" "left_ptr_watch-0014.png" "left_ptr_watch-0013.png" "left_ptr_watch-0012.png" "left_ptr_watch-0011.png" "left_ptr_watch-0010.png" "left_ptr_watch-0009.png" "left_ptr_watch-0008.png" "left_ptr_watch-0007.png" "left_ptr_watch-0006.png" "left_ptr_watch-0004.png" "left_ptr_watch-0003.png" "left_ptr_watch-0002.png" "left_ptr_watch-0001.png" "left_ptr.png" "hand2.png" "hand1.png" "dotbox.png" "dnd_no_drop.png" "cross.png" "copy.png" "context-menu.png" "bottom_tee.png" "bottom_right_corner.png" "bottom_left_corner.png" "all-scroll.png" "../" "./")
+
+ ("/home/g/Downloads/Google_Cursor-main/bitmaps/" (25989 5543 0 0) "GoogleDot-White/" "GoogleDot-Red/" "GoogleDot-Blue/" "GoogleDot-Black/" "../" "./")
+
+ ("/home/g/dotfiles/ranger/" (25575 31742 114974 58000) "../" "rc.conf" "rifle.conf" "./")
+
+ ("/home/g/dotfiles/sxhkd/" (25706 50133 340580 573000) "../" "sxhkdrc" "./")
+
+ ("/home/g/.config/sxhkd/" (26013 34187 984999 148000) "../" "sxhkdrc" "./")
+
+ ("/home/g/.config/bspwm/" (26013 34187 984999 148000) "bspwmrc" "../" "./")
+
+ ("/home/g/org/" (25996 52281 996998 327000) ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
+
+ ("/home/g/org/tasks/" (25996 52263 716998 343000) "birth.org" "../" "tasks.org" "./")
+
+ ("/home/g/config/" (25994 18039 931094 506000) "../" "./")
+
+ ("/home/g/patches/st-0.9/" (25992 18022 47800 645000) "config.def.h" "../" "LICENSE" "config.mk" "st.h" "Makefile" "TODO" "x.c.orig" "x.c" "FAQ" "win.h" "arg.h" "config.h" "LEGACY" "st.c" "st" "st.o" "st.c.orig" "config.def.h.orig" "st.1" "./" "st.h.orig" "st.info" "README" "x.o")
+
+ ("/home/g/patches/tabbed-0.7/" (25992 21679 988529 158000) "xembed.o" "config.def.h" "config.def.h.rej" "../" "tabbed.o" "LICENSE" "config.mk" "Makefile" "tabbed.1" "tabbed.c" "xembed" "arg.h" "config.h" "tabbed" "tabbed.c.orig" "config.def.h.orig" "xembed.c" "tabbed.c.rej" "tabbed-hidetabs-20191216-b5f9ec6.diff" "./" "README")
+
+ ("/home/g/org/journal/" (25912 26118 469999 53000) "../" "20230623" "20230621" "20230708" "20230714" "20230706" "20230622" "./")
+
+ ("/home/g/patches/st/" (25619 37903 859408 641000) "st-alpha-20220206-0.8.5.diff" "st-scrollback-mouse-20220127-2c5edf2.diff" "st-scrollback-0.8.5.diff" "../" "st-scrollback-mouse-altscreen-20220127-2c5edf2.diff" "./")
+
+ ("/home/g/patches/dmenu/" (25619 37919 132407 2000) "../" "dmenu-prefixcompletion-flag-4.9.diff" "dmenu-alpha-20210605-1a13d04.diff" "dmenu-center-5.2.diff" "./" "dmenu-border-4.9.diff")
+
+ ("/home/" (25926 59190 27999 915000) "g/" "./" "../")
+
+ ("/home/g/.config/gtk-3.0/" (25836 3425 488910 263000) "settings.ini" "bookmarks" "./" "../")
+
+ ("/usr/share/emacs/28.2/lisp/" (25789 10316 127414 196000) "hi-lock.el" "ffap.elc" "cus-theme.el" "desktop.elc" "generic-x.elc" "wdired.el" "repeat.el" "tooltip.elc" "hilit-chg.elc" "soundex.elc" "userlock.el" "files-x.el" "edmacro.elc" "dabbrev.el" "plstore.elc" "misc.elc" "dnd.elc" "plstore.el" "ielm.elc" "mh-e/" "array.el" "misearch.elc" "play/" "rfn-eshadow.elc" "cus-load.el" "dired-loaddefs.el" "tool-bar.elc" "calculator.elc" "emacs-lock.elc" "epa-dired.elc" "url/" "kmacro.el" "ps-mule.elc" "mouse-drag.el" "calc/" "font-core.el" "epa.elc" "loadhist.elc" "master.elc" "speedbar.el" "paren.el" "epa-ks.elc" "autoinsert.elc" "ielm.el" "pcmpl-unix.el" "double.elc" "facemenu.elc" "t-mouse.elc" "epa-mail.elc" "auth-source.elc" "dom.elc" "notifications.elc" "master.el" "disp-table.el" "dos-vars.el" "isearchb.elc" "ansi-color.el" "wid-browse.el" "server.elc" "subdirs.el" "epa-ks.el" "fringe.elc" "echistory.elc" "ps-print-loaddefs.el" "mpc.el" "ls-lisp.elc" "novice.elc" "strokes.elc" "icomplete.el" "pcmpl-unix.elc" "tar-mode.el" "apropos.elc" "autoarg.elc" "mouse-drag.elc" "tab-bar.elc" "rect.elc" "color.elc" "ps-mule.el" "help-at-pt.elc" "pcmpl-gnu.elc" "thingatpt.el" "json.el" "saveplace.el" "pcmpl-linux.el" "button.elc" "epa-file.el" "hexl.elc" "vcursor.elc" "xml.el" "format.elc" "emulation/" "find-cmd.el" "cus-face.elc" "pcmpl-linux.elc" "mail/" "rect.el" "nxml/" "msb.elc" "widget.el" "hilit-chg.el" "subr.elc" "wid-edit.elc" "w32-vars.el" "timezone.el" "delim-col.elc" "emacs-lisp/" "ps-bdf.el" "talk.el" "faces.el" "find-dired.elc" "mb-depth.el" "kermit.el" "double.el" "net/" "minibuffer.el" "reposition.elc" "help-mode.el" "xt-mouse.el" "frameset.elc" "hippie-exp.el" "dframe.elc" "battery.elc" "filenotify.elc" "rtree.el" "tmm.el" "find-dired.el" "uniquify.el" "jit-lock.elc" "cus-face.el" "dirtrack.elc" "simple.elc" "htmlfontify-loaddefs.el" "shell.el" "display-fill-column-indicator.elc" "ps-print.elc" "view.el" "windmove.elc" "forms.el" "image.el" "help.el" "winner.elc" "filecache.elc" "icomplete.elc" "progmodes/" "env.el" "tmm.elc" "tutorial.el" "auth-source-pass.elc" "dirtrack.el" "minibuf-eldef.el" "dabbrev.elc" "tree-widget.el" "man.el" "pixel-scroll.el" "cus-edit.elc" "x-dnd.elc" "arc-mode.el" "filecache.el" "env.elc" "help-at-pt.el" "fileloop.el" "woman.elc" "calendar/" "rtree.elc" "help-mode.elc" "woman.el" "jsonrpc.elc" "ibuffer.elc" "jit-lock.el" "tab-bar.el" "find-cmd.elc" "thumbs.el" "recentf.elc" "tool-bar.el" "md4.el" "completion.el" "image-file.el" "version.el" "lpr.elc" "obarray.elc" "timezone.elc" "scroll-lock.el" "isearch.elc" "winner.el" "strokes.el" "ibuf-macs.el" "select.elc" "doc-view.el" "ps-samp.elc" "vt100-led.el" "desktop.el" "w32-vars.elc" "pcmpl-gnu.el" "wid-browse.elc" "tabify.el" "rot13.el" "obarray.el" "midnight.elc" "skeleton.elc" "reveal.el" "tab-line.elc" "epg.el" "w32-fns.elc" "newcomment.el" "face-remap.el" "foldout.el" "cus-start.elc" "flow-ctrl.el" "format-spec.elc" "array.elc" "elec-pair.elc" "minibuf-eldef.elc" "sort.el" "w32-fns.el" "descr-text.elc" "image-dired.elc" "xml.elc" "find-file.el" "descr-text.el" "shadowfile.elc" "transient.el" "ls-lisp.el" "paren.elc" "ruler-mode.el" "follow.el" "echistory.el" "frame.elc" "completion.elc" "reposition.el" "tempo.el" "expand.el" "files.el" "macros.el" "pcmpl-cvs.el" "time.elc" "gnus/" "README" "apropos.el" "autoinsert.el" "locate.elc" "ps-samp.el" "elide-head.elc" "newcomment.elc" "align.el" "dired.elc" "hexl.el" "time-stamp.elc" "term/" "format.el" "info-xref.elc" "abbrev.el" "password-cache.elc" "savehist.elc" "dframe.el" "vc/" "info-xref.el" "replace.elc" "dynamic-setting.el" "thread.el" "pcmpl-cvs.elc" "obsolete/" "ezimage.elc" "foldout.elc" "reveal.elc" "info-look.elc" "dos-w32.elc" "dom.el" "vcursor.el" "bs.el" "tooltip.el" "skeleton.el" "wid-edit.el" "cus-dep.elc" "startup.el" "help-fns.el" "tree-widget.elc" "pixel-scroll.elc" "cus-start.el" "ibuf-ext.el" "auth-source.el" "ses.elc" "files-x.elc" "outline.el" "shell.elc" "informat.el" "proced.el" "printing.elc" "ecomplete.el" "time-stamp.el" "ibuffer-loaddefs.el" "macros.elc" "sort.elc" "epa.el" "view.elc" "htmlfontify.elc" "ansi-color.elc" "scroll-bar.el" "autoarg.el" "generic-x.el" "bs.elc" "display-fill-column-indicator.el" "scroll-lock.elc" "dired-x.elc" "font-lock.el" "dos-w32.el" "jka-compr.el" "xwidget.el" "image/" "register.el" "erc/" "font-lock.elc" "cedet/" "mouse-copy.elc" "startup.elc" "scroll-all.el" "elec-pair.el" "menu-bar.elc" "tab-line.el" "filesets.elc" "ruler-mode.elc" "buff-menu.elc" "epg-config.el" "ido.el" "emacs-lock.el" "info-look.el" "dos-fns.elc" "iimage.el" "kermit.elc" "wdired.elc" "ehelp.elc" "epa-hook.el" "filesets.el" "term.el" "mouse.elc" "uniquify.elc" "linum.elc" "bookmark.el" "finder.el" "delsel.elc" "thumbs.elc" "image-dired.el" "disp-table.elc" "elide-head.el" "md4.elc" "xdg.el" "button.el" "svg.elc" "epg.elc" "informat.elc" "rfn-eshadow.el" "language/" "comint.el" "bindings.el" "autorevert.elc" "mb-depth.elc" "scroll-all.elc" "window.elc" "org/" "profiler.el" "abbrev.elc" "password-cache.el" "image-file.elc" "cus-theme.elc" "kmacro.elc" "thingatpt.elc" "help-fns.elc" "tempo.elc" "loadhist.el" "ps-def.elc" "indent.el" "ffap.el" "chistory.el" "color.el" "iimage.elc" "dired-aux.elc" "lpr.el" "font-core.elc" "dired-x.el" "recentf.el" "forms.elc" "msb.el" "pcomplete.el" "vt-control.elc" "xt-mouse.elc" "isearch.el" "eshell/" "misc.el" "finder-inf.el" "ecomplete.elc" "help-macro.el" "jka-cmpr-hook.el" "speedbar.elc" "register.elc" "midnight.el" "hl-line.el" "allout-widgets.elc" "replace.el" "cdl.el" "tabify.elc" "fringe.el" "find-lisp.elc" "soundex.el" "whitespace.el" "dynamic-setting.elc" "hl-line.elc" "cus-dep.el" "international/" "t-mouse.el" "auth-source-pass.el" "delsel.el" "calculator.el" "format-spec.el" "case-table.el" "ezimage.el" "avoid.el" "epa-mail.el" "allout.elc" "cdl.elc" "cus-edit.el" "autorevert.el" "help-macro.elc" "rot13.elc" "ps-print.el" "image.elc" "ebuff-menu.el" "whitespace.elc" "talk.elc" "simple.el" "saveplace.elc" "scroll-bar.elc" "jka-compr.elc" "novice.el" "display-line-numbers.elc" "comint.elc" "printing.el" "indent.elc" "savehist.el" "jsonrpc.el" "epg-config.elc" "htmlfontify.el" "info.el" "linum.el" "leim/" "notifications.el" "bindings.elc" "composite.elc" "x-dnd.el" "ibuf-ext.elc" "misearch.el" "pcmpl-rpm.elc" "vt-control.el" "allout-widgets.el" "dired-aux.el" "dos-fns.el" "filenotify.el" "ps-def.el" "mwheel.el" "widget.elc" "info.elc" "expand.elc" "imenu.elc" "tar-mode.elc" "frameset.el" "char-fold.elc" "cmuscheme.el" "imenu.el" "hfy-cmap.el" "makesum.el" "ibuf-macs.elc" "ses.el" "select.el" "facemenu.el" "registry.elc" "fileloop.elc" "face-remap.elc" "bookmark.elc" "dnd.el" "repeat.elc" "align.elc" "registry.el" "windmove.el" "mouse.el" "ehelp.el" "hfy-cmap.elc" "avoid.elc" "xdg.elc" "ps-bdf.elc" "shadowfile.el" "follow.elc" "ldefs-boot.el" "allout.el" "dos-vars.elc" "chistory.elc" "loadup.el" "version.elc" "doc-view.elc" "electric.el" "char-fold.el" "custom.el" "svg.el" "cmuscheme.elc" "transient.elc" "type-break.elc" "custom.elc" "hex-util.el" "xwidget.elc" "minibuffer.elc" "hippie-exp.elc" "proced.elc" "outline.elc" "find-file.elc" "server.el" "image-mode.elc" "menu-bar.el" "flow-ctrl.elc" "hi-lock.elc" "pcmpl-rpm.el" "ebuff-menu.elc" "so-long.elc" "dired.el" "window.el" "image-mode.el" "type-break.el" "vt100-led.elc" "arc-mode.elc" "frame.el" "case-table.elc" "time.el" "files.elc" "subr.el" "makesum.elc" "electric.elc" "epa-dired.el" "so-long.el" "thread.elc" "epa-file.elc" "mwheel.elc" "locate.el" "json.elc" "ido.elc" "finder.elc" "faces.elc" "find-lisp.el" "term.elc" "man.elc" "edmacro.el" "composite.el" "loaddefs.el" "mouse-copy.el" "pcmpl-x.elc" "isearchb.el" "buff-menu.el" "epa-hook.elc" "pcmpl-x.el" "userlock.elc" "help.elc" "hex-util.elc" "delim-col.el" "textmodes/" "mpc.elc" "battery.el" "display-line-numbers.el" "tutorial.elc" "jka-cmpr-hook.elc" "ibuffer.el" "pcomplete.elc" "profiler.elc" "../" "./")
+
+ ("/home/g/boot_backup/boot/" (25772 44496 776758 410000) "grub/" "vmlinuz-6.1.12-gentoo" "vmlinuz-6.3.11-zen+" "zen-6.3.11-pds" "./" "../" "System.map-6.3.11-zen+" "vmlinuz-5.15.88-gentoo" "gentoo-backup" "config-6.3.11-zen+")
+
+ ("/home/g/boot_backup/" (25772 44493 638758 747000) "boot/" "./" "../")
+
+ ("/home/g/Downloads/" (25806 61127 956744 300000) "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 54-39 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 5-45 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 49-35 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 37-3 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 36-59 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-43-20 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-36-37 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-36-13 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-24-53 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-23-15 screenshot.png" "ZX-calculus for the working quantum computer scientist.pdf" "Whos in Charge Free Will and the Scie... (Z-Library).epub" "vagabond.tdesktop-theme" "Universal Sequential Search Problems.pdf" "Understanding Singular Value Decomposition and its Application in Data Science _ by Reza Bagheri _ Towards Data Science.pdf" "Systematic_study_of_the_impact_of_curved_active_an.pdf" "stage3-amd64-llvm-openrc-20230709T170149Z.tar.xz" "siy187504.pdf" "Simp1e-Gruvbox-Dark.tgz" "Simp1e-Adw-Dark.tgz" "Saitama Breaks His Limiter _ One Punch Man (Manga Edit) 3-13 screenshot.png" "rus.traineddata" "retbleed_sec22.pdf" "ResearchHumanLearning-rpt-5.doc" "ResearchHumanLearning-rpt-5 (1).doc" "pocorgtfo20.pdf" "PicoW-A4-Pinout.pdf" "tportable.4.8.1.zip" "tportable.4.8.1/" "Toc.pdf" "tmp/" "The_shuffling_of_mathematics_problems_improves_lea.pdf" "The Sims 4 [FitGirl Repack]/" "The brain-shaped mind what the brain can tell us about the mind (Naomi Goldblum, Shifra Glick) (z-lib.org).pdf" "The ARRL Antenna Book The Ultimate Reference for Amateur Radio Antennas, Transmission Lines And Propagation (Arrl Antenna... (American Radio Relay League) (z-lib.org).pdf" "test.png" "test.jpg" "peakpx.jpg" "Parallel Implementations of the Cholesky Decomposition on CPUs and GPUs.pdf" "onur-comparch-fall2017-lecture3-afterlecture.pdf" "onur-740-fall13-module3.4-shared-cache-management.pdf" "on the computational complexity of algorithms.pdf" "nature-creativitry.pdf" "microarchitecture.pdf" "micro06_mshr.pdf" "MdxBuilder64/" "MASSED TASK REPETITION IS A DOUBLE-EDGED SWORD FOR FLUENCY DEVELOPMENT.pdf" "madara-hashirama.jpg" "Lorien_0.5.0_Linux/" "Lecture6.pdf" "L18-CO.pdf" "L03-Cache.pdf" "hhasan_phd_defense_slides_v1.7.pdf" "Effects-of-Music-Instruction-on-Developing-Cognitive-Systems-at-the-Foundations-of-Mathematics-and-Science.pdf" "ED547678.pdf" "Drab Majesty - The Demonstration (2017) [FLAC]/" "Copipes.pdf" "br2.pdf" "berserk.jpg.jpg" "berserk.jpg" "a_digital_art_x4_toned.jpg" "a_digital_art_x4_toned (1).jpg" "a_auto_x2.jpg" "AmortizedAnalysisExplained_Fiebrink.pdf" "amdflaws_whitepaper.pdf" "88x2bu.zip" "7B89v2J.zip" "7B89v2J/" "5562986429567.rar" "5562986429567/" "2303.07445.pdf" "2303.06076.pdf" "2015-08-05.BMP" "1-s2.0-S0042698907003422-main.pdf" "undefined - Imgur.jpg" "Temporal_Domain_Parallelism_Does_It_Work.pdf" "Performance_Effects_of_a_Cache_Miss_Handling_Archi.pdf" "FALL-22-Booklist8.24.22.pdf" "../" "./")
+
+ ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "out/" "org-roam-ui-pkg.el" "org-roam-ui.elc" "./" "../" "org-roam-ui.el" "org-roam-ui-autoloads.el")
+
+ ("/home/g/.emacs.d/elpa/" (25748 57406 806115 290000) "ido-vertical-mode-20210205.436/" "org-download-20220906.1929/" "exwm-0.27/" "elfeed-org-20221118.852/" "use-package-2.4.5.signed" "magit-section-20230314.1653/" "org-journal-20230309.1240/" "ht-20230214.1632/" "compat-29.1.4.1/" "ts-20220822.2313/" "elfeed-20210822.2129/" "archives/" "f-20230116.1032/" "which-key-20230330.2121/" "peg-1.0.1/" "darcula-theme-20171227.1845/" "esxml-20230308.2254/" "org-super-agenda-20220826.2315/" "org-roam-20230307.1721/" "avy-20230316.2259/" "peg-1.0.1.signed" "./" "compat-29.1.4.1.signed" "ov-20200326.1042/" "s-20220902.1511/" "xelb-0.18.signed" "../" "tron-legacy-theme-20230103.617/" "dash-20230415.2324/" "bind-key-2.4.1/" "exwm-0.27.signed" "kv-20140108.1534/" "ace-window-20220911.358/" "websocket-20230305.410/" "org-ql-20230312.1433/" "xelb-0.18/" "swiper-0.14.0/" "use-package-2.4.5/" "simple-httpd-20191103.1446/" "nov-20230327.1739/" "bind-key-2.4.1.signed" "gnupg/" "swiper-0.14.0.signed" "ivy-20230410.1815/" "transient-20230315.1520/" "org-bullets-20200317.1740/" "org-roam-ui-20221105.1040/" "latex-preview-pane-20181008.1822/" "async-20230323.643/" "emacsql-20230417.1448/")
+
+ ("/etc/portage/" (25773 51883 179999 875000) "package.mask/" "package.unmask" "package.license/" "package.use/" "package.accept_keywords/" "./" "../" "repos.conf/" "package.env" "profile/" "make.conf" "make.conf~" "make.profile/" "make.conf.euse_backup" "env/")
+
+ ("/home/g/org/roadmap/journal/" (25747 34636 856001 970000) "./" "../")
+
+ ("/home/g/org/tasks/.stfolder/" (25696 14804 55190 610000) "./" "../")
+
+ ("/tmp/Anki-ANoCts/" (25700 8179 890381 387000) "paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "./" "../")
+
+ ("/home/g/notes/" (25667 2161 109887 442000) "exercises" "2023/" "./" "../" "cv/")
+
+ ("/home/g/image-roll.el/" (25656 15087 805173 768000) "FUNDING.yml" "./" ".git/" "../" "image-roll.el" "README.org")
+
+ ("/home/g/.emacs.d/games/" (25647 63038 15941 204000) "./" "../" "snake-scores")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

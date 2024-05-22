@@ -15,9 +15,9 @@ disable_titlebar yes
 for_window {
 	   [class="ranger"] floating enable
 	   [class="feh"] fullscreen enable
-	   [class=".*"] opacity 0.95
+	   [class=".*"] opacity 0.99
 	   #
-	   [app_id=".*"] opacity 0.95
+	   [app_id=".*"] opacity 0.99
 	   [app_id="pavucontrol"] floating enable
 	   [app_id="org.pwmt.zathura"] floating enable
 }
@@ -39,8 +39,8 @@ floating_modifier $mod normal
 seat seat0 hide_cursor 3000
 
 output DP-1 resolution 3440x1440@144Hz
-output * bg /home/g/images/cover.png fill
-#exec mpvpaper -vs -o "no-audio loop" DP-1 /home/g/images/gifs/cover.mp4
+output * bg ~/images/cover.png fill
+#exec mpvpaper -vs -o "no-audio loop" DP-1 ~/images/gifs/cover.mp4
 
     # Start a terminal
     bindsym $mod+e exec alacritty
@@ -231,7 +231,7 @@ bar {
     modifier Mod4+Alt
 
     # When the status_command prints a new line to stdout, swaybar updates.
-    status_command while /home/g/dotfiles/sway/bar; do sleep 1; done
+    status_command while ~/dotfiles/sway/bar; do sleep 1; done
 
     colors {
         statusline #ffffff

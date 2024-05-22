@@ -1,0 +1,29 @@
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
+;;; This format is meant to be slightly human-readable;
+;;; nevertheless, you probably don't want to edit it.
+;;; -*- End Of Bookmark File Format Version Stamp -*-
+(("config-elfeed"
+ (filename . "~/org/elfeed.org")
+ (front-context-string . "* Blogs :elfeed:")
+ (rear-context-string)
+ (position . 1)
+ (last-modified 26170 30132 878671 85000))
+("config-sway"
+ (filename . "~/.config/sway/config")
+ (front-context-string . "# Default config")
+ (rear-context-string)
+ (position . 1)
+ (last-modified 26170 30078 451700 236000))
+("config-emacs"
+ (filename . "~/.emacs.d/config.org")
+ (front-context-string . "*  Settings\n** G")
+ (rear-context-string)
+ (position . 1)
+ (last-modified 26170 30066 452549 84000))
+("images"
+ (filename . "/mnt/hd1/images/")
+ (front-context-string . "gifs\n  drwxrwxrw")
+ (rear-context-string . "96 Nov 20 22:18 ")
+ (position . 139)
+ (last-modified 26170 29954 278720 609000))
+)
