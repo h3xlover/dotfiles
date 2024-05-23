@@ -41,20 +41,21 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/g/"
+ "/home/g/dotfiles/sway/"
+ "/home/g/org/roadmap/"
  "/home/g/code/c/sorting/"
+ "/home/g/org/"
  "/home/g/.emacs.d/"
  "/home/g/.config/sway/"
  "/home/g/iosevka/"
  "/home/g/p-repo-forks/sway-overfocus-0.2.3/"
- "/home/g/"
  "/home/g/b/src/"
  "/home/g/Hakurei/src/"
  "/home/g/hakurei/hakurei/src/"
- "/home/g/dotfiles/sway/"
  "/home/g/dotfiles/bspwm/"
  "/home/g/dotfiles/portage/"
  "/home/g/walogram/"
- "/home/g/org/roadmap/"
  "/home/g/dotfiles/smart/"
  "/home/g/.icons/default/"
  "/etc/X11/xinit/"
@@ -66,7 +67,6 @@
  "/home/g/.config/alacritty/"
  "/home/g/.config/fontconfig/"
  "/home/g/.config/"
- "/home/g/org/"
  "/"
  "/mnt/"
  "/home/g/.config/sxhkd/"
@@ -93,23 +93,31 @@
 
 ;; ----- ido-work-file-list -----
 (
- "insertion.c"
- "init.el"
- "config"
- "Makefile"
- "Cargo.toml"
  ".bashrc"
- "test.cc"
- "main.cc"
- "fix.patch"
- "int_gen.c"
+ ".bash_profile"
+ "colors"
+ "topics.org"
+ "monastery.org"
+ "head.h"
+ "insertion.c"
+ "articles.org"
+ ".gitignore"
+ "toggle_floating"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/tmp/rmsbolt-Y93TqH/" (26188 62934 21335 415000) "rmsbolt.s" "./" "../")
+ ("/home/g/" (26189 62979 43175 329000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" "2.1.14_0.crx" "2.1.14_0.pem" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" "p-repo-forks/" ".ssh/" "2024-05-21 16-14-42.mkv" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" ".bash_history" ".java/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
 
- ("/home/g/" (26188 62115 99144 771000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" "2.1.14_0.crx" "2.1.14_0.pem" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" "p-repo-forks/" ".ssh/" "2024-05-21 16-14-42.mkv" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" ".bash_history" ".java/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+ ("/tmp/rmsbolt-PI8zOp/" (26189 20726 631365 139000) "rmsbolt.c" "rmsbolt.s" "./" "../")
+
+ ("/home/g/org/.stfolder/" (25912 26162 779999 13000) "../" "./")
+
+ ("/home/g/org/" (26189 16008 590554 86000) ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
+
+ ("/home/g/dotfiles/" (26188 46837 457419 941000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "org/" "polybar/" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "ranger/" "./" "sxhkd/" "alacritty/")
+
+ ("/tmp/rmsbolt-Y93TqH/" (26188 62934 21335 415000) "rmsbolt.s" "./" "../")
 
  ("/home/g/code/" (26186 36305 661088 610000) "kicad/" "vl/" "../" "c/" "./")
 
@@ -126,8 +134,6 @@
  ("/home/g/.config/polybar/" (26186 38226 85846 734000) "../" "config.template" "config_backup" "config.ini" "./")
 
  ("/home/g/.config/picom/" (26186 38143 141192 535000) "../" "picom.conf" "./")
-
- ("/home/g/dotfiles/" (26186 44082 964293 462000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "polybar/" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "ranger/" "./" "sxhkd/" "alacritty/")
 
  ("/home/g/.config/fontconfig/" (26186 38048 849427 693000) "fonts.conf" "../" "./")
 
@@ -261,8 +267,6 @@
 
  ("/home/g/.config/bspwm/" (26013 34187 984999 148000) "bspwmrc" "../" "./")
 
- ("/home/g/org/" (25996 52281 996998 327000) ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
-
  ("/home/g/org/tasks/" (25996 52263 716998 343000) "birth.org" "../" "tasks.org" "./")
 
  ("/home/g/config/" (25994 18039 931094 506000) "../" "./")
@@ -302,10 +306,6 @@
  ("/tmp/Anki-ANoCts/" (25700 8179 890381 387000) "paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "./" "../")
 
  ("/home/g/notes/" (25667 2161 109887 442000) "exercises" "2023/" "./" "../" "cv/")
-
- ("/home/g/image-roll.el/" (25656 15087 805173 768000) "FUNDING.yml" "./" ".git/" "../" "image-roll.el" "README.org")
-
- ("/home/g/.emacs.d/games/" (25647 63038 15941 204000) "./" "../" "snake-scores")
 )
 
 ;; ----- ido-unc-hosts-cache -----

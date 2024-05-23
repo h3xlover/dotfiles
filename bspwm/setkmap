@@ -5,7 +5,7 @@ if [[ -z "$1" ]];then
 fi
 
 if [[ $1 = "reset" ]];then
-    setxkbmap us
+    swaymsg input type:keyboard xkb_layout "us"
     exit
 fi
 
@@ -17,4 +17,6 @@ if [[ -z $kmap ]];then
     exit
 fi
 
-setxkbmap $kmap
+#setxkbmap $kmap
+echo a
+swaymsg input type:keyboard xkb_layout "$kmap"

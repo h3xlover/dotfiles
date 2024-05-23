@@ -61,8 +61,8 @@ output * bg ~/images/cover.png fill
     bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd1/images/sc/"$(date +%Y-%d-%H-%M-%S | tr A-Z a-z).png"
 
     # Set keyboard layout
-    bindsym $mod+p exec ~/dotfiles/bspwm/setkmap "us ru"
-    bindsym $mod+Shift+p exec ~/dotfiles/bspwm/setkmap reset
+    bindcode $mod+33 exec ~/dotfiles/bspwm/setkmap "us ru br"
+    bindcode $mod+Shift+33 exec ~/dotfiles/bspwm/setkmap reset
 
     # Reload the configuration file
     bindsym $mod+Shift+c reload
@@ -242,4 +242,5 @@ bar {
 
 # misc
 exec_always . ~/dotfiles/sway/colors
+input type:keyboard xkb_layout us
 include /etc/sway/config.d/*
