@@ -17,6 +17,7 @@ for_window {
 	   [class="feh"] fullscreen enable
 	   [class=".*"] opacity 0.99
 	   #
+	   [app_id="mpv"] fullscreen enable
 	   [app_id=".*"] opacity 0.99
 	   [app_id="pavucontrol"] floating enable
 	   [app_id="org.pwmt.zathura"] floating enable
@@ -71,10 +72,10 @@ output * bg ~/images/cover.png fill
     bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
 
      # Switch to window, swayfocus
-     bindsym $mod+a exec sway-overfocus split-lt float-lt output-ls
-     bindsym $mod+s exec sway-overfocus split-dt float-dt output-ds
-     bindsym $mod+w exec sway-overfocus split-ut float-ut output-us
-     bindsym $mod+d exec sway-overfocus split-rt float-rt output-rs
+     bindsym $mod+$left exec sway-overfocus split-lt float-lt output-ls
+     bindsym $mod+$down exec sway-overfocus split-dt float-dt output-ds
+     bindsym $mod+$up exec sway-overfocus split-ut float-ut output-us
+     bindsym $mod+$right exec sway-overfocus split-rt float-rt output-rs
 
      # Move windows
      bindsym $mod+Shift+$left move left
@@ -123,14 +124,19 @@ output * bg ~/images/cover.png fill
      bindsym $mod+n mode "hide"
      # Show individual scratchpad 1-4
      bindsym $mod+Tab exec $scratch toggle
-
+     
      bindsym $mod+4 exec ~/dotfiles/sway/toggle_floating hide
 
-     bindsym $mod+Alt+a exec $scratch select 1			 
+     bindsym $mod+Alt+a exec $scratch select 1				
      bindsym $mod+Alt+s exec $scratch select 2
      bindsym $mod+Alt+d exec $scratch select 3
      bindsym $mod+Alt+f exec $scratch select 4
-    
+
+     bindsym $mod+Ctrl+a exec $scratch select 1 select
+     bindsym $mod+Ctrl+s exec $scratch select 2 select
+     bindsym $mod+Ctrl+d exec $scratch select 3 select
+     bindsym $mod+Ctrl+f exec $scratch select 4 select
+     
 # Resize windows/containers
 mode "resize" {
     bindsym $left resize shrink width 10px
@@ -199,6 +205,11 @@ mode "hide" {
      bindsym s exec $scratch move 2
      bindsym d exec $scratch move 3
      bindsym f exec $scratch move 4
+
+     bindsym Shift+a exec $scratch move 1 f
+     bindsym Shift+s exec $scratch move 2 f
+     bindsym Shift+f exec $scratch move 3 f
+     bindsym Shift+d exec $scratch move 4 f
      
      bindsym $mod+n mode "hide-select"
      bindsym Ctrl+g mode "default"
@@ -206,10 +217,10 @@ mode "hide" {
 }
 
 mode "hide-select" {
-     bindsym a exec $scratch select 1
-     bindsym s exec $scratch select 2
-     bindsym d exec $scratch select 3
-     bindsym f exec $scratch select 4
+     bindsym a exec $scratch select 1 select
+     bindsym s exec $scratch select 2 select
+     bindsym d exec $scratch select 3 select
+     bindsym f exec $scratch select 4 select
 
      bindsym $mod+n mode "hide"
      bindsym Ctrl+g mode "default"

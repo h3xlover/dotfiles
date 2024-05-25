@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/g/git/sway/sway/" . "tree/")
+ ("/home/g/git/" . "sway/")
  ("/home/g/p-repo-forks/" . "sway-overfocus-0.2.3/")
  ("/home/g/b/" . "src/")
  ("/home/g/Hakurei/" . "src/")
@@ -35,16 +37,19 @@
  ("/" . "home/")
  ("/home/g/dotfiles/" . "sway/")
  ("/home/g/.config/" . "sway/")
- ("/home/g/" . "code/")
+ ("/home/g/" . "dotfiles/")
  ("/home/g/.emacs.d/" . "elpa/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/g/"
  "/home/g/dotfiles/sway/"
+ "/home/g/Downloads/"
  "/home/g/org/roadmap/"
+ "/home/g/git/sway/sway/tree/"
  "/home/g/code/c/sorting/"
+ "/home/g/dotfiles/bspwm/"
+ "/home/g/"
  "/home/g/org/"
  "/home/g/.emacs.d/"
  "/home/g/.config/sway/"
@@ -53,7 +58,6 @@
  "/home/g/b/src/"
  "/home/g/Hakurei/src/"
  "/home/g/hakurei/hakurei/src/"
- "/home/g/dotfiles/bspwm/"
  "/home/g/dotfiles/portage/"
  "/home/g/walogram/"
  "/home/g/dotfiles/smart/"
@@ -93,21 +97,37 @@
 
 ;; ----- ido-work-file-list -----
 (
- ".bashrc"
- ".bash_profile"
- "colors"
+ "floating"
+ "config"
+ "tabxpert-export-json-2024-05-25 (1).json"
+ "roadmap.org"
  "topics.org"
+ "root.c"
+ "sort.cpp"
+ "merge_sort.c"
  "monastery.org"
- "head.h"
- "insertion.c"
- "articles.org"
- ".gitignore"
- "toggle_floating"
+ "setkmap"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/g/" (26189 62979 43175 329000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" "2.1.14_0.crx" "2.1.14_0.pem" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" "p-repo-forks/" ".ssh/" "2024-05-21 16-14-42.mkv" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" ".bash_history" ".java/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+ ("/home/g/" (26194 19073 551173 509000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "2.0.9_0.pem" "dotfiles/" "2.1.14_0.crx" "2.1.14_0.pem" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" ".ssh/" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" "a.zip" ".texlive/" ".config/" ".cargo/" "git/" ".bash_history" ".java/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" "2.0.9_0.crx" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+
+ ("/home/g/Downloads/" (26193 32215 291327 900000) "The brain-shaped mind what the brain can tell us about the mind (Naomi Goldblum, Shifra Glick) (z-lib.org).pdf" "Performance_Effects_of_a_Cache_Miss_Handling_Archi.pdf" "onur-comparch-fall2017-lecture3-afterlecture.pdf" "matrix-japanese.mkv" "improving dram performance.pdf" "Effects-of-Music-Instruction-on-Developing-Cognitive-Systems-at-the-Foundations-of-Mathematics-and-Science.pdf" "ZX-calculus for the working quantum computer scientist.pdf" "Winterblood - Polar Ambient 60-3 screenshot.png" "visual span.pdf" "Universal Sequential Search Problems.pdf" "Understanding Singular Value Decomposition and its Application in Data Science _ by Reza Bagheri _ Towards Data Science.pdf" "tx-export-main-2024-02-05.dat" "The_shuffling_of_mathematics_problems_improves_lea.pdf" "The Matrix Revolutions (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix Reloaded (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix/" "hhasan_phd_defense_slides_v1.7.pdf" "cognition of time.pdf" "Temporal_Domain_Parallelism_Does_It_Work.pdf" "tabxpert-export-json-2024-05-25.json" "tabxpert-export-json-2024-05-25 (1).json" "Systematic_study_of_the_impact_of_curved_active_an.pdf" "retbleed_sec22.pdf" "perceptual learning.pdf" "Parallel Implementations of the Cholesky Decomposition on CPUs and GPUs.pdf" "Calligraphr-Template_9.png" "Calligraphr-Template_8.png" "Calligraphr-Template_7.png" "Calligraphr-Template_6.png" "Calligraphr-Template_5.png" "Calligraphr-Template_4.png" "Calligraphr-Template_3.png" "Calligraphr-Template_2.png" "Calligraphr-Template_10.png" "Calligraphr-Template_1.png" "Calligraphr-Template.zip" "C++ Primer, 5th Edition (Stanley B. Lippman, Josee LaJoie etc.) (Z-Library).pdf" "AmortizedAnalysisExplained_Fiebrink.pdf" "amdflaws_whitepaper.pdf" "../" "./")
+
+ ("/home/g/git/sway/sway/tree/" (26192 2873 881369 634000) "root.c" "node.c" "../" "container.c" "arrange.c" "workspace.c" "view.c" "output.c" "./")
+
+ ("/home/g/git/sway/sway/commands/" (26192 2873 877369 602000) "kill.c" "seat/" "shortcuts_inhibitor.c" "nop.c" "mouse_warping.c" "gesture.c" "swaybg_command.c" "tiling_drag_threshold.c" "focus_wrapping.c" "force_focus_wrapping.c" "reload.c" "sticky.c" "bind.c" "xwayland.c" "focus_on_window_activation.c" "set.c" "include.c" "show_marks.c" "exec_always.c" "resize.c" "../" "assign.c" "default_border.c" "client.c" "opacity.c" "exec.c" "swap.c" "title_format.c" "move.c" "default_orientation.c" "rename.c" "for_window.c" "bar.c" "split.c" "fullscreen.c" "urgent.c" "force_display_urgency_hint.c" "input/" "unmark.c" "gaps.c" "bar/" "smart_gaps.c" "create_output.c" "mark.c" "no_focus.c" "exit.c" "hide_edge_borders.c" "swaynag_command.c" "layout.c" "floating.c" "title_align.c" "primary_selection.c" "popup_during_fullscreen.c" "floating_modifier.c" "workspace.c" "tiling_drag.c" "focus.c" "floating_minmax_size.c" "input.c" "smart_borders.c" "inhibit_idle.c" "output/" "new_window.c" "border.c" "default_floating_border.c" "mode.c" "new_float.c" "titlebar_border_thickness.c" "output.c" "focus_follows_mouse.c" "max_render_time.c" "./" "workspace_layout.c" "scratchpad.c" "seat.c" "titlebar_padding.c" "font.c" "ws_auto_back_and_forth.c")
+
+ ("/home/g/git/sway/sway/" (26192 2873 881369 634000) "config.c" "sway.1.scd" "criteria.c" "config/" "../" "xdg_decoration.c" "xdg_activation_v1.c" "realtime.c" "commands/" "swaynag.c" "input/" "sway.5.scd" "main.c" "tree/" "lock.c" "sway-input.5.scd" "ipc-server.c" "meson.build" "scene_descriptor.c" "desktop/" "ipc-json.c" "./" "sway_text_node.c" "commands.c" "sway-bar.5.scd" "sway-output.5.scd" "sway-ipc.7.scd" "server.c" "decoration.c")
+
+ ("/home/g/git/sway/" (26192 2873 882369 643000) "README.pl.md" "README.gr.md" "README.ro.md" "swaynag/" "README.ko.md" ".gitignore" ".builds/" "README.ar.md" "README.it.md" "include/" "../" "README.de.md" "meson_options.txt" ".github/" "README.ir.md" ".git/" "LICENSE" "assets/" "README.ru.md" "README.sv.md" "client/" "README.uk.md" "common/" "README.zh-TW.md" "README.nl.md" "swaybar/" "README.dk.md" "CONTRIBUTING.md" "README.es.md" "sway/" "README.cs.md" "config.in" "README.no.md" "release.sh" "protocols/" "README.md" "README.pt.md" ".editorconfig" "README.hu.md" "meson.build" "swaymsg/" "README.zh-CN.md" "README.hi.md" "completions/" "README.tr.md" "./" "README.ge.md" "sway.desktop" ".mailmap" "README.fr.md" "README.ja.md")
+
+ ("/home/g/git/" (26192 2870 579342 461000) "../" "p-repo-forks/" "sway/" "./")
+
+ ("/home/g/dotfiles/sway/" (26190 39668 887105 112000) "config" "../" "floating" "bar" "colors" "./" "launch" "toggle_floating")
+
+ ("/home/g/code/c/sorting/" (26191 62701 378964 412000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c")
 
  ("/tmp/rmsbolt-PI8zOp/" (26189 20726 631365 139000) "rmsbolt.c" "rmsbolt.s" "./" "../")
 
@@ -147,8 +167,6 @@
 
  ("/home/g/dotfiles/bspwm/" (26186 41578 55558 433000) "temp" "bspwmrc" "../" "dmenu" "toggle_floating_window" "xclip" "kill_window" "toggle_border_width" "resize_window" "dmenu_run" "toggle_layer" "nodes" "tesseract" "center_window" "toggle_tiled_window" "marked_nodes" "setkmap" "ranger" "list_hidden_windows" "./" "notification_info")
 
- ("/home/g/dotfiles/sway/" (26186 41800 723894 545000) "config" "../" "floating" "bar" "colors" "./" "launch" "toggle_floating")
-
  ("/home/g/p-repo-forks/sway-overfocus-0.2.3/" (26187 29590 455610 358000) "usage.md" ".gitignore" "../" "Cargo.toml" "LICENSE" "Cargo.lock" "vendor/" "README.md" ".rustfmt.toml" "./" "demo.gif" "src/")
 
  ("/home/g/p-repo-forks/" (26187 29214 711140 142000) "../" ".git/" "sway-1.9.zip" "sway-overfocus.tar.xz" "./" "sway-overfocus-0.2.3/")
@@ -170,8 +188,6 @@
  ("/home/g/hakurei/hakurei/" (26175 62678 0 0) "../" "LICENSE.txt" "res/" "README.md" "./" "src/")
 
  ("/home/g/hakurei/" (26182 36502 930280 847000) "../" "./" "hakurei/")
-
- ("/home/g/code/c/sorting/" (26182 36313 807897 854000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c")
 
  ("/home/g/walogram/" (26180 51567 113808 565000) ".gitignore" "../" ".git/" "LICENSE" "walogram.1" "Makefile" "walogram" "README.md" "constants.tdesktop-theme" "./")
 
@@ -291,21 +307,9 @@
 
  ("/home/g/boot_backup/" (25772 44493 638758 747000) "boot/" "./" "../")
 
- ("/home/g/Downloads/" (25806 61127 956744 300000) "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 54-39 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 5-45 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 49-35 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 37-3 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 36-59 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-43-20 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-36-37 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-36-13 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-24-53 screenshot.png" "【4K HDR】Night Walk in Tokyo Shibuya (東京散歩) 1-23-15 screenshot.png" "ZX-calculus for the working quantum computer scientist.pdf" "Whos in Charge Free Will and the Scie... (Z-Library).epub" "vagabond.tdesktop-theme" "Universal Sequential Search Problems.pdf" "Understanding Singular Value Decomposition and its Application in Data Science _ by Reza Bagheri _ Towards Data Science.pdf" "Systematic_study_of_the_impact_of_curved_active_an.pdf" "stage3-amd64-llvm-openrc-20230709T170149Z.tar.xz" "siy187504.pdf" "Simp1e-Gruvbox-Dark.tgz" "Simp1e-Adw-Dark.tgz" "Saitama Breaks His Limiter _ One Punch Man (Manga Edit) 3-13 screenshot.png" "rus.traineddata" "retbleed_sec22.pdf" "ResearchHumanLearning-rpt-5.doc" "ResearchHumanLearning-rpt-5 (1).doc" "pocorgtfo20.pdf" "PicoW-A4-Pinout.pdf" "tportable.4.8.1.zip" "tportable.4.8.1/" "Toc.pdf" "tmp/" "The_shuffling_of_mathematics_problems_improves_lea.pdf" "The Sims 4 [FitGirl Repack]/" "The brain-shaped mind what the brain can tell us about the mind (Naomi Goldblum, Shifra Glick) (z-lib.org).pdf" "The ARRL Antenna Book The Ultimate Reference for Amateur Radio Antennas, Transmission Lines And Propagation (Arrl Antenna... (American Radio Relay League) (z-lib.org).pdf" "test.png" "test.jpg" "peakpx.jpg" "Parallel Implementations of the Cholesky Decomposition on CPUs and GPUs.pdf" "onur-comparch-fall2017-lecture3-afterlecture.pdf" "onur-740-fall13-module3.4-shared-cache-management.pdf" "on the computational complexity of algorithms.pdf" "nature-creativitry.pdf" "microarchitecture.pdf" "micro06_mshr.pdf" "MdxBuilder64/" "MASSED TASK REPETITION IS A DOUBLE-EDGED SWORD FOR FLUENCY DEVELOPMENT.pdf" "madara-hashirama.jpg" "Lorien_0.5.0_Linux/" "Lecture6.pdf" "L18-CO.pdf" "L03-Cache.pdf" "hhasan_phd_defense_slides_v1.7.pdf" "Effects-of-Music-Instruction-on-Developing-Cognitive-Systems-at-the-Foundations-of-Mathematics-and-Science.pdf" "ED547678.pdf" "Drab Majesty - The Demonstration (2017) [FLAC]/" "Copipes.pdf" "br2.pdf" "berserk.jpg.jpg" "berserk.jpg" "a_digital_art_x4_toned.jpg" "a_digital_art_x4_toned (1).jpg" "a_auto_x2.jpg" "AmortizedAnalysisExplained_Fiebrink.pdf" "amdflaws_whitepaper.pdf" "88x2bu.zip" "7B89v2J.zip" "7B89v2J/" "5562986429567.rar" "5562986429567/" "2303.07445.pdf" "2303.06076.pdf" "2015-08-05.BMP" "1-s2.0-S0042698907003422-main.pdf" "undefined - Imgur.jpg" "Temporal_Domain_Parallelism_Does_It_Work.pdf" "Performance_Effects_of_a_Cache_Miss_Handling_Archi.pdf" "FALL-22-Booklist8.24.22.pdf" "../" "./")
-
  ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "out/" "org-roam-ui-pkg.el" "org-roam-ui.elc" "./" "../" "org-roam-ui.el" "org-roam-ui-autoloads.el")
 
  ("/home/g/.emacs.d/elpa/" (25748 57406 806115 290000) "ido-vertical-mode-20210205.436/" "org-download-20220906.1929/" "exwm-0.27/" "elfeed-org-20221118.852/" "use-package-2.4.5.signed" "magit-section-20230314.1653/" "org-journal-20230309.1240/" "ht-20230214.1632/" "compat-29.1.4.1/" "ts-20220822.2313/" "elfeed-20210822.2129/" "archives/" "f-20230116.1032/" "which-key-20230330.2121/" "peg-1.0.1/" "darcula-theme-20171227.1845/" "esxml-20230308.2254/" "org-super-agenda-20220826.2315/" "org-roam-20230307.1721/" "avy-20230316.2259/" "peg-1.0.1.signed" "./" "compat-29.1.4.1.signed" "ov-20200326.1042/" "s-20220902.1511/" "xelb-0.18.signed" "../" "tron-legacy-theme-20230103.617/" "dash-20230415.2324/" "bind-key-2.4.1/" "exwm-0.27.signed" "kv-20140108.1534/" "ace-window-20220911.358/" "websocket-20230305.410/" "org-ql-20230312.1433/" "xelb-0.18/" "swiper-0.14.0/" "use-package-2.4.5/" "simple-httpd-20191103.1446/" "nov-20230327.1739/" "bind-key-2.4.1.signed" "gnupg/" "swiper-0.14.0.signed" "ivy-20230410.1815/" "transient-20230315.1520/" "org-bullets-20200317.1740/" "org-roam-ui-20221105.1040/" "latex-preview-pane-20181008.1822/" "async-20230323.643/" "emacsql-20230417.1448/")
-
- ("/etc/portage/" (25773 51883 179999 875000) "package.mask/" "package.unmask" "package.license/" "package.use/" "package.accept_keywords/" "./" "../" "repos.conf/" "package.env" "profile/" "make.conf" "make.conf~" "make.profile/" "make.conf.euse_backup" "env/")
-
- ("/home/g/org/roadmap/journal/" (25747 34636 856001 970000) "./" "../")
-
- ("/home/g/org/tasks/.stfolder/" (25696 14804 55190 610000) "./" "../")
-
- ("/tmp/Anki-ANoCts/" (25700 8179 890381 387000) "paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "./" "../")
-
- ("/home/g/notes/" (25667 2161 109887 442000) "exercises" "2023/" "./" "../" "cv/")
 )
 
 ;; ----- ido-unc-hosts-cache -----

@@ -7,6 +7,7 @@ cpu=$(sensors k10temp-pci-00c3 | awk 'NR==3 {print $2}')
 gpu=$(sensors amdgpu-pci-2800 | awk 'NR==5 {print $2}')
 scratchpad=$(swaymsg -t get_tree | jq -r '.. | select(.type?) | select(.name=="__i3_scratch").floating_nodes[] | length')
 mute=$(amixer get Master | tail -1 | awk '{print $6}')
+mem=$(free -m | grep Mem: | awk '{print $3}')
 if [[ $mute = "[off]" ]];then
 	vol="muted"
 else
@@ -19,4 +20,4 @@ else
     scratchpad="no"
 fi
 
-echo "gpu: $gpu | cpu: $cpu | scratchpad: $scratchpad | news: $news | root: $space | vol: $vol | $date"
+echo "gpu: $gpu | cpu: $cpu | scratchpad: $scratchpad | news: $news | root: $space | mem: $mem | vol: $vol | $date ¯\_(ツ)_/¯"

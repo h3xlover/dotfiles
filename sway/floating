@@ -1,7 +1,5 @@
 #!/bin/bash
 
-con_ids=$(swaymsg -t get_workspaces  | jq -r '.[] | select(.focused==true).floating_nodes[].id')
-
 if [[ -e /tmp/sway-workspc ]];then
     workspc="$(cat /tmp/sway-workspc)"
 else
@@ -9,20 +7,29 @@ else
     workspc=1
 fi
 
-echo $con_ids_hidden marked
-
 # Use con_id to iterate through containers from $con_ids instead of windows
 if [[ $1 = "toggle" ]];then
-    swaymsg [con_mark="^$workspc\s.*"] scratchpad show
+    swaymsg split none
+    swaymsg [floating con_mark="^$workspc\s.*"] scratchpad show
 elif [[ $1 = "move" ]];then
-    for con_id in $con_ids;do
-	swaymsg [con_id="$con_id"] mark "$2 $con_id"
-	swaymsg [con_id="$con_id"] move scratchpad
-    done
+    if [[ -n $3 ]];then
+	focused=$(swaymsg -t get_tree | jq -r '.. | select(.nodes?) | .floating_nodes[] | recurse(.nodes[]) as $parent | select($parent.focused==true).id')
+	swaymsg split none
+	swaymsg [con_id="$focused"] mark "$2 $focused", floating enable
+	swaymsg [con_mark="^$2\s.*"] move container scratchpad
+    else
+	con_ids=$(swaymsg -t get_workspaces | jq -r '.[] | select(.focused==true).floating_nodes[].id')
+	for con_id in $con_ids;do
+	    swaymsg [con_id="$con_id"] mark "$2 $con_id", floating enable
+	    swaymsg [con_id="$con_id"] move container scratchpad
+	done
+    fi
     echo $2 > /tmp/sway-workspc
 elif [[ $1 = "select" ]];then
     echo $2 > /tmp/sway-workspc
-    ~/dotfiles/sway/floating toggle
+    if [[ -z $3 ]];then
+	~/dotfiles/sway/floating toggle
+    fi
 fi
 
 swaymsg mode "default"
