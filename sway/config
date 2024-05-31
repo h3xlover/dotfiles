@@ -33,6 +33,7 @@ set $right d
 set $launch ~/dotfiles/sway/launch
 # multiple individual scratchpads using marks
 set $scratch ~/dotfiles/sway/floating
+set $move ~/dotfiles/sway/move_float
 # Set floating modifier
 floating_modifier $mod normal
 
@@ -104,9 +105,9 @@ output * bg ~/images/cover.png fill
      bindsym $mod+Shift+v split none
      bindsym $mod+y [con_id=__focused__] sticky toggle
      # Focus to parent or child container
-     bindsym $mod+z focus parent
+     bindsym $mod+z exec ~/dotfiles/sway/focus_parent
+     bindsym $mod+Shift+x focus parent
      bindsym $mod+x focus child
-
      # Change layout of container
      bindsym $mod+t layout toggle tabbed split
 
@@ -121,7 +122,7 @@ output * bg ~/images/cover.png fill
      bindsym $mod+space focus mode_toggle
 
      # Move to individual scratchpad 1-4
-     bindsym $mod+n mode "hide"
+
      # Show individual scratchpad 1-4
      bindsym $mod+Tab exec $scratch toggle
      
@@ -149,29 +150,34 @@ mode "resize" {
     bindsym Shift+$up resize shrink height 35px
     bindsym Shift+$right resize grow width 35px
 
-    bindsym $mod+z focus parent
+    bindsym $mod+z ~/dotfiles/sway/focus_parent
+    bindsym $mod+Shift+x focus parent
     bindsym $mod+x focus child
 
+    bindsym g mode "move"
     bindsym $mod+g mode "move"
     bindsym Ctrl+g mode "default"
     bindsym Escape mode "default"
 }
 
+
 # Move windows/containers
 mode "move" {
-     bindsym $left move left
-     bindsym $down move down
-     bindsym $up move up
-     bindsym $right move right
+     bindsym $left exec $move left 30
+     bindsym $down exec $move down 30
+     bindsym $up exec $move up 30
+     bindsym $right exec $move right 30
 
-     bindsym Shift+$left move left 35
-     bindsym Shift+$down move down 35
-     bindsym Shift+$up move up 35
-     bindsym Shift+$right move right 35
+     bindsym Shift+$left exec $move left 150
+     bindsym Shift+$down exec $move down 150
+     bindsym Shift+$up exec $move up 150
+     bindsym Shift+$right exec $move right 150
 
-     bindsym $mod+z focus parent
+     bindsym $mod+z ~/dotfiles/sway/focus_parent
+     bindsym $mod+Shift+x focus parent
      bindsym $mod+x focus child
 
+     bindsym g mode "resize"
      bindsym $mod+g mode "resize"
      bindsym Ctrl+g mode "default"
      bindsym Escape mode "default"
@@ -211,7 +217,7 @@ mode "hide" {
      bindsym Shift+f exec $scratch move 3 f
      bindsym Shift+d exec $scratch move 4 f
      
-     bindsym $mod+n mode "hide-select"
+     bindsym g mode "hide-select"
      bindsym Ctrl+g mode "default"
      bindsym Escape mode "default"
 }
@@ -222,7 +228,7 @@ mode "hide-select" {
      bindsym d exec $scratch select 3 select
      bindsym f exec $scratch select 4 select
 
-     bindsym $mod+n mode "hide"
+     bindsym g mode "hide"
      bindsym Ctrl+g mode "default"
      bindsym Escape mode "default"
 }
@@ -231,8 +237,7 @@ mode "hide-select" {
 bindsym $mod+Escape mode "apps"
 bindsym $mod+g mode "resize"
 bindsym $mod+h mode "power"
-bindsym $mod+m mode "move"
-
+bindsym $mod+Alt+g mode "hide"			
 # Bar config
 bar {
     position top
@@ -253,5 +258,6 @@ bar {
 
 # misc
 exec_always . ~/dotfiles/sway/colors
+exec python ~/dotfiles/misc/2nd_kb.py
 input type:keyboard xkb_layout us
 include /etc/sway/config.d/*
