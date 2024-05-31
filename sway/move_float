@@ -1,0 +1,5 @@
+#!/bin/bash
+
+focused=$(swaymsg -t get_tree | jq -r '.. | select(.nodes?) | .floating_nodes[] | recurse(.nodes[]) as $parent | select($parent.focused==true).id')
+
+swaymsg [con_id="$focused"] move "$1" "$2"
