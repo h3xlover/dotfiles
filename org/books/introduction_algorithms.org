@@ -1,0 +1,9 @@
+* Chapter 2
+
+This chapter presents *insertion sort and merge sort* (*divide and conquer algorithm*). As for the analysis of algorithms, concepts such as *loop invariants* and *recurrence* are used. In the exercises, horner method is discussed too.
+
+The importance of the chapter lies in the fact that analysis of algorithms (at least what was presented in this chapter) is a basis for understanding of more complex algorithms and why they take less or more time than others. Topics such as order of growth and worst case analysis is important for chapter 3.
+
+* Chapter 3
+
+asymptotic efficiency, asymptotic notation, O-notation, $\Theta$ Notation, $\Omega$ notation (informal), formal definition of asymptotic notation and asymptotic lower and upper bounds, proper use of asymptotic notation and abuse of notation, $\theta$ and $\omega$ notation.
