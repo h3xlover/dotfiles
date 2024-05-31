@@ -2,6 +2,9 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/g/dotfiles/emacs/" . ".emacs.d/")
+ ("/home/g/org/books/" . "ltximg/")
+ ("/home/g/dotfiles/org/" . "roadmap/")
  ("/home/g/git/sway/sway/" . "tree/")
  ("/home/g/git/" . "sway/")
  ("/home/g/p-repo-forks/" . "sway-overfocus-0.2.3/")
@@ -33,9 +36,9 @@
  ("/home/g/org/roadmap/" . "journal/")
  ("/home/g/org/tasks/" . ".stfolder/")
  ("/home/" . "g/")
- ("/home/g/org/" . "roadmap/")
+ ("/home/g/org/" . "books/")
  ("/" . "home/")
- ("/home/g/dotfiles/" . "sway/")
+ ("/home/g/dotfiles/" . "emacs/")
  ("/home/g/.config/" . "sway/")
  ("/home/g/" . "dotfiles/")
  ("/home/g/.emacs.d/" . "elpa/")
@@ -43,16 +46,24 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/g/dotfiles/"
+ "/home/g/dotfiles/emacs/.emacs.d/"
  "/home/g/dotfiles/sway/"
+ "/home/g/org/books/"
+ "/home/g/dotfiles/misc/"
+ "/home/g/"
+ "/home/g/dotfiles/smart/"
+ "/home/g/.config/sway/"
+ "/home/g/dotfiles/org/books/"
+ "/home/g/org/"
+ "/home/g/code/c/sorting/"
+ "/home/g/dotfiles/org/roadmap/"
+ "/home/g/dotfiles/org/roam/"
  "/home/g/Downloads/"
  "/home/g/org/roadmap/"
  "/home/g/git/sway/sway/tree/"
- "/home/g/code/c/sorting/"
  "/home/g/dotfiles/bspwm/"
- "/home/g/"
- "/home/g/org/"
  "/home/g/.emacs.d/"
- "/home/g/.config/sway/"
  "/home/g/iosevka/"
  "/home/g/p-repo-forks/sway-overfocus-0.2.3/"
  "/home/g/b/src/"
@@ -60,7 +71,6 @@
  "/home/g/hakurei/hakurei/src/"
  "/home/g/dotfiles/portage/"
  "/home/g/walogram/"
- "/home/g/dotfiles/smart/"
  "/home/g/.icons/default/"
  "/etc/X11/xinit/"
  "/etc/X11/xorg.conf.d/"
@@ -76,7 +86,6 @@
  "/home/g/.config/sxhkd/"
  "/home/g/sway/sway/tree/"
  "/home/g/sway/sway/desktop/"
- "/home/g/dotfiles/"
  "/home/g/.config/bspwm/"
  "/home/g/.config/picom/"
  "/home/g/.config/polybar/"
@@ -87,51 +96,75 @@
  "/home/g/patches/st-0.9/"
  "/etc/init.d/"
  "/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/"
- "/etc/portage/env/"
- "/home/g/org/roam/"
- "/home/g/.config/gtk-3.0/"
- "/home/g/config/"
- "/home/g/notes/"
- "/home/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "floating"
- "config"
- "floating2"
- "bar"
- "tabxpert-export-json-2024-05-25 (1).json"
- "roadmap.org"
- "topics.org"
- "root.c"
- "sort.cpp"
- "merge_sort.c"
+ ".gitignore"
+ "focus_parent"
+ "a.json"
+ "resize_float"
+ "move_float"
+ "introduction_algorithms.org"
+ "2nd_kb.py"
+ "test.py"
+ "light"
+ "launch"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/g/dotfiles/sway/" (26194 26511 636697 798000) "floating2" "config" "../" "floating" "bar" "colors" "./" "launch" "toggle_floating")
+ ("/home/g/dotfiles/emacs/.emacs.d/" (26202 5763 955092 857000) "org-download.el" "eln-cache/" ".gitignore" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
 
- ("/home/g/org/roam/" (26192 60386 872706 673000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
+ ("/home/g/dotfiles/emacs/" (26188 46676 678625 409000) "../" "init.el" "config.org" ".emacs.d/" "./" "latex-preview-pane/")
 
- ("/etc/init.d/" (26190 42008 316801 933000) "libvirtd" "savecache" "systemd-tmpfiles-setup" "procfs" "mount-ro" "sshd" "metalog" "cupsd" "net.wlp42s0f3u1" "tor" "consolefont" "hostname" "root" "bootlogd" "#amdfan#" "git-daemon" "modules" "virtlogd" "bootmisc" "net-online" "libvirt-guests" "loopback" "devfs" "osclock" "udev-settle" "termencoding" "lm_sensors" "udev-trigger" "localmount" "keymaps" "save-termencoding" "elogind" "ip6tables" "alsasound" "transmission-daemon" "virtlockd" "fuse" "swap" "ebtables" "cgroups" "fancontrol" "ntpd" "display-manager" "sysfs" "systemd-tmpfiles-setup-dev" "xdm" "dnsmasq" "swclock" "pydoc-3.12" "syncthing" "rsyncd" "wpa_supplicant~" "display-manager-setup" "dhcpcd" "runsvdir" "ntp-client" "fsck" "hwclock" "sysctl" "seedrng" "functions.sh" "dmesg" "numlock" "pciparm" "pydoc-3.11" "agetty" "mtab" "wpa_supplicant" "net.lo" "wpa" "udev" "sntp" "netmount" "kmod-static-nodes" "binfmt" "wpa~" "nullmailer" "radvd" "./" "s6-svscan" "../" "local" "killprocs" "qemu-binfmt" "dbus" "amdfan" "iptables" "save-keymaps")
+ ("/home/g/dotfiles/sway/" (26202 5010 756398 250000) "config" "../" "focus_parent" "floating" "bar" "colors" "move_float" "./" "launch" "toggle_floating")
+
+ ("/home/g/" (26202 4128 935833 935000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" ".ssh/" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+
+ ("/etc/init.d/" (26201 18465 330861 586000) "libvirtd" "savecache" "systemd-tmpfiles-setup" "procfs" "mount-ro" "sshd" "metalog" "cupsd" "net.wlp42s0f3u1" "tor" "consolefont" "hostname" "root" "bootlogd" "#amdfan#" "git-daemon" "modules" "virtlogd" "bootmisc" "net-online" "libvirt-guests" "loopback" "devfs" "osclock" "udev-settle" "termencoding" "lm_sensors" "udev-trigger" "localmount" "keymaps" "save-termencoding" "elogind" "ip6tables" "alsasound" "transmission-daemon" "virtlockd" "fuse" "swap" "ebtables" "cgroups" "fancontrol" "ntpd" "display-manager" "sysfs" "systemd-tmpfiles-setup-dev" "xdm" "dnsmasq" "swclock" "pydoc-3.12" "syncthing" "rsyncd" "wpa_supplicant~" "display-manager-setup" "dhcpcd" "runsvdir" "ntp-client" "fsck" "hwclock" "sysctl" "seedrng" "functions.sh" "dmesg" "numlock" "pciparm" "pydoc-3.11" "agetty" "mtab" "wpa_supplicant" "net.lo" "wpa" "udev" "sntp" "netmount" "kmod-static-nodes" "binfmt" "wpa~" "nullmailer" "radvd" "./" "s6-svscan" "../" "local" "killprocs" "qemu-binfmt" "dbus" "amdfan" "iptables" "save-keymaps")
+
+ ("/home/g/org/tasks/" (26199 18277 353783 568000) "birth.org" "../" "tasks.org" "./")
+
+ ("/home/g/.local/share/icons/" (26200 44417 862323 870000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
+
+ ("/home/g/org/roadmap/" (26199 18380 199580 532000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/Downloads/" (26200 39866 297124 100000) "The brain-shaped mind what the brain can tell us about the mind (Naomi Goldblum, Shifra Glick) (z-lib.org).pdf" "Performance_Effects_of_a_Cache_Miss_Handling_Archi.pdf" "onur-comparch-fall2017-lecture3-afterlecture.pdf" "install-amd64-minimal-20240526T163557Z.iso" "improving dram performance.pdf" "Effects-of-Music-Instruction-on-Developing-Cognitive-Systems-at-the-Foundations-of-Mathematics-and-Science.pdf" "ZX-calculus for the working quantum computer scientist.pdf" "Winterblood - Polar Ambient 60-3 screenshot.png" "visual span.pdf" "Universal Sequential Search Problems.pdf" "Understanding Singular Value Decomposition and its Application in Data Science _ by Reza Bagheri _ Towards Data Science.pdf" "tx-export-main-2024-05-25.dat" "tx-export-main-2024-02-05.dat" "The_shuffling_of_mathematics_problems_improves_lea.pdf" "The Matrix Revolutions (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix Reloaded (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix/" "hhasan_phd_defense_slides_v1.7.pdf" "cognition of time.pdf" "Temporal_Domain_Parallelism_Does_It_Work.pdf" "tabxpert-export-json-2024-05-25.json" "tab.json" "Systematic_study_of_the_impact_of_curved_active_an.pdf" "retbleed_sec22.pdf" "perceptual learning.pdf" "Parallel Implementations of the Cholesky Decomposition on CPUs and GPUs.pdf" "C++ Primer, 5th Edition (Stanley B. Lippman, Josee LaJoie etc.) (Z-Library).pdf" "AmortizedAnalysisExplained_Fiebrink.pdf" "amdflaws_whitepaper.pdf" "../" "./")
+
+ ("/home/g/dotfiles/org/roadmap/" (26199 18380 199580 532000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/dotfiles/org/books/" (26199 14658 684245 717000) "../" "ltximg/" "introduction_algorithms.org" "./")
+
+ ("/home/" (25926 59190 27999 915000) "g/" "./" "../")
+
+ ("/home/g/dotfiles/misc/" (26201 27120 543169 912000) "../" "rec.sh" "2nd_kb.py" "rec-mic.sh" "troll" "./" "cowsay-date.sh")
+
+ ("/home/g/org/books/ltximg/" (26199 15610 438395 77000) "../" "org-ltximg_9af787b0b480464dc07afdd0c767a571fa5ecc37.png" "org-ltximg_470390e81f9984e761f2920eeba385605baa98e6.png" "./")
+
+ ("/home/g/org/books/" (26199 14658 684245 717000) "../" "ltximg/" "introduction_algorithms.org" "./")
+
+ ("/home/g/org/" (26199 13119 614164 983000) "books/" ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
+
+ ("/home/g/.emacs.d/" (26198 46657 877590 270000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/dotfiles/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
+
+ ("/home/g/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
+
+ ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "../" "org-roam-ui-autoloads.el" "org-roam-ui.el" "out/" "org-roam-ui-pkg.el" "./" "org-roam-ui.elc")
+
+ ("/home/g/.config/" (26198 40379 166902 133000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
+
+ ("/home/g/code/c/sorting/" (26198 40357 140740 44000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "horner" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c" "horner.c")
+
+ ("/home/g/dotfiles/org/tasks/" (25996 52263 716998 343000) "birth.org" "../" "tasks.org" "./")
+
+ ("/home/g/dotfiles/org/" (26189 16008 590554 86000) ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
 
  ("/home/g/images/" (26187 62580 970952 430000) "tokyo2.png" "../" "tokyo.png" "tokyo3.png" "startup.mp4" "covers/" "city.png" "gifs/" "cover.png" "./" "matrix.png" "tokyo4.png")
 
- ("/home/g/.config/" (26193 28160 179275 883000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
-
- ("/home/g/.local/share/icons/" (26194 5869 946154 64000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
-
- ("/home/g/.emacs.d/" (26192 61400 555409 144000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
-
- ("/home/g/" (26194 26451 305376 305000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "2.0.9_0.pem" "dotfiles/" "2.1.14_0.crx" "2.1.14_0.pem" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" ".ssh/" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" "a.zip" ".texlive/" ".config/" ".cargo/" "git/" ".bash_history" ".java/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" "2.0.9_0.crx" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
-
  ("/home/g/dotfiles/bspwm/" (26190 39668 887105 112000) "temp" "bspwmrc" "../" "dmenu" "toggle_floating_window" "xclip" "kill_window" "toggle_border_width" "resize_window" "dmenu_run" "toggle_layer" "nodes" "tesseract" "center_window" "toggle_tiled_window" "marked_nodes" "setkmap" "ranger" "list_hidden_windows" "./" "notification_info")
-
- ("/home/g/code/c/sorting/" (26191 63578 314166 740000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c")
-
- ("/home/g/Downloads/" (26193 38643 760493 100000) "The brain-shaped mind what the brain can tell us about the mind (Naomi Goldblum, Shifra Glick) (z-lib.org).pdf" "Performance_Effects_of_a_Cache_Miss_Handling_Archi.pdf" "onur-comparch-fall2017-lecture3-afterlecture.pdf" "matrix-japanese.mkv" "improving dram performance.pdf" "Effects-of-Music-Instruction-on-Developing-Cognitive-Systems-at-the-Foundations-of-Mathematics-and-Science.pdf" "ZX-calculus for the working quantum computer scientist.pdf" "Winterblood - Polar Ambient 60-3 screenshot.png" "visual span.pdf" "Universal Sequential Search Problems.pdf" "Understanding Singular Value Decomposition and its Application in Data Science _ by Reza Bagheri _ Towards Data Science.pdf" "tx-export-main-2024-05-25.dat" "tx-export-main-2024-02-05.dat" "The_shuffling_of_mathematics_problems_improves_lea.pdf" "The Matrix Revolutions (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix Reloaded (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix/" "hhasan_phd_defense_slides_v1.7.pdf" "cognition of time.pdf" "Temporal_Domain_Parallelism_Does_It_Work.pdf" "tabxpert-export-json-2024-05-25.json" "tab.json" "Systematic_study_of_the_impact_of_curved_active_an.pdf" "retbleed_sec22.pdf" "perceptual learning.pdf" "Parallel Implementations of the Cholesky Decomposition on CPUs and GPUs.pdf" "Calligraphr-Template_9.png" "Calligraphr-Template_8.png" "Calligraphr-Template_7.png" "Calligraphr-Template_6.png" "Calligraphr-Template_5.png" "Calligraphr-Template_4.png" "Calligraphr-Template_3.png" "Calligraphr-Template_2.png" "Calligraphr-Template_10.png" "Calligraphr-Template_1.png" "Calligraphr-Template.zip" "C++ Primer, 5th Edition (Stanley B. Lippman, Josee LaJoie etc.) (Z-Library).pdf" "AmortizedAnalysisExplained_Fiebrink.pdf" "amdflaws_whitepaper.pdf" "../" "./")
 
  ("/home/g/git/sway/sway/tree/" (26192 2873 881369 634000) "root.c" "node.c" "../" "container.c" "arrange.c" "workspace.c" "view.c" "output.c" "./")
 
@@ -146,8 +179,6 @@
  ("/tmp/rmsbolt-PI8zOp/" (26189 20726 631365 139000) "rmsbolt.c" "rmsbolt.s" "./" "../")
 
  ("/home/g/org/.stfolder/" (25912 26162 779999 13000) "../" "./")
-
- ("/home/g/org/" (26189 16008 590554 86000) ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
 
  ("/home/g/dotfiles/" (26188 46837 457419 941000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "org/" "polybar/" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "ranger/" "./" "sxhkd/" "alacritty/")
 
@@ -261,8 +292,6 @@
 
  ("/home/g/sway/include/sway/tree/" (26168 27839 503182 22000) "../" "arrange.h" "root.h" "container.h" "node.h" "workspace.h" "./" "view.h")
 
- ("/home/g/org/roadmap/" (26113 32868 78998 800000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
-
  ("/home/g/patches/" (26039 40126 24837 162000) "dmenu-final.tar.xz" "wmutils.zip" "../" "dmenu/" ".git/" "tabbed-final.tar.xz" "st-0.9/" "tabbed/" "st/" "./" "st-final.tar.xz")
 
  ("/home/g/.config/alacritty/" (26062 15878 757752 202000) "../" "alacritty.yml" "./")
@@ -283,33 +312,7 @@
 
  ("/home/g/.config/bspwm/" (26013 34187 984999 148000) "bspwmrc" "../" "./")
 
- ("/home/g/org/tasks/" (25996 52263 716998 343000) "birth.org" "../" "tasks.org" "./")
-
  ("/home/g/config/" (25994 18039 931094 506000) "../" "./")
-
- ("/home/g/patches/st-0.9/" (25992 18022 47800 645000) "config.def.h" "../" "LICENSE" "config.mk" "st.h" "Makefile" "TODO" "x.c.orig" "x.c" "FAQ" "win.h" "arg.h" "config.h" "LEGACY" "st.c" "st" "st.o" "st.c.orig" "config.def.h.orig" "st.1" "./" "st.h.orig" "st.info" "README" "x.o")
-
- ("/home/g/patches/tabbed-0.7/" (25992 21679 988529 158000) "xembed.o" "config.def.h" "config.def.h.rej" "../" "tabbed.o" "LICENSE" "config.mk" "Makefile" "tabbed.1" "tabbed.c" "xembed" "arg.h" "config.h" "tabbed" "tabbed.c.orig" "config.def.h.orig" "xembed.c" "tabbed.c.rej" "tabbed-hidetabs-20191216-b5f9ec6.diff" "./" "README")
-
- ("/home/g/org/journal/" (25912 26118 469999 53000) "../" "20230623" "20230621" "20230708" "20230714" "20230706" "20230622" "./")
-
- ("/home/g/patches/st/" (25619 37903 859408 641000) "st-alpha-20220206-0.8.5.diff" "st-scrollback-mouse-20220127-2c5edf2.diff" "st-scrollback-0.8.5.diff" "../" "st-scrollback-mouse-altscreen-20220127-2c5edf2.diff" "./")
-
- ("/home/g/patches/dmenu/" (25619 37919 132407 2000) "../" "dmenu-prefixcompletion-flag-4.9.diff" "dmenu-alpha-20210605-1a13d04.diff" "dmenu-center-5.2.diff" "./" "dmenu-border-4.9.diff")
-
- ("/home/" (25926 59190 27999 915000) "g/" "./" "../")
-
- ("/home/g/.config/gtk-3.0/" (25836 3425 488910 263000) "settings.ini" "bookmarks" "./" "../")
-
- ("/usr/share/emacs/28.2/lisp/" (25789 10316 127414 196000) "hi-lock.el" "ffap.elc" "cus-theme.el" "desktop.elc" "generic-x.elc" "wdired.el" "repeat.el" "tooltip.elc" "hilit-chg.elc" "soundex.elc" "userlock.el" "files-x.el" "edmacro.elc" "dabbrev.el" "plstore.elc" "misc.elc" "dnd.elc" "plstore.el" "ielm.elc" "mh-e/" "array.el" "misearch.elc" "play/" "rfn-eshadow.elc" "cus-load.el" "dired-loaddefs.el" "tool-bar.elc" "calculator.elc" "emacs-lock.elc" "epa-dired.elc" "url/" "kmacro.el" "ps-mule.elc" "mouse-drag.el" "calc/" "font-core.el" "epa.elc" "loadhist.elc" "master.elc" "speedbar.el" "paren.el" "epa-ks.elc" "autoinsert.elc" "ielm.el" "pcmpl-unix.el" "double.elc" "facemenu.elc" "t-mouse.elc" "epa-mail.elc" "auth-source.elc" "dom.elc" "notifications.elc" "master.el" "disp-table.el" "dos-vars.el" "isearchb.elc" "ansi-color.el" "wid-browse.el" "server.elc" "subdirs.el" "epa-ks.el" "fringe.elc" "echistory.elc" "ps-print-loaddefs.el" "mpc.el" "ls-lisp.elc" "novice.elc" "strokes.elc" "icomplete.el" "pcmpl-unix.elc" "tar-mode.el" "apropos.elc" "autoarg.elc" "mouse-drag.elc" "tab-bar.elc" "rect.elc" "color.elc" "ps-mule.el" "help-at-pt.elc" "pcmpl-gnu.elc" "thingatpt.el" "json.el" "saveplace.el" "pcmpl-linux.el" "button.elc" "epa-file.el" "hexl.elc" "vcursor.elc" "xml.el" "format.elc" "emulation/" "find-cmd.el" "cus-face.elc" "pcmpl-linux.elc" "mail/" "rect.el" "nxml/" "msb.elc" "widget.el" "hilit-chg.el" "subr.elc" "wid-edit.elc" "w32-vars.el" "timezone.el" "delim-col.elc" "emacs-lisp/" "ps-bdf.el" "talk.el" "faces.el" "find-dired.elc" "mb-depth.el" "kermit.el" "double.el" "net/" "minibuffer.el" "reposition.elc" "help-mode.el" "xt-mouse.el" "frameset.elc" "hippie-exp.el" "dframe.elc" "battery.elc" "filenotify.elc" "rtree.el" "tmm.el" "find-dired.el" "uniquify.el" "jit-lock.elc" "cus-face.el" "dirtrack.elc" "simple.elc" "htmlfontify-loaddefs.el" "shell.el" "display-fill-column-indicator.elc" "ps-print.elc" "view.el" "windmove.elc" "forms.el" "image.el" "help.el" "winner.elc" "filecache.elc" "icomplete.elc" "progmodes/" "env.el" "tmm.elc" "tutorial.el" "auth-source-pass.elc" "dirtrack.el" "minibuf-eldef.el" "dabbrev.elc" "tree-widget.el" "man.el" "pixel-scroll.el" "cus-edit.elc" "x-dnd.elc" "arc-mode.el" "filecache.el" "env.elc" "help-at-pt.el" "fileloop.el" "woman.elc" "calendar/" "rtree.elc" "help-mode.elc" "woman.el" "jsonrpc.elc" "ibuffer.elc" "jit-lock.el" "tab-bar.el" "find-cmd.elc" "thumbs.el" "recentf.elc" "tool-bar.el" "md4.el" "completion.el" "image-file.el" "version.el" "lpr.elc" "obarray.elc" "timezone.elc" "scroll-lock.el" "isearch.elc" "winner.el" "strokes.el" "ibuf-macs.el" "select.elc" "doc-view.el" "ps-samp.elc" "vt100-led.el" "desktop.el" "w32-vars.elc" "pcmpl-gnu.el" "wid-browse.elc" "tabify.el" "rot13.el" "obarray.el" "midnight.elc" "skeleton.elc" "reveal.el" "tab-line.elc" "epg.el" "w32-fns.elc" "newcomment.el" "face-remap.el" "foldout.el" "cus-start.elc" "flow-ctrl.el" "format-spec.elc" "array.elc" "elec-pair.elc" "minibuf-eldef.elc" "sort.el" "w32-fns.el" "descr-text.elc" "image-dired.elc" "xml.elc" "find-file.el" "descr-text.el" "shadowfile.elc" "transient.el" "ls-lisp.el" "paren.elc" "ruler-mode.el" "follow.el" "echistory.el" "frame.elc" "completion.elc" "reposition.el" "tempo.el" "expand.el" "files.el" "macros.el" "pcmpl-cvs.el" "time.elc" "gnus/" "README" "apropos.el" "autoinsert.el" "locate.elc" "ps-samp.el" "elide-head.elc" "newcomment.elc" "align.el" "dired.elc" "hexl.el" "time-stamp.elc" "term/" "format.el" "info-xref.elc" "abbrev.el" "password-cache.elc" "savehist.elc" "dframe.el" "vc/" "info-xref.el" "replace.elc" "dynamic-setting.el" "thread.el" "pcmpl-cvs.elc" "obsolete/" "ezimage.elc" "foldout.elc" "reveal.elc" "info-look.elc" "dos-w32.elc" "dom.el" "vcursor.el" "bs.el" "tooltip.el" "skeleton.el" "wid-edit.el" "cus-dep.elc" "startup.el" "help-fns.el" "tree-widget.elc" "pixel-scroll.elc" "cus-start.el" "ibuf-ext.el" "auth-source.el" "ses.elc" "files-x.elc" "outline.el" "shell.elc" "informat.el" "proced.el" "printing.elc" "ecomplete.el" "time-stamp.el" "ibuffer-loaddefs.el" "macros.elc" "sort.elc" "epa.el" "view.elc" "htmlfontify.elc" "ansi-color.elc" "scroll-bar.el" "autoarg.el" "generic-x.el" "bs.elc" "display-fill-column-indicator.el" "scroll-lock.elc" "dired-x.elc" "font-lock.el" "dos-w32.el" "jka-compr.el" "xwidget.el" "image/" "register.el" "erc/" "font-lock.elc" "cedet/" "mouse-copy.elc" "startup.elc" "scroll-all.el" "elec-pair.el" "menu-bar.elc" "tab-line.el" "filesets.elc" "ruler-mode.elc" "buff-menu.elc" "epg-config.el" "ido.el" "emacs-lock.el" "info-look.el" "dos-fns.elc" "iimage.el" "kermit.elc" "wdired.elc" "ehelp.elc" "epa-hook.el" "filesets.el" "term.el" "mouse.elc" "uniquify.elc" "linum.elc" "bookmark.el" "finder.el" "delsel.elc" "thumbs.elc" "image-dired.el" "disp-table.elc" "elide-head.el" "md4.elc" "xdg.el" "button.el" "svg.elc" "epg.elc" "informat.elc" "rfn-eshadow.el" "language/" "comint.el" "bindings.el" "autorevert.elc" "mb-depth.elc" "scroll-all.elc" "window.elc" "org/" "profiler.el" "abbrev.elc" "password-cache.el" "image-file.elc" "cus-theme.elc" "kmacro.elc" "thingatpt.elc" "help-fns.elc" "tempo.elc" "loadhist.el" "ps-def.elc" "indent.el" "ffap.el" "chistory.el" "color.el" "iimage.elc" "dired-aux.elc" "lpr.el" "font-core.elc" "dired-x.el" "recentf.el" "forms.elc" "msb.el" "pcomplete.el" "vt-control.elc" "xt-mouse.elc" "isearch.el" "eshell/" "misc.el" "finder-inf.el" "ecomplete.elc" "help-macro.el" "jka-cmpr-hook.el" "speedbar.elc" "register.elc" "midnight.el" "hl-line.el" "allout-widgets.elc" "replace.el" "cdl.el" "tabify.elc" "fringe.el" "find-lisp.elc" "soundex.el" "whitespace.el" "dynamic-setting.elc" "hl-line.elc" "cus-dep.el" "international/" "t-mouse.el" "auth-source-pass.el" "delsel.el" "calculator.el" "format-spec.el" "case-table.el" "ezimage.el" "avoid.el" "epa-mail.el" "allout.elc" "cdl.elc" "cus-edit.el" "autorevert.el" "help-macro.elc" "rot13.elc" "ps-print.el" "image.elc" "ebuff-menu.el" "whitespace.elc" "talk.elc" "simple.el" "saveplace.elc" "scroll-bar.elc" "jka-compr.elc" "novice.el" "display-line-numbers.elc" "comint.elc" "printing.el" "indent.elc" "savehist.el" "jsonrpc.el" "epg-config.elc" "htmlfontify.el" "info.el" "linum.el" "leim/" "notifications.el" "bindings.elc" "composite.elc" "x-dnd.el" "ibuf-ext.elc" "misearch.el" "pcmpl-rpm.elc" "vt-control.el" "allout-widgets.el" "dired-aux.el" "dos-fns.el" "filenotify.el" "ps-def.el" "mwheel.el" "widget.elc" "info.elc" "expand.elc" "imenu.elc" "tar-mode.elc" "frameset.el" "char-fold.elc" "cmuscheme.el" "imenu.el" "hfy-cmap.el" "makesum.el" "ibuf-macs.elc" "ses.el" "select.el" "facemenu.el" "registry.elc" "fileloop.elc" "face-remap.elc" "bookmark.elc" "dnd.el" "repeat.elc" "align.elc" "registry.el" "windmove.el" "mouse.el" "ehelp.el" "hfy-cmap.elc" "avoid.elc" "xdg.elc" "ps-bdf.elc" "shadowfile.el" "follow.elc" "ldefs-boot.el" "allout.el" "dos-vars.elc" "chistory.elc" "loadup.el" "version.elc" "doc-view.elc" "electric.el" "char-fold.el" "custom.el" "svg.el" "cmuscheme.elc" "transient.elc" "type-break.elc" "custom.elc" "hex-util.el" "xwidget.elc" "minibuffer.elc" "hippie-exp.elc" "proced.elc" "outline.elc" "find-file.elc" "server.el" "image-mode.elc" "menu-bar.el" "flow-ctrl.elc" "hi-lock.elc" "pcmpl-rpm.el" "ebuff-menu.elc" "so-long.elc" "dired.el" "window.el" "image-mode.el" "type-break.el" "vt100-led.elc" "arc-mode.elc" "frame.el" "case-table.elc" "time.el" "files.elc" "subr.el" "makesum.elc" "electric.elc" "epa-dired.el" "so-long.el" "thread.elc" "epa-file.elc" "mwheel.elc" "locate.el" "json.elc" "ido.elc" "finder.elc" "faces.elc" "find-lisp.el" "term.elc" "man.elc" "edmacro.el" "composite.el" "loaddefs.el" "mouse-copy.el" "pcmpl-x.elc" "isearchb.el" "buff-menu.el" "epa-hook.elc" "pcmpl-x.el" "userlock.elc" "help.elc" "hex-util.elc" "delim-col.el" "textmodes/" "mpc.elc" "battery.el" "display-line-numbers.el" "tutorial.elc" "jka-cmpr-hook.elc" "ibuffer.el" "pcomplete.elc" "profiler.elc" "../" "./")
-
- ("/home/g/boot_backup/boot/" (25772 44496 776758 410000) "grub/" "vmlinuz-6.1.12-gentoo" "vmlinuz-6.3.11-zen+" "zen-6.3.11-pds" "./" "../" "System.map-6.3.11-zen+" "vmlinuz-5.15.88-gentoo" "gentoo-backup" "config-6.3.11-zen+")
-
- ("/home/g/boot_backup/" (25772 44493 638758 747000) "boot/" "./" "../")
-
- ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "out/" "org-roam-ui-pkg.el" "org-roam-ui.elc" "./" "../" "org-roam-ui.el" "org-roam-ui-autoloads.el")
-
- ("/home/g/.emacs.d/elpa/" (25748 57406 806115 290000) "ido-vertical-mode-20210205.436/" "org-download-20220906.1929/" "exwm-0.27/" "elfeed-org-20221118.852/" "use-package-2.4.5.signed" "magit-section-20230314.1653/" "org-journal-20230309.1240/" "ht-20230214.1632/" "compat-29.1.4.1/" "ts-20220822.2313/" "elfeed-20210822.2129/" "archives/" "f-20230116.1032/" "which-key-20230330.2121/" "peg-1.0.1/" "darcula-theme-20171227.1845/" "esxml-20230308.2254/" "org-super-agenda-20220826.2315/" "org-roam-20230307.1721/" "avy-20230316.2259/" "peg-1.0.1.signed" "./" "compat-29.1.4.1.signed" "ov-20200326.1042/" "s-20220902.1511/" "xelb-0.18.signed" "../" "tron-legacy-theme-20230103.617/" "dash-20230415.2324/" "bind-key-2.4.1/" "exwm-0.27.signed" "kv-20140108.1534/" "ace-window-20220911.358/" "websocket-20230305.410/" "org-ql-20230312.1433/" "xelb-0.18/" "swiper-0.14.0/" "use-package-2.4.5/" "simple-httpd-20191103.1446/" "nov-20230327.1739/" "bind-key-2.4.1.signed" "gnupg/" "swiper-0.14.0.signed" "ivy-20230410.1815/" "transient-20230315.1520/" "org-bullets-20200317.1740/" "org-roam-ui-20221105.1040/" "latex-preview-pane-20181008.1822/" "async-20230323.643/" "emacsql-20230417.1448/")
 )
 
 ;; ----- ido-unc-hosts-cache -----

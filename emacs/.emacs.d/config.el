@@ -97,7 +97,7 @@
   (setq org-log-repeat nil)
   (setq org-ellipsis " ▾")
   (setq org-directory "~/org")
-  (setq org-agenda-files '("roadmap/topics.org" "tasks/birth.org" "tasks/tasks.org" "roadmap/roadmap.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org" "roadmap/physics.org"))
+  (setq org-agenda-files '("roadmap/topics.org" "roadmap/todo.org" "tasks/birth.org" "tasks/tasks.org" "roadmap/roadmap.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org" "roadmap/physics.org"))
   (setq org-refile-targets
 	'(("archive.org" :maxlevel . 1)))
   (advice-add 'org-refile :after 'org-save-all-org-buffers)
