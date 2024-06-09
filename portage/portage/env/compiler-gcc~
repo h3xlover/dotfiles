@@ -1,0 +1,11 @@
+CFLAGS="${CFLAGS}"
+CXXFLAGS="${CXXFLAGS}"
+
+LDFLAGS="-Wl,--as-needed"
+
+CC="gcc"
+CXX="g++"
+CPP="gcc -E"
+AR="ar"
+NM="nm"
+RANLIB="ranlib"
