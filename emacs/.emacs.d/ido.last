@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/tmp/" . "telegram/")
  ("/home/g/dotfiles/emacs/" . ".emacs.d/")
  ("/home/g/org/books/" . "ltximg/")
  ("/home/g/dotfiles/org/" . "roadmap/")
@@ -29,7 +30,7 @@
  ("/home/g/Downloads/Google_Cursor-main/bitmaps/" . "GoogleDot-Black/")
  ("/home/g/Downloads/Google_Cursor-main/" . "bitmaps/")
  ("/home/g/patches/" . "dmenu/")
- ("/etc/" . "default/")
+ ("/etc/" . "sway/")
  ("/home/g/boot_backup/" . "boot/")
  ("/home/g/.emacs.d/elpa/" . "org-roam-ui-20221105.1040/")
  ("/etc/portage/" . "env/")
@@ -37,27 +38,30 @@
  ("/home/g/org/tasks/" . ".stfolder/")
  ("/home/" . "g/")
  ("/home/g/org/" . "books/")
- ("/" . "home/")
+ ("/" . "etc/")
  ("/home/g/dotfiles/" . "emacs/")
  ("/home/g/.config/" . "sway/")
- ("/home/g/" . "dotfiles/")
+ ("/home/g/" . "org/")
  ("/home/g/.emacs.d/" . "elpa/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/g/org/books/"
+ "/etc/sway/"
+ "/tmp/telegram/"
+ "/home/g/dotfiles/org/roadmap/"
+ "/home/g/dotfiles/org/"
+ "/home/g/"
  "/home/g/dotfiles/"
  "/home/g/dotfiles/emacs/.emacs.d/"
  "/home/g/dotfiles/sway/"
- "/home/g/org/books/"
  "/home/g/dotfiles/misc/"
- "/home/g/"
  "/home/g/dotfiles/smart/"
  "/home/g/.config/sway/"
  "/home/g/dotfiles/org/books/"
  "/home/g/org/"
  "/home/g/code/c/sorting/"
- "/home/g/dotfiles/org/roadmap/"
  "/home/g/dotfiles/org/roam/"
  "/home/g/Downloads/"
  "/home/g/org/roadmap/"
@@ -93,46 +97,59 @@
  "/home/g/org/tasks/"
  "/home/g/images/"
  "/home/g/patches/tabbed-0.7/"
- "/home/g/patches/st-0.9/"
- "/etc/init.d/"
- "/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- ".gitignore"
- "focus_parent"
- "a.json"
- "resize_float"
- "move_float"
  "introduction_algorithms.org"
- "2nd_kb.py"
- "test.py"
- "light"
- "launch"
+ "config"
+ "image_2024-06-03_01-59-41.png"
+ "image_2024-06-03_01-59-18.png"
+ "todo.org"
+ ".gitignore"
+ "monastery.org"
+ "roadmap.org"
+ ".bashrc"
+ "focus_parent"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/g/dotfiles/emacs/.emacs.d/" (26202 5763 955092 857000) "org-download.el" "eln-cache/" ".gitignore" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+ ("/home/g/" (26207 30561 906094 119000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".npm/" ".android/" ".ssh/" "images/" ".wget-hsts" "tabxpert-export-json-2024-06-01.json" ".elfeed/" "realsr-ncnn-vulkan/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "upscayl/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" "tx-export-main-2024-06-01.dat" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+
+ ("/etc/sway/" (26166 49495 986919 909000) "config" "./" "../")
+
+ ("/etc/" (26206 26952 521661 299000) "default/" "pulse/" "ssh/" "revdep-rebuild/" "dispatch-conf.conf~" "systemd/" "rc.conf" "chromium/" "sway/" "lessfilter.d/" "wgetrc" "gshadow-" "mpv/" "polkit-1/" "rpc" "npm/" "tor/" "sudoers.tmp~" "adjtime" "lsb-release" "hostname" "issue" "host.conf" "NaturalDocs/" "netconfig" "ntp.conf" "machine-id" "gai.conf" "inittab.d/" "swtpm_setup.conf" "wireless-regdb/" "ImageMagick-7/" "sgml/" "emacs/" "environment" "dispatch-conf.conf" "sandbox.d/" "timezone" "ssl/" "profile" "subgid" "shells" "environment.d/" "virt-builder/" "rhashrc" "clang/" "libvirt/" "passwd" "group-" "fonts/" "conf.d/" "ld.so.cache" "profile.env" "sudoers.dist" "protocols" "hosts" "DIR_COLORS" "cni/" "subgid-" "metalog.conf" "skel/" "runlevels/" "inputrc" "elogind/" "portage/" "ld.so.conf.d/" "bash/" "swtpm-localca.conf" "eselect/" "xinetd.d/" "inittab" "etc-update.conf" "xdg/" "init.d/" "grub.d/" "login.defs" "local.d/" "gimp/" "sandbox.conf" "ld.so.conf" "sudo.conf" "mime.types" "pam.d/" "swtpm-localca.options" "xml/" "env.d/" "#sudoers.tmp#" "sudoers~" "terminfo/" "sudo_logsrvd.conf" "fstab~" "dhcpcd.conf~" "filesystems" "rsyncd.conf" "fuse.conf" "python-exec/" "ethertypes" "csh.env" "shadow" "sysctl.d/" "man_db.conf" "dbus-1/" "gentoo-release" ".pwd.lock" "sensors3.conf" "#sudoers#" "services" "alsa/" "issue.logo" "X11/" "dnsmasq.conf" "nsswitch.conf" "fstab" "eclean/" "modules-load.d/" "cups/" "cron.daily/" "os-release" "libnl/" "w3m/" "shadow-" "libguestfs-tools.conf" "e2scrub.conf" "qemu/" "paperspecs" "fakechroot/" "gtk-3.0/" "ca-certificates.conf" "security/" "logrotate.d/" "mke2fs.conf" "mtab" "polybar/" "wpa_supplicant/" "locale.gen" "pkcs11/" "subuid-" "gtk-2.0/" "xattr.conf" "udev/" "dhcpcd.conf" "gitconfig" "texmf/" "modprobe.d" "subuid" "sudoers" "vulkan/" "resolv.conf" "issue~" "group" "rmt" "nullmailer/" "networks" "profile.d/" "bindresvport.blacklist" "vdpau_wrapper.cfg" "./" "config-archive/" "gshadow" "localtime" "../" "e2fsck.conf" "passwd-")
+
+ ("/tmp/telegram/" (26205 22988 57241 889000) "IMG_20231102_171811_307.jpg" "image_2024-06-03_01-59-18.png" "image_2024-06-03_01-59-41_upscayl_4x_realesrgan-x4plus.png" "image_2024-06-03_01-59-41_upscayl_4x_realesrgan-x4plus-anime.png" "image_2024-06-03_01-59-41_upscayl_8x_ultramix_balanced.png" "image_2024-06-03_01-59-41.png" "./" "../")
+
+ ("/tmp/" (26205 23303 930617 369000) ".org.chromium.Chromium.m0A5DB" ".org.chromium.Chromium.dogjuk" "babel-stable-557/" ".XIM-unix/" "portage/" ".X11-unix/" ".org.chromium.Chromium.KJoBHp/" "telegram/" ".X0-lock" ".ICE-unix/" "9b27531ae03cace6e83ac743980ed92a-{87A94AB0-E370-4cde-98D3-ACC110C5967D}" "sway-workspc" "pulse-PKdhtXMmr18n/" ".font-unix/" "./" "babel-ONNitm/" "../" "dbus-bpK0O5rk8H")
+
+ ("/home/g/images/" (26204 40321 156069 411000) "../" "startup.mp4" "covers/" "gifs/" "cover.png" "./")
+
+ ("/home/g/.config/" (26202 41098 565561 215000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
+
+ ("/home/g/.local/share/icons/" (26204 44662 35836 602000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
+
+ ("/home/g/.emacs.d/" (26202 6124 208322 362000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/org/roadmap/" (26202 42947 805326 993000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/Downloads/" (26202 46233 265822 800000) "stage3-amd64-openrc-20240526T163557Z.tar.xz" "install-amd64-minimal-20240526T163557Z.iso" "img/" "doc/" "vid/" "../" "./")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/" (26202 6124 208322 362000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/dotfiles/org/roadmap/" (26202 42947 805326 993000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/dotfiles/org/" (26199 13119 614164 983000) "books/" ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
 
  ("/home/g/dotfiles/emacs/" (26188 46676 678625 409000) "../" "init.el" "config.org" ".emacs.d/" "./" "latex-preview-pane/")
 
  ("/home/g/dotfiles/sway/" (26202 5010 756398 250000) "config" "../" "focus_parent" "floating" "bar" "colors" "move_float" "./" "launch" "toggle_floating")
 
- ("/home/g/" (26202 4128 935833 935000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".android/" ".ssh/" "images/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
-
  ("/etc/init.d/" (26201 18465 330861 586000) "libvirtd" "savecache" "systemd-tmpfiles-setup" "procfs" "mount-ro" "sshd" "metalog" "cupsd" "net.wlp42s0f3u1" "tor" "consolefont" "hostname" "root" "bootlogd" "#amdfan#" "git-daemon" "modules" "virtlogd" "bootmisc" "net-online" "libvirt-guests" "loopback" "devfs" "osclock" "udev-settle" "termencoding" "lm_sensors" "udev-trigger" "localmount" "keymaps" "save-termencoding" "elogind" "ip6tables" "alsasound" "transmission-daemon" "virtlockd" "fuse" "swap" "ebtables" "cgroups" "fancontrol" "ntpd" "display-manager" "sysfs" "systemd-tmpfiles-setup-dev" "xdm" "dnsmasq" "swclock" "pydoc-3.12" "syncthing" "rsyncd" "wpa_supplicant~" "display-manager-setup" "dhcpcd" "runsvdir" "ntp-client" "fsck" "hwclock" "sysctl" "seedrng" "functions.sh" "dmesg" "numlock" "pciparm" "pydoc-3.11" "agetty" "mtab" "wpa_supplicant" "net.lo" "wpa" "udev" "sntp" "netmount" "kmod-static-nodes" "binfmt" "wpa~" "nullmailer" "radvd" "./" "s6-svscan" "../" "local" "killprocs" "qemu-binfmt" "dbus" "amdfan" "iptables" "save-keymaps")
 
  ("/home/g/org/tasks/" (26199 18277 353783 568000) "birth.org" "../" "tasks.org" "./")
-
- ("/home/g/.local/share/icons/" (26200 44417 862323 870000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
-
- ("/home/g/org/roadmap/" (26199 18380 199580 532000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
-
- ("/home/g/Downloads/" (26200 39866 297124 100000) "The brain-shaped mind what the brain can tell us about the mind (Naomi Goldblum, Shifra Glick) (z-lib.org).pdf" "Performance_Effects_of_a_Cache_Miss_Handling_Archi.pdf" "onur-comparch-fall2017-lecture3-afterlecture.pdf" "install-amd64-minimal-20240526T163557Z.iso" "improving dram performance.pdf" "Effects-of-Music-Instruction-on-Developing-Cognitive-Systems-at-the-Foundations-of-Mathematics-and-Science.pdf" "ZX-calculus for the working quantum computer scientist.pdf" "Winterblood - Polar Ambient 60-3 screenshot.png" "visual span.pdf" "Universal Sequential Search Problems.pdf" "Understanding Singular Value Decomposition and its Application in Data Science _ by Reza Bagheri _ Towards Data Science.pdf" "tx-export-main-2024-05-25.dat" "tx-export-main-2024-02-05.dat" "The_shuffling_of_mathematics_problems_improves_lea.pdf" "The Matrix Revolutions (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix Reloaded (2003) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "The Matrix/" "hhasan_phd_defense_slides_v1.7.pdf" "cognition of time.pdf" "Temporal_Domain_Parallelism_Does_It_Work.pdf" "tabxpert-export-json-2024-05-25.json" "tab.json" "Systematic_study_of_the_impact_of_curved_active_an.pdf" "retbleed_sec22.pdf" "perceptual learning.pdf" "Parallel Implementations of the Cholesky Decomposition on CPUs and GPUs.pdf" "C++ Primer, 5th Edition (Stanley B. Lippman, Josee LaJoie etc.) (Z-Library).pdf" "AmortizedAnalysisExplained_Fiebrink.pdf" "amdflaws_whitepaper.pdf" "../" "./")
-
- ("/home/g/dotfiles/org/roadmap/" (26199 18380 199580 532000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
 
  ("/home/g/dotfiles/org/books/" (26199 14658 684245 717000) "../" "ltximg/" "introduction_algorithms.org" "./")
 
@@ -146,23 +163,15 @@
 
  ("/home/g/org/" (26199 13119 614164 983000) "books/" ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
 
- ("/home/g/.emacs.d/" (26198 46657 877590 270000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
-
  ("/home/g/dotfiles/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
 
  ("/home/g/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
 
  ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "../" "org-roam-ui-autoloads.el" "org-roam-ui.el" "out/" "org-roam-ui-pkg.el" "./" "org-roam-ui.elc")
 
- ("/home/g/.config/" (26198 40379 166902 133000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
-
  ("/home/g/code/c/sorting/" (26198 40357 140740 44000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "horner" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c" "horner.c")
 
  ("/home/g/dotfiles/org/tasks/" (25996 52263 716998 343000) "birth.org" "../" "tasks.org" "./")
-
- ("/home/g/dotfiles/org/" (26189 16008 590554 86000) ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
-
- ("/home/g/images/" (26187 62580 970952 430000) "tokyo2.png" "../" "tokyo.png" "tokyo3.png" "startup.mp4" "covers/" "city.png" "gifs/" "cover.png" "./" "matrix.png" "tokyo4.png")
 
  ("/home/g/dotfiles/bspwm/" (26190 39668 887105 112000) "temp" "bspwmrc" "../" "dmenu" "toggle_floating_window" "xclip" "kill_window" "toggle_border_width" "resize_window" "dmenu_run" "toggle_layer" "nodes" "tesseract" "center_window" "toggle_tiled_window" "marked_nodes" "setkmap" "ranger" "list_hidden_windows" "./" "notification_info")
 
@@ -258,8 +267,6 @@
 
  ("/etc/X11/" (26113 55419 355984 453000) "startDM.sh" "Sessions/" "xorg.conf.d/" "xinit/" "chooser.sh" "./" "../")
 
- ("/etc/" (26175 41026 604000 43000) "default/" "pulse/" "ssh/" "revdep-rebuild/" "dispatch-conf.conf~" "systemd/" "rc.conf" "chromium/" "sway/" "lessfilter.d/" "wgetrc" "gshadow-" "mpv/" "polkit-1/" "rpc" "npm/" "tor/" "sudoers.tmp~" "adjtime" "lsb-release" "hostname" "issue" "host.conf" "netconfig" "ntp.conf" "machine-id" "gai.conf" "inittab.d/" "swtpm_setup.conf" "wireless-regdb/" "ImageMagick-7/" "sgml/" "emacs/" "environment" "dispatch-conf.conf" "sandbox.d/" "timezone" "ssl/" "profile" "acpi/" "subgid" "shells" "environment.d/" "rhashrc" "clang/" "libvirt/" "passwd" "group-" "fonts/" "conf.d/" "ld.so.cache" "profile.env" "sudoers.dist" "protocols" "hosts" "DIR_COLORS" "cni/" "subgid-" "metalog.conf" "skel/" "runlevels/" "inputrc" "elogind/" "portage/" "ld.so.conf.d/" "bash/" "swtpm-localca.conf" "eselect/" "xinetd.d/" "inittab" "etc-update.conf" "xdg/" "init.d/" "grub.d/" "login.defs" "local.d/" "sandbox.conf" "ld.so.conf" "sudo.conf" "mime.types" "pam.d/" "swtpm-localca.options" "xml/" "env.d/" "#sudoers.tmp#" "sudoers~" "terminfo/" "sudo_logsrvd.conf" "fstab~" "dhcpcd.conf~" "filesystems" "rsyncd.conf" "fuse.conf" "python-exec/" "ethertypes" "csh.env" "shadow" "sysctl.d/" "man_db.conf" "dbus-1/" "gentoo-release" ".pwd.lock" "sensors3.conf" "#sudoers#" "services" "alsa/" "issue.logo" "X11/" "dnsmasq.conf" "nsswitch.conf" "fstab" "eclean/" "modules-load.d/" "cups/" "cron.daily/" "os-release" "libnl/" "w3m/" "shadow-" "e2scrub.conf" "qemu/" "paperspecs" "gtk-3.0/" "ca-certificates.conf" "security/" "logrotate.d/" "mke2fs.conf" "mtab" "polybar/" "wpa_supplicant/" "locale.gen" "pkcs11/" "subuid-" "xattr.conf" "udev/" "dhcpcd.conf" "gitconfig" "modprobe.d" "subuid" "sudoers" "vulkan/" "resolv.conf" "issue~" "group" "rmt" "nullmailer/" "networks" "profile.d/" "bindresvport.blacklist" "vdpau_wrapper.cfg" "./" "config-archive/" "gshadow" "localtime" "../" "e2fsck.conf" "passwd-")
-
  ("/home/g/.local/share/icons/Simp1e-Gruvbox-Dark/" (25647 63582 0 0) "../" "cursors/" "index.theme" "./")
 
  ("/home/g/.local/share/" (26173 44554 859177 107000) "man/" "fonts/" "nyxt/" "dbus-1/" "../" "Anki2/" "webkitgtk/" "TelegramDesktop/" "qutebrowser/" "xorg/" "zathura/" "libvirt/" "recently-used.xbel" "icons/" "gegl-0.4/" "godot/" "ranger/" "GoldenDict/" "./" "applications/" "goldendict/")
@@ -307,12 +314,6 @@
  ("/home/g/dotfiles/ranger/" (25575 31742 114974 58000) "../" "rc.conf" "rifle.conf" "./")
 
  ("/home/g/dotfiles/sxhkd/" (25706 50133 340580 573000) "../" "sxhkdrc" "./")
-
- ("/home/g/.config/sxhkd/" (26013 34187 984999 148000) "../" "sxhkdrc" "./")
-
- ("/home/g/.config/bspwm/" (26013 34187 984999 148000) "bspwmrc" "../" "./")
-
- ("/home/g/config/" (25994 18039 931094 506000) "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

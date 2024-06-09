@@ -6,4 +6,14 @@ The importance of the chapter lies in the fact that analysis of algorithms (at l
 
 * Chapter 3
 
-asymptotic efficiency, asymptotic notation, O-notation, $\Theta$ Notation, $\Omega$ notation (informal), formal definition of asymptotic notation and asymptotic lower and upper bounds, proper use of asymptotic notation and abuse of notation, $\theta$ and $\omega$ notation.
+asymptotic efficiency, asymptotic notation, O-notation, $\Theta$ Notation, $\Omega$ notation (informal), formal definition of asymptotic notation and asymptotic lower and upper bounds, proper use of asymptotic notation and abuse of notation, $\theta$ and $\omega$ notation, transitivity, reflexivity, symmetry, transpose symmetry of asymptotic functions.
+
+The focus of this chapter is asymptotic notation and its properties, the formal definitions of these notations are important to differentiate and compare between similar notations (eg $\Theta$ and $\theta$ notation), the chapter highlight this idea when showing proper use of the notation. The chapter finishes with properties of the notation and other mathematical notations.
+
+* Divide and conquer
+
+applications of divide and conquer, mathematical tools, solve recurrence and obtain asymptotic bounds from recurrences, matrix-multiply recursive implementation and comparison between strassen method. like $x^2 - y^2 = (x + y)(x - y)$, strassen method reduce the number of matrix multiplications at the expense of matrix additions
+
+** substitution method for solving recurrences
+
+recurrences characterize running times of divide-and-conquer algorithms, this chapter shows how to solve recurrences.

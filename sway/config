@@ -15,10 +15,10 @@ disable_titlebar yes
 for_window {
 	   [class="ranger"] floating enable
 	   [class="feh"] fullscreen enable
-	   [class=".*"] opacity 0.99
+	   [class=".*"] opacity 0.95
 	   #
 	   [app_id="mpv"] fullscreen enable
-	   [app_id=".*"] opacity 0.99
+	   [app_id=".*"] opacity 0.95
 	   [app_id="pavucontrol"] floating enable
 	   [app_id="org.pwmt.zathura"] floating enable
 }
@@ -60,7 +60,7 @@ output * bg ~/images/cover.png fill
     bindsym $mod+bracketright disable_titlebar yes
 
     # Print
-    bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd1/images/sc/"$(date +%Y-%d-%H-%M-%S | tr A-Z a-z).png"
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd1/images/sc/"$(date +%Y-%m-%d-%H-%M-%S | tr A-Z a-z).png"
 
     # Set keyboard layout
     bindcode $mod+33 exec ~/dotfiles/bspwm/setkmap "us ru br"
@@ -70,7 +70,7 @@ output * bg ~/images/cover.png fill
     bindsym $mod+Shift+c reload
 
     # Exit sway (logs you out of your Wayland session)
-    bindsym $mod+Shift+e exec swaynag -t warning -m 'Do you really want to exit sway?' -B 'Yes, exit sway' 'swaymsg exit'
+    bindsym $mod+Shift+e exec swaynag -t warning -m 'Exit sway?' -B 'Yes' 'swaymsg exit'
 
      # Switch to window, swayfocus
      bindsym $mod+$left exec sway-overfocus split-lt float-lt output-ls
@@ -258,6 +258,6 @@ bar {
 
 # misc
 exec_always . ~/dotfiles/sway/colors
-exec python ~/dotfiles/misc/2nd_kb.py
+
 input type:keyboard xkb_layout us
 include /etc/sway/config.d/*
