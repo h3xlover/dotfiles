@@ -10,10 +10,35 @@ asymptotic efficiency, asymptotic notation, O-notation, $\Theta$ Notation, $\Ome
 
 The focus of this chapter is asymptotic notation and its properties, the formal definitions of these notations are important to differentiate and compare between similar notations (eg $\Theta$ and $\theta$ notation), the chapter highlight this idea when showing proper use of the notation. The chapter finishes with properties of the notation and other mathematical notations.
 
-* Divide and conquer
+* Chapter 4, Divide and conquer
 
-applications of divide and conquer, mathematical tools, solve recurrence and obtain asymptotic bounds from recurrences, matrix-multiply recursive implementation and comparison between strassen method. like $x^2 - y^2 = (x + y)(x - y)$, strassen method reduce the number of matrix multiplications at the expense of matrix additions
+applications of divide and conquer, solve recurrence and obtain asymptotic bounds from recurrences, matrix-multiply recursive implementation and comparison between strassen method. like $x^2 - y^2 = (x + y)(x - y)$, strassen method reduce the number of matrix multiplications at the expense of matrix additions
 
 ** substitution method for solving recurrences
 
-recurrences characterize running times of divide-and-conquer algorithms, this chapter shows how to solve recurrences.
+recurrences characterize running times of divide-and-conquer algorithms, this chapter shows how to solve recurrences by guessing the solution and then proving by induction. it shows how to make good guesses with loose upper/lower bounds, and to have more accuracy on the guesses by subtracting a low-order term.
+
+Avoid using asymptotic notation in the inductive hypothesis.
+
+** recursion tree method
+
+In this method, you draw the entire tree and make the sum of all costs:
+
+#+DOWNLOADED: screenshot @ 2024-06-10 16:46:46
+[[file:Divide_and_conquer/recursion_tree.png]]
+
+this method helps to find a good guess for substitution method.
+
+** master method
+
+method for solving $T(n) = aT(\frac{n}_{b}) + f(n)$ (master recurrence), need to memorise 3 cases.
+
+*** proving continuous master theorem
+
+** akra-bazzi recurrences and method
+
+* Chapter 5, Probabilistic analysis and randomized algorithms
+
+using probability to analyze the running time of an algorithm and average case running time, by making an algorithm randomized (behavior determined by a random number generator) we can use probabilistic analysis, running time of a randomized algorithm is the *expected running time*.
+
+the random algorithm needs to generate an uniform random permutation
