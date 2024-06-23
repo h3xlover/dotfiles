@@ -2,6 +2,8 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/g/dotfiles/emacs/.emacs.d/" . "elpa/")
+ ("/home/g/dotfiles/emacs/.emacs.d/elpa/" . "ewal-spacemacs-themes-20230505.609/")
  ("/tmp/" . "telegram/")
  ("/home/g/dotfiles/emacs/" . ".emacs.d/")
  ("/home/g/org/books/" . "ltximg/")
@@ -32,7 +34,7 @@
  ("/home/g/patches/" . "dmenu/")
  ("/etc/" . "sway/")
  ("/home/g/boot_backup/" . "boot/")
- ("/home/g/.emacs.d/elpa/" . "org-roam-ui-20221105.1040/")
+ ("/home/g/.emacs.d/elpa/" . "ewal-spacemacs-themes-20230505.609/")
  ("/etc/portage/" . "env/")
  ("/home/g/org/roadmap/" . "journal/")
  ("/home/g/org/tasks/" . ".stfolder/")
@@ -41,18 +43,31 @@
  ("/" . "etc/")
  ("/home/g/dotfiles/" . "emacs/")
  ("/home/g/.config/" . "sway/")
- ("/home/g/" . "org/")
+ ("/home/g/" . ".emacs.d/")
  ("/home/g/.emacs.d/" . "elpa/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/g/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/"
+ "/home/g/.emacs.d/elpa/spacemacs-theme-20230530.1751/"
+ "/home/g/dotfiles/emacs/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/"
+ "/home/g/dotfiles/emacs/.emacs.d/elpa/spacemacs-theme-20230530.1751/"
  "/home/g/org/books/"
+ "/home/g/.emacs.d/elpa/avy-20230420.404/"
+ "/home/g/dotfiles/emacs/.emacs.d/elpa/avy-20230420.404/"
+ "/home/g/dotfiles/emacs/.emacs.d/elpa/ewal-20200305.230/"
+ "/home/g/.emacs.d/"
+ "/home/g/org/roadmap/"
+ "/home/g/dotfiles/org/roadmap/"
+ "/home/g/dotfiles/org/tasks/"
+ "/home/g/org/roam/"
+ "/home/g/code/c/sorting/"
+ "/home/g/code/c/polynomial/"
+ "/home/g/"
  "/etc/sway/"
  "/tmp/telegram/"
- "/home/g/dotfiles/org/roadmap/"
  "/home/g/dotfiles/org/"
- "/home/g/"
  "/home/g/dotfiles/"
  "/home/g/dotfiles/emacs/.emacs.d/"
  "/home/g/dotfiles/sway/"
@@ -61,13 +76,10 @@
  "/home/g/.config/sway/"
  "/home/g/dotfiles/org/books/"
  "/home/g/org/"
- "/home/g/code/c/sorting/"
  "/home/g/dotfiles/org/roam/"
  "/home/g/Downloads/"
- "/home/g/org/roadmap/"
  "/home/g/git/sway/sway/tree/"
  "/home/g/dotfiles/bspwm/"
- "/home/g/.emacs.d/"
  "/home/g/iosevka/"
  "/home/g/p-repo-forks/sway-overfocus-0.2.3/"
  "/home/g/b/src/"
@@ -87,59 +99,103 @@
  "/home/g/.config/"
  "/"
  "/mnt/"
- "/home/g/.config/sxhkd/"
- "/home/g/sway/sway/tree/"
- "/home/g/sway/sway/desktop/"
- "/home/g/.config/bspwm/"
- "/home/g/.config/picom/"
- "/home/g/.config/polybar/"
- "/home/g/Downloads/Google_Cursor-main/"
- "/home/g/org/tasks/"
- "/home/g/images/"
- "/home/g/patches/tabbed-0.7/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "ewal-spacemacs-themes.el"
+ "spacemacs-theme.el"
+ "spacemacs-dark-theme.el"
+ "ewal-spacemacs-classic-theme.el"
  "introduction_algorithms.org"
- "config"
- "image_2024-06-03_01-59-41.png"
- "image_2024-06-03_01-59-18.png"
- "todo.org"
- ".gitignore"
- "monastery.org"
- "roadmap.org"
- ".bashrc"
- "focus_parent"
+ "ewal-spacemacs-themes-pkg.el"
+ "ewal-spacemacs-modern-theme.el"
+ "avy.el"
+ "avy-autoloads.el"
+ "ewal.el"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/g/" (26207 30561 906094 119000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".npm/" ".android/" ".ssh/" "images/" ".wget-hsts" "tabxpert-export-json-2024-06-01.json" ".elfeed/" "realsr-ncnn-vulkan/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "upscayl/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" "tx-export-main-2024-06-01.dat" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+ ("/home/g/.emacs.d/elpa/spacemacs-theme-20230530.1751/" (26180 54296 577888 55000) "spacemacs-light-theme.el" "../" "spacemacs-dark-theme.elc" "spacemacs-theme.el" "spacemacs-theme-autoloads.el" "spacemacs-light-theme.elc" "spacemacs-theme-pkg.el" "./" "spacemacs-dark-theme.el")
+
+ ("/home/g/.emacs.d/" (26232 20672 929508 347000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/" (26232 20669 475483 47000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".npm/" ".android/" ".ssh/" "images/" ".wget-hsts" ".elfeed/" "realsr-ncnn-vulkan/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "upscayl/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+
+ ("/home/g/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/" (26232 20077 487144 63000) "ewal-spacemacs-modern-theme.el" "../" "ewal-spacemacs-classic-theme.el" "ewal-spacemacs-themes-autoloads.el" "ewal-spacemacs-classic-theme.elc" "./" "ewal-spacemacs-themes.el" "ewal-spacemacs-themes-pkg.el")
+
+ ("/home/g/dotfiles/portage/" (26232 19315 969548 304000) "../" "portage/" "package-size" "./")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/" (26232 19739 864665 729000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/.config/alacritty/" (26062 15878 757752 202000) "../" "alacritty.yml" "./")
+
+ ("/home/g/.emacs.d/elpa/avy-20230420.404/" (26198 44237 452058 558000) "../" "avy-autoloads.el" "./" "avy.el" "avy-pkg.el" "avy.elc")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/eln-cache/" (26202 6006 447594 605000) "29.3-fca71211/" "../" "./")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/elpa/avy-20230420.404/" (26198 44237 452058 558000) "../" "avy-autoloads.el" "./" "avy.el" "avy-pkg.el" "avy.elc")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/elpa/spacemacs-theme-20230530.1751/" (26180 54296 577888 55000) "spacemacs-light-theme.el" "../" "spacemacs-dark-theme.elc" "spacemacs-theme.el" "spacemacs-theme-autoloads.el" "spacemacs-light-theme.elc" "spacemacs-theme-pkg.el" "./" "spacemacs-dark-theme.el")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/elpa/ewal-20200305.230/" (26180 53386 937883 707000) "../" "ewal-autoloads.el" "ewal.elc" "ewal.el" "palettes/" "./" "ewal-pkg.el")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/elpa/" (26198 44263 923249 643000) "ov-20230522.1117/" "archives/" "xelb-0.19.signed" "s-20220902.1511/" "websocket-20230809.305/" "tron-legacy-theme-20230506.1037/" "ht-20230703.558/" "xelb-0.19/" "ewal-20200305.230/" "spacemacs-theme-20230530.1751/" "wfnames-20240418.1005/" "../" "org-journal-20240218.1645/" "f-20240308.906/" "transient-20240525.1118/" "which-key-20240501.1251/" "peg-1.0.1/" "org-ql-20240403.2027/" "org-roam-20240114.1941/" "elfeed-20240331.1348/" "popup-20240101.830/" "nov-20240407.1219/" "peg-1.0.1.signed" "compat-29.1.4.5.signed" "ido-vertical-mode-20210205.436/" "swiper-20240520.1202/" "exwm-0.30.signed" "darcula-theme-20171227.1845/" "org-bullets-20200317.1740/" "ace-window-20220911.358/" "org-download-20220906.1929/" "latex-preview-pane-20181008.1822/" "compat-29.1.4.5/" "org-super-agenda-20240301.1602/" "dash-20240510.1327/" "rmsbolt-20240507.47/" "ewal-spacemacs-themes-20230505.609/" "ts-20220822.2313/" "exwm-0.30/" "evm-20141007.1156/" "ivy-20240524.1139/" "elfeed-org-20231009.1125/" "kv-20140108.1534/" "org-roam-ui-20221105.1040/" "./" "async-20240323.1912/" "gnupg/" "esxml-20230308.2254/" "emacsql-20240415.1535/" "simple-httpd-20230821.1458/" "magit-section-20240508.2349/" "good-scroll-20211101.942/" "avy-20230420.404/")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/" (26180 54297 205893 429000) "ewal-spacemacs-modern-theme.el" "../" "ewal-spacemacs-themes.elc" "ewal-spacemacs-modern-theme.elc" "ewal-spacemacs-classic-theme.el" "ewal-spacemacs-themes-autoloads.el" "ewal-spacemacs-classic-theme.elc" "./" "ewal-spacemacs-themes.el" "ewal-spacemacs-themes-pkg.el")
+
+ ("/home/g/.emacs.d/elpa/" (26198 44263 923249 643000) "ov-20230522.1117/" "archives/" "xelb-0.19.signed" "s-20220902.1511/" "websocket-20230809.305/" "tron-legacy-theme-20230506.1037/" "ht-20230703.558/" "xelb-0.19/" "ewal-20200305.230/" "spacemacs-theme-20230530.1751/" "wfnames-20240418.1005/" "../" "org-journal-20240218.1645/" "f-20240308.906/" "transient-20240525.1118/" "which-key-20240501.1251/" "peg-1.0.1/" "org-ql-20240403.2027/" "org-roam-20240114.1941/" "elfeed-20240331.1348/" "popup-20240101.830/" "nov-20240407.1219/" "peg-1.0.1.signed" "compat-29.1.4.5.signed" "ido-vertical-mode-20210205.436/" "swiper-20240520.1202/" "exwm-0.30.signed" "darcula-theme-20171227.1845/" "org-bullets-20200317.1740/" "ace-window-20220911.358/" "org-download-20220906.1929/" "latex-preview-pane-20181008.1822/" "compat-29.1.4.5/" "org-super-agenda-20240301.1602/" "dash-20240510.1327/" "rmsbolt-20240507.47/" "ewal-spacemacs-themes-20230505.609/" "ts-20220822.2313/" "exwm-0.30/" "evm-20141007.1156/" "ivy-20240524.1139/" "elfeed-org-20231009.1125/" "kv-20140108.1534/" "org-roam-ui-20221105.1040/" "./" "async-20240323.1912/" "gnupg/" "esxml-20230308.2254/" "emacsql-20240415.1535/" "simple-httpd-20230821.1458/" "magit-section-20240508.2349/" "good-scroll-20211101.942/" "avy-20230420.404/")
+
+ ("/usr/share/" (26231 28366 260038 716000) "wireplumber/" "cryptopp/" "defaults/" "xtables/" "gettext/" "licenses/" "mpv/" "polkit-1/" "tor/" "elt-patches/" "ghostscript/" "factory/" "osinfo/" "grub/" "zsh/" "texmf-dist/" "NaturalDocs/" "pkgcore/" "drirc.d/" "glib-2.0/" "ImageMagick-7/" "gcc-data/" "texmf-site/" "sgml/" "qt6/" "gir-1.0/" "emacs/" "themes/" "metainfo/" "keyutils/" "luajit-2.1.0-beta3/" "source-highlight/" "mypaint-data/" "augeas/" "gtksourceview-4/" "iso-codes/" "installed-tests/" "pkgconfig/" "transmission/" "libvirt/" "bash-completion/" "awk/" "cowsay/" "cmake/" "fonts/" "libtool/" "mime/" "binutils-data/" "vala/" "sounds/" "ss/" "keymaps/" "applications/" "unimaps/" "pipewire/" "qt6-doc/" "portage/" "icu/" "eselect/" "info/" "edk2-ovmf/" "hwdata/" "gdb/" "libwmf/" "pixmaps/" "asciidoc/" "opencc/" "gnome-control-center/" "xsessions/" "vim/" "gst-plugins-base/" "gettext-0.22.4/" "poppler/" "tlpkg/" "ipxe/" "locale/" "virt-manager/" "ca-certificates/" "automake-1.16.5/" "gimp/" "doc/" "netsurf-buildsystem/" "openpgp-keys/" "gnuconfig/" "nvim/" "man/" "tabset/" "ntp/" "qt5-doc/" "xmlto/" "dnsmasq/" "gdm/" "xml/" "terminfo/" "wayland/" "fzf/" "libgpg-error/" "misc/" "i18n/" "imlib2/" "libthai/" "wayland-protocols/" "dbus-1/" "guestfs/" "intltool/" "sandbox/" "gstreamer-1.0/" "swtpm/" "groff/" "pkgcheck/" "seavgabios/" "libdrm/" "alsa/" "dhcpcd/" "gtk-doc/" "X11/" "feh/" "cups/" "aclocal/" "consoletrans/" "libinput/" "fish/" "w3m/" "sgabios/" "openrc/" "thumbnailers/" "st/" "lua/" "automake-1.16/" "texinfo/" "android-tools/" "qemu/" "p11-kit/" "gtk-3.0/" "obs/" "pavucontrol/" "xdg-desktop-portal/" "ffmpeg/" "gobject-introspection-1.0/" "xcb/" "alacritty/" "gnupg/" "glade/" "git-core/" "nghttp2/" "djvu/" "gtk-2.0/" "zoneinfo/" "iproute2/" "vala-0.56/" "et/" "vulkan/" "seabios/" "gcc-config/" "gnome/" "re2c/" "alsa-card-profile/" "pulseaudio/" "baselayout/" "wayland-sessions/" "autoconf-2.71/" "b2/" "git/" "aclocal-1.16/" "icons/" "bison/" "./" "glvnd/" "fc-lang/" "devhelp/" "consolefonts/" "../" "cursors/" "imagemagick/" "GConf/")
+
+ ("/usr/share/info/" (26201 18480 272955 750000) "gawk.info.bz2" "libffi.info.bz2" "bash.info.bz2" "find-maint.info.bz2" "tar.info.bz2" "gperf.info.bz2" "source-highlight.info.bz2" "grub.info-2.bz2" "help2man-fr.info.bz2" "gawk_array-elements.png" "gmp.info.bz2" "m4.info.bz2" "diffutils.info.bz2" "aalib.info-2.bz2" "source-highlight-lib.info.bz2" "dvipng.info.bz2" "help2man-de.info.bz2" "rluserman.info.bz2" "texinfo.info-2.bz2" "ksba.info.bz2" "gdbm.info.bz2" "gnupg.info-1.bz2" "help2man-pt_BR.info.bz2" "grub.info.bz2" "gzip.info.bz2" "texinfo.info-3.bz2" "web2c.info.bz2" "autoconf-archive.info-4.bz2" "readline.info.bz2" "autosprintf.info.bz2" "gcrypt.info-1.bz2" "gdb.info-3.bz2" "dc.info.bz2" "libtool.info-2.bz2" "info-stnd.info.bz2" "help2man-ro.info.bz2" "gmp.info-2.bz2" "libconfig.info.bz2" "gcrypt.info.bz2" "gdb.info.bz2" "gdb.info-5.bz2" "gmp.info-1.bz2" "find.info-2.bz2" "pinentry.info.bz2" "groff.info-3.bz2" "libtool.info.bz2" "autoconf-archive.info-2.bz2" "aalib.info.bz2" "gnupg.info.bz2" "texi2any_api.info.bz2" "autoconf-archive.info.bz2" "tar.info-3.bz2" "tlbuild.info.bz2" "libtasn1.info.bz2" "texinfo.info.bz2" "groff.info-2.bz2" "help2man-sr.info.bz2" "history.info.bz2" "groff.info.bz2" "bc.info.bz2" "libidn2.info.bz2" "aalib.info-1.bz2" "stabs.info.bz2" "ctf-spec.info.bz2" "make.info-3.bz2" "m4.info-1.bz2" "grep.info.bz2" "gettext.info.bz2" "flex.info-1.bz2" "mpfr.info.bz2" "gdb.info-2.bz2" "make.info-1.bz2" "gpgme.info-1.bz2" "gdb.info-9.bz2" "sframe-spec.info.bz2" "texinfo.info-1.bz2" "grub.info-1.bz2" "help2man-zh_CN.info.bz2" "gcrypt.info-2.bz2" "make.info.bz2" "dir" "make.info-2.bz2" "gawkworkflow.info.bz2" "libtool.info-1.bz2" "tar.info-1.bz2" "help2man.info.bz2" "gawk_api-figure1.png" "gawk_statist.jpg" "bison.info.bz2" "which.info.bz2" "wget.info.bz2" "gawk_api-figure2.png" "gpgme.info.bz2" "gawk_api-figure3.png" "gdb.info-7.bz2" "autoconf-archive.info-1.bz2" "flex.info.bz2" "dvips.info.bz2" "sed.info.bz2" "tar.info-2.bz2" "ed.info.bz2" "gdb.info-1.bz2" "cpio.info.bz2" "gnupg.info-2.bz2" "autoconf-archive.info-3.bz2" "help2man-es.info.bz2" "coreutils.info.bz2" "gpgme.info-2.bz2" "gdb.info-6.bz2" "bfd.info.bz2" "texi2any_internals.info.bz2" "gnupg.info-3.bz2" "gdb.info-4.bz2" "mpc.info.bz2" "find.info.bz2" "help2man-pl.info.bz2" "help2man-sv.info.bz2" "flex.info-2.bz2" "pm-gawk.info.bz2" "gpgrt.info.bz2" "help2man-uk.info.bz2" "gawkinet.info.bz2" "groff.info-1.bz2" "gdb.info-8.bz2" "emacs-29/" "bashref.info.bz2" "assuan.info.bz2" "find.info-1.bz2" "libtextstyle.info.bz2" "aalib.info-3.bz2" "./" "m4.info-2.bz2" "kpathsea.info.bz2" "../" "gawk_process-flow.png" "gawk_general-program.png" "grub-dev.info.bz2")
+
+ ("/usr/share/info/emacs-29/" (26113 36074 539995 922000) "vip.info.bz2" "eudc.info.bz2" "cl.info.bz2" "sieve.info.bz2" "autotype.info.bz2" "rcirc.info.bz2" "eshell.info.bz2" "emacs-mime.info.bz2" "gnus.info.bz2" "mh-e.info.bz2" "ses.info.bz2" "emacs.info.bz2" "vhdl-mode.info.bz2" "srecode.info.bz2" "semantic.info.bz2" "sasl.info.bz2" "viper.info.bz2" "pgg.info.bz2" "woman.info.bz2" "newsticker.info.bz2" "sc.info.bz2" "vtable.info.bz2" "use-package.info.bz2" "epa.info.bz2" "ido.info.bz2" "info.info.bz2" "message.info.bz2" "widget.info.bz2" "reftex.info.bz2" "smtpmail.info.bz2" "dired-x.info.bz2" "ebrowse.info.bz2" "url.info.bz2" "calc.info.bz2" "ede.info.bz2" "octave-mode.info.bz2" "dbus.info.bz2" "wisent.info.bz2" "remember.info.bz2" "erc.info.bz2" "elisp.info.bz2" "htmlfontify.info.bz2" "dir" "eww.info.bz2" "bovine.info.bz2" "emacs-gnutls.info.bz2" "eglot.info.bz2" "efaq.info.bz2" "eintr.info.bz2" "todo-mode.info.bz2" "flymake.info.bz2" "mairix-el.info.bz2" "nxml-mode.info.bz2" "idlwave.info.bz2" "ccmode.info.bz2" "ediff.info.bz2" ".keepinfodir" "speedbar.info.bz2" "eieio.info.bz2" "org.info.bz2" "modus-themes.info.bz2" "forms.info.bz2" "edt.info.bz2" "transient.info.bz2" "./" "tramp.info.bz2" "../" "auth.info.bz2" "pcl-cvs.info.bz2" "ert.info.bz2")
+
+ ("/home/g/.config/" (26228 23035 875448 951000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "nextjs-nodejs/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "Upscayl/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
+
+ ("/home/g/.local/share/icons/" (26231 33954 242278 463000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
+
+ ("/home/g/Downloads/" (26231 31604 623958 500000) "stage3-amd64-openrc-20240526T163557Z.tar.xz" "README (1)" "README" "orb_LE_auto_x2.png" "lunar-lexicon_LE_magic_x2_creativity_74_resemblance_50.png" "img/" "gentoo/" "doc/" "bg4m2yZSIr4-HD_LE_auto_x2_LE_magic_x2_creativity_74_resemblance_50.png" "anki-24.06.2-linux-qt6.tar.zst" "anki-24.06.2-linux-qt5.tar.zst" "anki/" "Akira (1988) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "20240414.txt.asc" "vid/" "tx-export-main-2024-06-22.dat" "tx-export-main-2024-06-21.dat" "tx-export-main-2024-06-20.dat" "tx-export-main-2024-06-15.dat" "tx-export-main-2024-06-14.dat" "../" "./")
+
+ ("/tmp/telegram/" (26232 4851 827647 845000) "./" "../")
+
+ ("/home/g/code/c/sorting/" (26229 45974 225504 12000) "insertion.c" "merge" "sort.cpp" "../" "sort" "array_int" "merge_sort.c" "./")
+
+ ("/home/g/dotfiles/org/tasks/" (26231 33658 452992 184000) "birth.org" "../" "tasks.org" "./")
+
+ ("/home/g/dotfiles/org/roadmap/" (26231 33827 924300 914000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/org/roadmap/" (26231 33827 924300 914000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/" (26219 49870 168909 962000) "tg/" "g/" "./" "../")
+
+ ("/home/g/org/tasks/" (26227 14893 594529 435000) "birth.org" "../" "tasks.org" "./")
+
+ ("/home/g/code/c/" (26229 45896 210043 271000) "include/" "../" "sorting/" "misc/" "./" "polynomial/")
+
+ ("/home/g/code/c/polynomial/" (26229 45867 51981 752000) "../" "array_int" "horner" "./" "horner.c")
+
+ ("/home/g/images/" (26205 23399 144333 554000) "../" "cover2.png" "startup.mp4" "covers/" "gifs/" "cover.png" "./")
+
+ ("/home/g/.config/bspwm/" (26013 34187 984999 148000) "bspwmrc" "../" "./")
+
+ ("/home/g/.config/sxhkd/" (26013 34187 984999 148000) "../" "sxhkdrc" "./")
+
+ ("/mnt/" (26213 43590 843475 566000) "hd1/" "gentoo/" "hd2/" "./" "../")
+
+ ("/home/g/dotfiles/org/books/" (26215 22535 442305 606000) "../" "Divide_and_conquer/" "ltximg/" "introduction_algorithms.org" "./")
+
+ ("/home/g/org/books/" (26215 22535 442305 606000) "../" "Divide_and_conquer/" "ltximg/" "introduction_algorithms.org" "./")
+
+ ("/home/g/dotfiles/" (26214 14453 840598 642000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "org/" "polybar/" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "kernel/" "ranger/" "./" "sxhkd/" "alacritty/")
 
  ("/etc/sway/" (26166 49495 986919 909000) "config" "./" "../")
 
  ("/etc/" (26206 26952 521661 299000) "default/" "pulse/" "ssh/" "revdep-rebuild/" "dispatch-conf.conf~" "systemd/" "rc.conf" "chromium/" "sway/" "lessfilter.d/" "wgetrc" "gshadow-" "mpv/" "polkit-1/" "rpc" "npm/" "tor/" "sudoers.tmp~" "adjtime" "lsb-release" "hostname" "issue" "host.conf" "NaturalDocs/" "netconfig" "ntp.conf" "machine-id" "gai.conf" "inittab.d/" "swtpm_setup.conf" "wireless-regdb/" "ImageMagick-7/" "sgml/" "emacs/" "environment" "dispatch-conf.conf" "sandbox.d/" "timezone" "ssl/" "profile" "subgid" "shells" "environment.d/" "virt-builder/" "rhashrc" "clang/" "libvirt/" "passwd" "group-" "fonts/" "conf.d/" "ld.so.cache" "profile.env" "sudoers.dist" "protocols" "hosts" "DIR_COLORS" "cni/" "subgid-" "metalog.conf" "skel/" "runlevels/" "inputrc" "elogind/" "portage/" "ld.so.conf.d/" "bash/" "swtpm-localca.conf" "eselect/" "xinetd.d/" "inittab" "etc-update.conf" "xdg/" "init.d/" "grub.d/" "login.defs" "local.d/" "gimp/" "sandbox.conf" "ld.so.conf" "sudo.conf" "mime.types" "pam.d/" "swtpm-localca.options" "xml/" "env.d/" "#sudoers.tmp#" "sudoers~" "terminfo/" "sudo_logsrvd.conf" "fstab~" "dhcpcd.conf~" "filesystems" "rsyncd.conf" "fuse.conf" "python-exec/" "ethertypes" "csh.env" "shadow" "sysctl.d/" "man_db.conf" "dbus-1/" "gentoo-release" ".pwd.lock" "sensors3.conf" "#sudoers#" "services" "alsa/" "issue.logo" "X11/" "dnsmasq.conf" "nsswitch.conf" "fstab" "eclean/" "modules-load.d/" "cups/" "cron.daily/" "os-release" "libnl/" "w3m/" "shadow-" "libguestfs-tools.conf" "e2scrub.conf" "qemu/" "paperspecs" "fakechroot/" "gtk-3.0/" "ca-certificates.conf" "security/" "logrotate.d/" "mke2fs.conf" "mtab" "polybar/" "wpa_supplicant/" "locale.gen" "pkcs11/" "subuid-" "gtk-2.0/" "xattr.conf" "udev/" "dhcpcd.conf" "gitconfig" "texmf/" "modprobe.d" "subuid" "sudoers" "vulkan/" "resolv.conf" "issue~" "group" "rmt" "nullmailer/" "networks" "profile.d/" "bindresvport.blacklist" "vdpau_wrapper.cfg" "./" "config-archive/" "gshadow" "localtime" "../" "e2fsck.conf" "passwd-")
 
- ("/tmp/telegram/" (26205 22988 57241 889000) "IMG_20231102_171811_307.jpg" "image_2024-06-03_01-59-18.png" "image_2024-06-03_01-59-41_upscayl_4x_realesrgan-x4plus.png" "image_2024-06-03_01-59-41_upscayl_4x_realesrgan-x4plus-anime.png" "image_2024-06-03_01-59-41_upscayl_8x_ultramix_balanced.png" "image_2024-06-03_01-59-41.png" "./" "../")
-
  ("/tmp/" (26205 23303 930617 369000) ".org.chromium.Chromium.m0A5DB" ".org.chromium.Chromium.dogjuk" "babel-stable-557/" ".XIM-unix/" "portage/" ".X11-unix/" ".org.chromium.Chromium.KJoBHp/" "telegram/" ".X0-lock" ".ICE-unix/" "9b27531ae03cace6e83ac743980ed92a-{87A94AB0-E370-4cde-98D3-ACC110C5967D}" "sway-workspc" "pulse-PKdhtXMmr18n/" ".font-unix/" "./" "babel-ONNitm/" "../" "dbus-bpK0O5rk8H")
-
- ("/home/g/images/" (26204 40321 156069 411000) "../" "startup.mp4" "covers/" "gifs/" "cover.png" "./")
-
- ("/home/g/.config/" (26202 41098 565561 215000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
-
- ("/home/g/.local/share/icons/" (26204 44662 35836 602000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
-
- ("/home/g/.emacs.d/" (26202 6124 208322 362000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
-
- ("/home/g/org/roadmap/" (26202 42947 805326 993000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
-
- ("/home/g/Downloads/" (26202 46233 265822 800000) "stage3-amd64-openrc-20240526T163557Z.tar.xz" "install-amd64-minimal-20240526T163557Z.iso" "img/" "doc/" "vid/" "../" "./")
-
- ("/home/g/dotfiles/emacs/.emacs.d/" (26202 6124 208322 362000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
-
- ("/home/g/dotfiles/org/roadmap/" (26202 42947 805326 993000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "topics.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
 
  ("/home/g/dotfiles/org/" (26199 13119 614164 983000) "books/" ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
 
@@ -149,17 +205,9 @@
 
  ("/etc/init.d/" (26201 18465 330861 586000) "libvirtd" "savecache" "systemd-tmpfiles-setup" "procfs" "mount-ro" "sshd" "metalog" "cupsd" "net.wlp42s0f3u1" "tor" "consolefont" "hostname" "root" "bootlogd" "#amdfan#" "git-daemon" "modules" "virtlogd" "bootmisc" "net-online" "libvirt-guests" "loopback" "devfs" "osclock" "udev-settle" "termencoding" "lm_sensors" "udev-trigger" "localmount" "keymaps" "save-termencoding" "elogind" "ip6tables" "alsasound" "transmission-daemon" "virtlockd" "fuse" "swap" "ebtables" "cgroups" "fancontrol" "ntpd" "display-manager" "sysfs" "systemd-tmpfiles-setup-dev" "xdm" "dnsmasq" "swclock" "pydoc-3.12" "syncthing" "rsyncd" "wpa_supplicant~" "display-manager-setup" "dhcpcd" "runsvdir" "ntp-client" "fsck" "hwclock" "sysctl" "seedrng" "functions.sh" "dmesg" "numlock" "pciparm" "pydoc-3.11" "agetty" "mtab" "wpa_supplicant" "net.lo" "wpa" "udev" "sntp" "netmount" "kmod-static-nodes" "binfmt" "wpa~" "nullmailer" "radvd" "./" "s6-svscan" "../" "local" "killprocs" "qemu-binfmt" "dbus" "amdfan" "iptables" "save-keymaps")
 
- ("/home/g/org/tasks/" (26199 18277 353783 568000) "birth.org" "../" "tasks.org" "./")
-
- ("/home/g/dotfiles/org/books/" (26199 14658 684245 717000) "../" "ltximg/" "introduction_algorithms.org" "./")
-
- ("/home/" (25926 59190 27999 915000) "g/" "./" "../")
-
  ("/home/g/dotfiles/misc/" (26201 27120 543169 912000) "../" "rec.sh" "2nd_kb.py" "rec-mic.sh" "troll" "./" "cowsay-date.sh")
 
  ("/home/g/org/books/ltximg/" (26199 15610 438395 77000) "../" "org-ltximg_9af787b0b480464dc07afdd0c767a571fa5ecc37.png" "org-ltximg_470390e81f9984e761f2920eeba385605baa98e6.png" "./")
-
- ("/home/g/org/books/" (26199 14658 684245 717000) "../" "ltximg/" "introduction_algorithms.org" "./")
 
  ("/home/g/org/" (26199 13119 614164 983000) "books/" ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
 
@@ -168,10 +216,6 @@
  ("/home/g/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
 
  ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "../" "org-roam-ui-autoloads.el" "org-roam-ui.el" "out/" "org-roam-ui-pkg.el" "./" "org-roam-ui.elc")
-
- ("/home/g/code/c/sorting/" (26198 40357 140740 44000) "insertion.c" "merge" "sort.cpp" "../" "i" "sort" "array_int" "horner" "merge_sort.c" "int_gen" "misc.c" "misc" "head.h" "./" "int_gen.c" "horner.c")
-
- ("/home/g/dotfiles/org/tasks/" (25996 52263 716998 343000) "birth.org" "../" "tasks.org" "./")
 
  ("/home/g/dotfiles/bspwm/" (26190 39668 887105 112000) "temp" "bspwmrc" "../" "dmenu" "toggle_floating_window" "xclip" "kill_window" "toggle_border_width" "resize_window" "dmenu_run" "toggle_layer" "nodes" "tesseract" "center_window" "toggle_tiled_window" "marked_nodes" "setkmap" "ranger" "list_hidden_windows" "./" "notification_info")
 
@@ -188,8 +232,6 @@
  ("/tmp/rmsbolt-PI8zOp/" (26189 20726 631365 139000) "rmsbolt.c" "rmsbolt.s" "./" "../")
 
  ("/home/g/org/.stfolder/" (25912 26162 779999 13000) "../" "./")
-
- ("/home/g/dotfiles/" (26188 46837 457419 941000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "org/" "polybar/" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "ranger/" "./" "sxhkd/" "alacritty/")
 
  ("/tmp/rmsbolt-Y93TqH/" (26188 62934 21335 415000) "rmsbolt.s" "./" "../")
 
@@ -208,8 +250,6 @@
  ("/home/g/.config/fontconfig/" (26186 38048 849427 693000) "fonts.conf" "../" "./")
 
  ("/home/g/dotfiles/smart/" (26186 43358 751249 229000) "api" "../" "light" "colors" "./")
-
- ("/home/g/dotfiles/portage/" (26186 37542 209364 976000) "../" "package-size" "./")
 
  ("/home/g/p-repo-forks/sway-overfocus-0.2.3/" (26187 29590 455610 358000) "usage.md" ".gitignore" "../" "Cargo.toml" "LICENSE" "Cargo.lock" "vendor/" "README.md" ".rustfmt.toml" "./" "demo.gif" "src/")
 
@@ -232,8 +272,6 @@
  ("/home/g/hakurei/" (26182 36502 930280 847000) "../" "./" "hakurei/")
 
  ("/home/g/walogram/" (26180 51567 113808 565000) ".gitignore" "../" ".git/" "LICENSE" "walogram.1" "Makefile" "walogram" "README.md" "constants.tdesktop-theme" "./")
-
- ("/home/g/code/c/" (26179 32184 518218 363000) "../" "sorting/" "./")
 
  ("/home/g/.icons/" (26022 54466 174997 373000) "../" "default/" "./" "backup/" "GoogleDot-Black/")
 
@@ -261,8 +299,6 @@
 
  ("/usr/share/icons/" (25942 42684 248999 430000) "hicolor/" "breeze-dark/" "breeze/" "./" "../" "Adwaita/")
 
- ("/usr/share/" (26174 53560 385830 638000) "wireplumber/" "cryptopp/" "defaults/" "vlc/" "xtables/" "gettext/" "licenses/" "solid/" "mpv/" "polkit-1/" "tor/" "elt-patches/" "ghostscript/" "factory/" "osinfo/" "grub/" "zsh/" "rlhc-js.lm" "drirc.d/" "glib-2.0/" "swig/" "ragel.lm" "ImageMagick-7/" "ril.lm" "gcc-data/" "sgml/" "qt6/" "gir-1.0/" "emacs/" "themes/" "metainfo/" "luajit-2.1.0-beta3/" "source-highlight/" "augeas/" "gtksourceview-4/" "iso-codes/" "pkgconfig/" "transmission/" "libvirt/" "bash-completion/" "awk/" "cmake/" "fonts/" "libtool/" "mime/" "binutils-data/" "vala/" "sounds/" "ss/" "keymaps/" "applications/" "unimaps/" "rlhc-julia.lm" "pipewire/" "qt6-doc/" "portage/" "icu/" "rlhc-c.lm" "rlhc-d.lm" "eselect/" "info/" "edk2-ovmf/" "hwdata/" "gdb/" "pixmaps/" "asciidoc/" "opencc/" "gnome-control-center/" "xsessions/" "vim/" "gst-plugins-base/" "gettext-0.22.4/" "poppler/" "ipxe/" "locale/" "virt-manager/" "ca-certificates/" "automake-1.16.5/" "doc/" "openpgp-keys/" "gnuconfig/" "nvim/" "man/" "tabset/" "ntp/" "qt5-doc/" "xmlto/" "dnsmasq/" "gdm/" "xml/" "terminfo/" "wayland/" "rlhc-go.lm" "fzf/" "libgpg-error/" "misc/" "i18n/" "imlib2/" "libthai/" "runtests" "out-go.lm" "wayland-protocols/" "dbus-1/" "intltool/" "sandbox/" "gstreamer-1.0/" "swtpm/" "rlhc-ruby.lm" "groff/" "rlhc-ocaml.lm" "seavgabios/" "libdrm/" "alsa/" "dhcpcd/" "gtk-doc/" "X11/" "feh/" "rlhc-csharp.lm" "cups/" "aclocal/" "consoletrans/" "libinput/" "fish/" "w3m/" "sgabios/" "openrc/" "thumbnailers/" "lua/" "flameshot/" "automake-1.16/" "texinfo/" "rlhc-java.lm" "ECM/" "android-tools/" "qemu/" "p11-kit/" "gtk-3.0/" "rlhc-crack.lm" "obs/" "pavucontrol/" "xdg-desktop-portal/" "ffmpeg/" "gobject-introspection-1.0/" "xcb/" "alacritty/" "gnupg/" "glade/" "git-core/" "rlhc-main.lm" "nghttp2/" "djvu/" "zoneinfo/" "iproute2/" "vala-0.56/" "et/" "qlogging-categories5/" "vulkan/" "seabios/" "gcc-config/" "gnome/" "re2c/" "alsa-card-profile/" "plasma-wayland-protocols/" "pulseaudio/" "baselayout/" "wayland-sessions/" "autoconf-2.71/" "b2/" "git/" "aclocal-1.16/" "icons/" "bison/" "./" "glvnd/" "fc-lang/" "devhelp/" "consolefonts/" "../" "cursors/" "rlhc-rust.lm" "imagemagick/" "GConf/")
-
  ("/usr/" (25926 54738 781991 205000) "x86_64-pc-linux-gnu/" "lib64/" "libexec/" "bin/" "sbin/" "man/" "lib/" "src/" "include/" "share/" "./" "../" "local/")
 
  ("/etc/X11/" (26113 55419 355984 453000) "startDM.sh" "Sessions/" "xorg.conf.d/" "xinit/" "chooser.sh" "./" "../")
@@ -280,40 +316,6 @@
  ("/mnt/hd1/images/" (25981 29335 739717 100000) "wallpapers/" "sc/" "my_prints/" "gifs/" ".stfolder/" "../" "./")
 
  ("/mnt/hd1/" (26168 30198 164563 0) "System Volume Information/" "qemu/" "programs/" "pdfs/" "music/" "images/" "found.000/" "downloads/" "desktop.ini" "camera/" "$RECYCLE.BIN/" "../" "./")
-
- ("/mnt/" (25927 37387 227999 810000) "hd1/" "hd2/" "./" "../")
-
- ("/home/g/.elfeed/" (25706 7445 7190 812000) "../" "index" "data/" "./")
-
- ("/home/g/sway/sway/tree/" (26168 27839 512182 118000) "root.c" "node.c" "../" "container.c" "arrange.c" "workspace.c" "view.c" "output.c" "./")
-
- ("/home/g/sway/sway/desktop/" (26168 27839 509182 86000) "layer_shell.c" "xwayland.c" "../" "idle_inhibit_v1.c" "xdg_shell.c" "transaction.c" "launcher.c" "output.c" "./")
-
- ("/home/g/sway/sway/" (26168 27839 512182 118000) "config.c" "sway.1.scd" "criteria.c" "config/" "../" "xdg_decoration.c" "xdg_activation_v1.c" "realtime.c" "commands/" "swaynag.c" "input/" "sway.5.scd" "main.c" "tree/" "lock.c" "sway-input.5.scd" "ipc-server.c" "meson.build" "scene_descriptor.c" "desktop/" "ipc-json.c" "./" "sway_text_node.c" "commands.c" "sway-bar.5.scd" "sway-output.5.scd" "sway-ipc.7.scd" "server.c" "decoration.c")
-
- ("/home/g/sway/" (26168 27839 513182 128000) "README.pl.md" "README.gr.md" "README.ro.md" "swaynag/" "README.ko.md" ".gitignore" ".builds/" "README.ar.md" "README.it.md" "include/" "../" "README.de.md" "meson_options.txt" ".github/" "README.ir.md" ".git/" "LICENSE" "assets/" "README.ru.md" "README.sv.md" "client/" "README.uk.md" "common/" "README.zh-TW.md" "README.nl.md" "swaybar/" "README.dk.md" "CONTRIBUTING.md" "README.es.md" "sway/" "README.cs.md" "config.in" "README.no.md" "release.sh" "protocols/" "README.md" "README.pt.md" ".editorconfig" "README.hu.md" "meson.build" "swaymsg/" "README.zh-CN.md" "README.hi.md" "completions/" "README.tr.md" "./" "README.ge.md" "sway.desktop" ".mailmap" "README.fr.md" "README.ja.md")
-
- ("/home/g/sway/include/" (26168 27839 504182 32000) "gesture.h" "stringop.h" "swaynag/" "util.h" "../" "list.h" "ipc-client.h" "pool-buffer.h" "swaybar/" "log.h" "pango.h" "sway/" "cairo_util.h" "loop.h" "ipc.h" "meson.build" "./")
-
- ("/home/g/sway/include/sway/" (26168 27839 503182 22000) "swaynag.h" "scene_descriptor.h" "output.h" "../" "decoration.h" "input/" "ipc-json.h" "tree/" "criteria.h" "config.h" "commands.h" "sway_text_node.h" "desktop/" "layers.h" "server.h" "xwayland.h" "ipc-server.h" "./" "xdg_decoration.h")
-
- ("/home/g/sway/include/sway/tree/" (26168 27839 503182 22000) "../" "arrange.h" "root.h" "container.h" "node.h" "workspace.h" "./" "view.h")
-
- ("/home/g/patches/" (26039 40126 24837 162000) "dmenu-final.tar.xz" "wmutils.zip" "../" "dmenu/" ".git/" "tabbed-final.tar.xz" "st-0.9/" "tabbed/" "st/" "./" "st-final.tar.xz")
-
- ("/home/g/.config/alacritty/" (26062 15878 757752 202000) "../" "alacritty.yml" "./")
-
- ("/home/g/.icons/default/" (26022 54424 573830 800000) "../" "cursors/" "index.theme" "cursor.theme" "./")
-
- ("/home/g/Downloads/Google_Cursor-main/" (26022 54286 129345 0) "yarn.lock" "themes/" "svg/" "release.sh" "README.md" "pling.txt" "package.json" "LICENSE" "CONTRIBUTING.md" "CODE_OF_CONDUCT.md" "CHANGELOG.md" "build.toml" "bitmaps/" ".gitignore" ".github/" "../" "./")
-
- ("/home/g/Downloads/Google_Cursor-main/bitmaps/GoogleDot-Black/" (25989 5543 0 0) "zoom-out.png" "zoom-in.png" "X_cursor.png" "xterm.png" "wayland-cursor.png" "wait-0058.png" "wait-0057.png" "wait-0056.png" "wait-0055.png" "wait-0054.png" "wait-0053.png" "wait-0052.png" "wait-0051.png" "wait-0050.png" "wait-0049.png" "wait-0048.png" "wait-0047.png" "wait-0046.png" "wait-0045.png" "wait-0044.png" "wait-0043.png" "wait-0042.png" "wait-0041.png" "wait-0040.png" "wait-0039.png" "wait-0038.png" "wait-0037.png" "wait-0036.png" "wait-0035.png" "wait-0034.png" "wait-0032.png" "wait-0031.png" "wait-0030.png" "wait-0029.png" "wait-0028.png" "wait-0027.png" "wait-0026.png" "wait-0025.png" "wait-0024.png" "wait-0023.png" "wait-0022.png" "wait-0021.png" "wait-0020.png" "wait-0019.png" "wait-0018.png" "wait-0017.png" "wait-0016.png" "wait-0014.png" "wait-0013.png" "wait-0012.png" "wait-0011.png" "wait-0010.png" "wait-0009.png" "wait-0008.png" "wait-0007.png" "wait-0006.png" "wait-0005.png" "wait-0004.png" "wait-0003.png" "wait-0002.png" "wait-0001.png" "vertical-text.png" "ur_angle.png" "ul_angle.png" "sb_v_double_arrow.png" "sb_up_arrow.png" "sb_right_arrow.png" "sb_left_arrow.png" "sb_h_double_arrow.png" "sb_down_arrow.png" "right_tee.png" "right_ptr.png" "question_arrow.png" "plus.png" "pencil.png" "move.png" "lr_angle.png" "ll_angle.png" "link.png" "left_tee.png" "left_ptr_watch-0055.png" "wait-0033.png" "wait-0015.png" "top_tee.png" "left_ptr_watch-0054.png" "left_ptr_watch-0037.png" "left_ptr_watch-0021.png" "left_ptr_watch-0005.png" "left_ptr_watch-0053.png" "left_ptr_watch-0052.png" "left_ptr_watch-0051.png" "left_ptr_watch-0050.png" "left_ptr_watch-0049.png" "left_ptr_watch-0048.png" "left_ptr_watch-0047.png" "left_ptr_watch-0046.png" "left_ptr_watch-0045.png" "left_ptr_watch-0044.png" "left_ptr_watch-0043.png" "left_ptr_watch-0042.png" "left_ptr_watch-0041.png" "left_ptr_watch-0040.png" "left_ptr_watch-0039.png" "left_ptr_watch-0038.png" "left_ptr_watch-0036.png" "left_ptr_watch-0035.png" "left_ptr_watch-0034.png" "left_ptr_watch-0033.png" "left_ptr_watch-0032.png" "left_ptr_watch-0031.png" "left_ptr_watch-0030.png" "left_ptr_watch-0029.png" "left_ptr_watch-0028.png" "left_ptr_watch-0027.png" "left_ptr_watch-0026.png" "left_ptr_watch-0025.png" "left_ptr_watch-0024.png" "left_ptr_watch-0023.png" "left_ptr_watch-0022.png" "left_ptr_watch-0020.png" "left_ptr_watch-0019.png" "left_ptr_watch-0018.png" "left_ptr_watch-0017.png" "left_ptr_watch-0016.png" "left_ptr_watch-0015.png" "left_ptr_watch-0014.png" "left_ptr_watch-0013.png" "left_ptr_watch-0012.png" "left_ptr_watch-0011.png" "left_ptr_watch-0010.png" "left_ptr_watch-0009.png" "left_ptr_watch-0008.png" "left_ptr_watch-0007.png" "left_ptr_watch-0006.png" "left_ptr_watch-0004.png" "left_ptr_watch-0003.png" "left_ptr_watch-0002.png" "left_ptr_watch-0001.png" "left_ptr.png" "hand2.png" "hand1.png" "dotbox.png" "dnd_no_drop.png" "cross.png" "copy.png" "context-menu.png" "bottom_tee.png" "bottom_right_corner.png" "bottom_left_corner.png" "all-scroll.png" "../" "./")
-
- ("/home/g/Downloads/Google_Cursor-main/bitmaps/" (25989 5543 0 0) "GoogleDot-White/" "GoogleDot-Red/" "GoogleDot-Blue/" "GoogleDot-Black/" "../" "./")
-
- ("/home/g/dotfiles/ranger/" (25575 31742 114974 58000) "../" "rc.conf" "rifle.conf" "./")
-
- ("/home/g/dotfiles/sxhkd/" (25706 50133 340580 573000) "../" "sxhkdrc" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

@@ -268,19 +268,19 @@ For example, to make SPC do the same as ?a, use
 \(lambda (c) (if (= c 32) ?a c)).")
 
 (defface avy-lead-face-0
-  '((t (:foreground "white" :background "#4f57f9")))
+  '((t (:foreground "white" :background "#000000")))
   "Face used for first non-terminating leading chars.")
 
 (defface avy-lead-face-1
-  '((t (:foreground "white" :background "gray")))
+  '((t (:foreground "white" :background "black")))
   "Face used for matched leading chars.")
 
 (defface avy-lead-face-2
-  '((t (:foreground "white" :background "#f86bf3")))
+  '((t (:foreground "white" :background "#000000")))
   "Face used for leading chars.")
 
 (defface avy-lead-face
-  '((t (:foreground "white" :background "#e52b50")))
+  '((t (:foreground "white" :background "#000000")))
   "Face used for the leading chars.")
 
 (defface avy-background-face
