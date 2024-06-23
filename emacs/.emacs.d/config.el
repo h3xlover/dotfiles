@@ -75,7 +75,7 @@
 (use-package avy
 :ensure t
 :bind
-("M-s" . avy-goto-char))
+("M-s" . avy-goto-char-2))
 
 (use-package ace-window
   :ensure t
@@ -97,12 +97,12 @@
   (setq org-log-repeat nil)
   (setq org-ellipsis " ▾")
   (setq org-directory "~/org")
-  (setq org-agenda-files '("roadmap/topics.org" "roadmap/todo.org" "tasks/birth.org" "tasks/tasks.org" "roadmap/roadmap.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org" "roadmap/physics.org"))
+  (setq org-agenda-files '("roadmap/todo.org" "roadmap/math.org" "roadmap/comp.org" "roadmap/hardware.org" "roadmap/physics.org"))
   (setq org-refile-targets
 	'(("archive.org" :maxlevel . 1)))
   (advice-add 'org-refile :after 'org-save-all-org-buffers)
   (setq org-todo-keywords
-	'((sequence "TODO(t)" "ROAM-FILL(rf)" "NEXT(n)" "ROUTINE(r)" "|" "DONE(d)")))
+	'((sequence "TODO(t)" "BOOK(b)" "NEXT(n)" "|" "DONE(d)")))
 (add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp"))
 :bind
 (("C-c a" . org-agenda)
