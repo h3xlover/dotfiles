@@ -46,6 +46,7 @@ output * bg ~/images/cover.png fill
 
     # Start a terminal
     bindsym $mod+e exec alacritty
+    bindsym $mod+Alt+e exec st -f Iosevka -z 14
 
     # Kill focused window
     bindsym --no-repeat $mod+q kill
@@ -60,7 +61,7 @@ output * bg ~/images/cover.png fill
     bindsym $mod+bracketright disable_titlebar yes
 
     # Print
-    bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd1/images/sc/"$(date +%Y-%m-%d-%H-%M-%S | tr A-Z a-z).png"
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd2/images/sc/"$(date +%Y-%m-%d-%H-%M-%S | tr A-Z a-z).png"
 
     # Set keyboard layout
     bindcode $mod+33 exec ~/dotfiles/bspwm/setkmap "us ru br"
