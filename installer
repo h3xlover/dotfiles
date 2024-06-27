@@ -1,0 +1,20 @@
+#!/bin/bash
+
+base="sudo gentoolkit portage-utils cpuid2cpuflags eselect-repository imediff2 dhcpcd ntp openssh arch-chroot grub gentoo-sources"
+
+filesys="fuse ntfs3g dosfstools e2fsprogs"
+
+virt="qemu virt-manager guestfs-tools"
+
+file="unzip zip"
+
+utils="ranger nerd-fonts noto noto-cjk noto-emoji fzf emacs zathura zathura-pdf-poppler zathura-djvu feh ffmpeg git syncthing transmission  st xdg-utils yt-dlp"
+
+stat="sysstat radeontop htop iotop lm-sensors lsof hdparm"
+
+audio="alsa-plugins alsa-utils pavucontrol pulseaudio"
+
+graphics="setxkbmap xev xprop sway swaybg jq mesa grim slurp wl-clipboard mpv mpvpaper xdg-desktop-portal-wlr libva-utils "
+
+pywal="pip imagemagick"
+pip="pywal"
