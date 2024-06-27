@@ -1,0 +1,111 @@
+diff -crB sway/include/sway/tree/container.h swayp/include/sway/tree/container.h
+*** sway/include/sway/tree/container.h	2024-05-06 02:44:40.463589413 -0300
+--- swayp/include/sway/tree/container.h	2024-05-06 02:39:37.193108160 -0300
+***************
+*** 257,262 ****
+--- 257,264 ----
+  void container_set_fullscreen(struct sway_container *con,
+  		enum sway_fullscreen_mode mode);
+  
++ void client_set_fullscreen(struct sway_container *con, bool enable);
++ 
+  /**
+   * Convenience function.
+   */
+diff -crB sway/sway/desktop/xdg_shell.c swayp/sway/desktop/xdg_shell.c
+*** sway/sway/desktop/xdg_shell.c	2024-05-06 02:44:40.468589450 -0300
+--- swayp/sway/desktop/xdg_shell.c	2024-05-06 02:40:54.141828244 -0300
+***************
+*** 401,406 ****
+--- 401,407 ----
+  	}
+  
+  	container_set_fullscreen(container, req->fullscreen);
++ 	client_set_fullscreen(container, req->fullscreen);
+  
+  	arrange_root();
+  	transaction_commit_dirty();
+diff -crB sway/sway/desktop/xwayland.c swayp/sway/desktop/xwayland.c
+*** sway/sway/desktop/xwayland.c	2024-05-06 02:44:40.468589450 -0300
+--- swayp/sway/desktop/xwayland.c	2024-05-06 02:41:26.964102963 -0300
+***************
+*** 609,614 ****
+--- 609,615 ----
+  		return;
+  	}
+  	container_set_fullscreen(view->container, xsurface->fullscreen);
++ 	client_set_fullscreen(view->container, xsurface->fullscreen);
+  
+  	arrange_root();
+  	transaction_commit_dirty();
+diff -crB sway/sway/tree/container.c swayp/sway/tree/container.c
+*** sway/sway/tree/container.c	2024-05-06 02:44:40.471589473 -0300
+--- swayp/sway/tree/container.c	2024-05-06 02:43:33.528096282 -0300
+***************
+*** 1119,1125 ****
+  	}
+  }
+  
+! static void set_fullscreen(struct sway_container *con, bool enable) {
+  	if (!con->view) {
+  		return;
+  	}
+--- 1119,1125 ----
+  	}
+  }
+  
+! void client_set_fullscreen(struct sway_container *con, bool enable) {
+  	if (!con->view) {
+  		return;
+  	}
+***************
+*** 1137,1143 ****
+  				"Expected a non-fullscreen container")) {
+  		return;
+  	}
+! 	set_fullscreen(con, true);
+  	con->pending.fullscreen_mode = FULLSCREEN_WORKSPACE;
+  
+  	con->saved_x = con->pending.x;
+--- 1137,1143 ----
+  				"Expected a non-fullscreen container")) {
+  		return;
+  	}
+! 
+  	con->pending.fullscreen_mode = FULLSCREEN_WORKSPACE;
+  
+  	con->saved_x = con->pending.x;
+***************
+*** 1171,1177 ****
+  				"Expected a non-fullscreen container")) {
+  		return;
+  	}
+! 	set_fullscreen(con, true);
+  
+  	root->fullscreen_global = con;
+  	con->saved_x = con->pending.x;
+--- 1171,1177 ----
+  				"Expected a non-fullscreen container")) {
+  		return;
+  	}
+! 
+  
+  	root->fullscreen_global = con;
+  	con->saved_x = con->pending.x;
+***************
+*** 1197,1203 ****
+  				"Expected a fullscreen container")) {
+  		return;
+  	}
+! 	set_fullscreen(con, false);
+  
+  	if (container_is_floating(con)) {
+  		con->pending.x = con->saved_x;
+--- 1197,1203 ----
+  				"Expected a fullscreen container")) {
+  		return;
+  	}
+! 
+  
+  	if (container_is_floating(con)) {
+  		con->pending.x = con->saved_x;

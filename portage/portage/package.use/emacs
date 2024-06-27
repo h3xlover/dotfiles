@@ -1,0 +1,5 @@
+# for gui and jit to work
+sys-devel/gcc jit
+app-emacs/emacs-common gui
+
+app-editors/emacs gui png jpeg svg gtk jit xft -alsa
