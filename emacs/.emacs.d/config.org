@@ -22,22 +22,31 @@
   (global-set-key (kbd "<next>") 'good-scroll-up)
   (global-set-key (kbd "C-S-n") 'good-scroll-up)
   (global-set-key (kbd "C-S-p") 'good-scroll-down)
-  ;; kill all buffers except for current 
-  (defun kill-all-other-buffer ()
-    (interactive)
-    (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
 
-  ;; reload config
-  (defun config-reload ()
-    (interactive)
-    (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
 
-  ;; smooth scrolling
   (setq pixel-scroll-precision-large-scroll-height 40.0)
   (pixel-scroll-mode 1)
   (good-scroll-mode 1)
   (setq mouse-wheel-progressive-speed nil)
 #+END_SRC
+
+** functions
+
+#+begin_src emacs-lisp
+  (defun config-reload ()
+    (interactive)
+    (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
+
+  (defun kill-all-other-buffer ()
+    (interactive)
+    (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
+  (defun switch-to-last-buffer ()
+    (interactive)
+    (switch-to-buffer nil))
+
+  (global-set-key (kbd "C-c b") 'switch-to-last-buffer)
+#+end_src
 
 
 ** Melpa
@@ -50,6 +59,11 @@
 ** rmsbolt
 #+begin_src emacs-lisp
   (use-package rmsbolt)
+#+end_src
+
+** good-scroll
+#+begin_src emacs-lisp
+
 #+end_src
 ** ewal
 #+begin_src emacs-lisp
@@ -140,7 +154,7 @@
 		'(("archive.org" :maxlevel . 1)))
 	  (advice-add 'org-refile :after 'org-save-all-org-buffers)
 	  (setq org-todo-keywords
-		'((sequence "TODO(t)" "BOOK(b)" "NEXT(n)" "|" "DONE(d)")))
+		'((sequence "TODO(t)" "ROUTINE(r)" "ROAM" "BOOK(b)" "NEXT(n)" "|" "DONE(d)")))
 	(add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp"))
 	:bind
 	(("C-c a" . org-agenda)
@@ -194,8 +208,48 @@
 	 ("C-c n i" . org-roam-node-insert)
 	 ("C-c n o" . org-roam-ui-mode))
   :config
-  (org-roam-setup)
-  (setq org-roam-ui-open-on-start nil))
+  (org-roam-setup))
+#+end_src
+
+** org roam ui
+#+begin_src emacs-lisp
+  (use-package org-roam-ui
+    :after org-roam
+    :config
+    (setq org-roam-ui-open-on-start nil))
+#+end_src
+
+** calfw
+
+#+begin_src emacs-lisp
+  (use-package calfw)
+  (use-package calfw-cal)
+  (use-package calfw-org)
+#+end_src
+
+** org-super-agenda
+
+#+begin_src emacs-lisp
+		      (use-package org-super-agenda)
+		      (org-super-agenda-mode)
+		      (setq org-super-agenda-groups
+			    '(
+			      (:name "Morning"
+				     :tag "morning")
+			      (:name "Study Today"
+				     :tag "study_today")
+			      (:name "Study"
+				     :tag "study")
+			      (:name "Night"
+				     :tag "night")
+			      (:name "Org Roam"
+				     :tag "orgroam")
+			      (:name "Emacs"
+				     :tag "emacs")
+			      (:name "Projects"
+				     :tag "projects")))
+		      (setq org-agenda-remove-tags t)
+		      (setq org-agenda-use-time-grid nil)
 #+end_src
 
 ** org-download
@@ -210,3 +264,4 @@
   (org-agenda-day-view)
   (delete-other-windows)
 #+end_src
+
