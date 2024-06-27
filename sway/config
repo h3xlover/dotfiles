@@ -15,12 +15,15 @@ disable_titlebar yes
 for_window {
 	   [class="ranger"] floating enable
 	   [class="feh"] fullscreen enable
-	   [class=".*"] opacity 0.95
 	   #
 	   [app_id="mpv"] fullscreen enable
-	   [app_id=".*"] opacity 0.95
 	   [app_id="pavucontrol"] floating enable
 	   [app_id="org.pwmt.zathura"] floating enable
+	   #
+	   [class=".*"] opacity 0.95
+	   [app_id=".*"] opacity 0.95
+	   [app_id="chromium-browser-chromium"] opacity 0.99
+	   [app_id="firefox"] opacity 0.99
 }
 
 ### Variables
@@ -45,8 +48,8 @@ output * bg ~/images/cover.png fill
 #exec mpvpaper -vs -o "no-audio loop" DP-1 ~/images/gifs/cover.mp4
 
     # Start a terminal
-    bindsym $mod+e exec alacritty
-    bindsym $mod+Alt+e exec st -f Iosevka -z 14
+    bindsym $mod+Alt+e exec alacritty
+    bindsym $mod+e exec st -f Iosevka -z 14
 
     # Kill focused window
     bindsym --no-repeat $mod+q kill
@@ -61,7 +64,7 @@ output * bg ~/images/cover.png fill
     bindsym $mod+bracketright disable_titlebar yes
 
     # Print
-    bindsym Print exec grim -g "$(slurp)" - | wl-copy && wl-paste > /mnt/hd2/images/sc/"$(date +%Y-%m-%d-%H-%M-%S | tr A-Z a-z).png"
+    bindsym Print exec grim -g "$(slurp)" - | wl-copy -t image/png && wl-paste > /mnt/hd2/images/sc/"$(date +%Y-%m-%d-%H-%M-%S | tr A-Z a-z).png"
 
     # Set keyboard layout
     bindcode $mod+33 exec ~/dotfiles/bspwm/setkmap "us ru br"
@@ -146,10 +149,10 @@ mode "resize" {
     bindsym $up resize shrink height 10px
     bindsym $right resize grow width 10px
 
-    bindsym Shift+$left resize shrink width 35px
-    bindsym Shift+$down resize grow height 35px
-    bindsym Shift+$up resize shrink height 35px
-    bindsym Shift+$right resize grow width 35px
+    bindsym Shift+$left resize shrink width 150px
+    bindsym Shift+$down resize grow height 150px
+    bindsym Shift+$up resize shrink height 150px
+    bindsym Shift+$right resize grow width 150px
 
     bindsym $mod+z ~/dotfiles/sway/focus_parent
     bindsym $mod+Shift+x focus parent
@@ -187,7 +190,7 @@ mode "move" {
 # Launch apps
 mode "apps" {
     bindsym e exec $launch emacs
-    bindsym c exec $launch ch
+    bindsym c exec $launch chromium
     bindsym t exec $launch tg
     bindsym r exec $launch alacritty --class ranger -T ranger -e ~/dotfiles/bspwm/ranger
     bindsym d exec swaymsg mode "default" && ~/dotfiles/bspwm/dmenu_run
