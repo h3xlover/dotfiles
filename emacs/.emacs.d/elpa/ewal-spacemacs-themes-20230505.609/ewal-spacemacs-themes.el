@@ -168,8 +168,10 @@ For usage see: <https://github.com/nashamri/spacemacs-theme>."
      `(avy-lead-face-0   ((,class (:background ,(ewal-get-color 'background 0) :foreground ,(ewal-get-color 'green 0)))))
      `(avy-lead-face-1   ((,class (:background ,(ewal-get-color 'background 0) :foreground ,(ewal-get-color 'green 0)))))
      `(avy-lead-face-2   ((,class (:background ,(ewal-get-color 'background 0) :foreground ,(ewal-get-color 'green 0)))))
-     `(org-checkbox-statistics-todo ((,class (:foreground ,(ewal-get-color 'background -2) :background ,(ewal-get-color 'black 0)))))
+     `(org-checkbox-statistics-todo ((,class (:foreground ,(ewal-get-color 'green -1) :background ,(ewal-get-color 'background 0)))))
      `(org-todo ((,class (:foreground ,(ewal-get-color 'green -1) :background ,(ewal-get-color 'background 0)))))
+     `(cfw:face-grid ((,class (:background ,(ewal-get-color 'background 0) :foreground ,(ewal-get-color 'white 0)))))
+     `(org-super-agenda-header ((,class (:background ,(ewal-get-color 'green 0) :foreground ,(ewal-get-color 'background 0) :weight extra-bold))))
        )))
 
 ;;;###autoload

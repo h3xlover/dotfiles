@@ -18,27 +18,34 @@
 (global-set-key (kbd "<next>") 'good-scroll-up)
 (global-set-key (kbd "C-S-n") 'good-scroll-up)
 (global-set-key (kbd "C-S-p") 'good-scroll-down)
-;; kill all buffers except for current 
-(defun kill-all-other-buffer ()
-  (interactive)
-  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
 
-;; reload config
-(defun config-reload ()
-  (interactive)
-  (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
 
-;; smooth scrolling
 (setq pixel-scroll-precision-large-scroll-height 40.0)
 (pixel-scroll-mode 1)
 (good-scroll-mode 1)
 (setq mouse-wheel-progressive-speed nil)
+
+(defun config-reload ()
+  (interactive)
+  (org-babel-load-file (expand-file-name "~/.emacs.d/config.org")))
+
+(defun kill-all-other-buffer ()
+  (interactive)
+  (mapc 'kill-buffer (delq (current-buffer) (buffer-list))))
+
+(defun switch-to-last-buffer ()
+  (interactive)
+  (switch-to-buffer nil))
+
+(global-set-key (kbd "C-c b") 'switch-to-last-buffer)
 
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
 (package-initialize)
 
 (use-package rmsbolt)
+
+
 
 (use-package ewal
   :init (setq ewal-use-built-in-always-p nil
@@ -102,7 +109,7 @@
 	'(("archive.org" :maxlevel . 1)))
   (advice-add 'org-refile :after 'org-save-all-org-buffers)
   (setq org-todo-keywords
-	'((sequence "TODO(t)" "BOOK(b)" "NEXT(n)" "|" "DONE(d)")))
+	'((sequence "TODO(t)" "ROUTINE(r)" "ROAM" "BOOK(b)" "NEXT(n)" "|" "DONE(d)")))
 (add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp"))
 :bind
 (("C-c a" . org-agenda)
@@ -139,8 +146,37 @@
        ("C-c n i" . org-roam-node-insert)
        ("C-c n o" . org-roam-ui-mode))
 :config
-(org-roam-setup)
-(setq org-roam-ui-open-on-start nil))
+(org-roam-setup))
+
+(use-package org-roam-ui
+  :after org-roam
+  :config
+  (setq org-roam-ui-open-on-start nil))
+
+(use-package calfw)
+(use-package calfw-cal)
+(use-package calfw-org)
+
+(use-package org-super-agenda)
+(org-super-agenda-mode)
+(setq org-super-agenda-groups
+      '(
+	(:name "Morning"
+	       :tag "morning")
+	(:name "Study Today"
+	       :tag "study_today")
+	(:name "Study"
+	       :tag "study")
+	(:name "Night"
+	       :tag "night")
+	(:name "Org Roam"
+	       :tag "orgroam")
+	(:name "Emacs"
+	       :tag "emacs")
+	(:name "Projects"
+	       :tag "projects")))
+(setq org-agenda-remove-tags t)
+(setq org-agenda-use-time-grid nil)
 
 (use-package org-download)
 

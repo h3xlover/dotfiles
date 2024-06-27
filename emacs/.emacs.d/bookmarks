@@ -2,13 +2,7 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
- (filename . "~/org/roam/20240529014724-insertion_sort.org")
- (front-context-string)
- (rear-context-string . " insertion sort\n")
- (position . 92)
- (last-modified 26198 45919 82768 857000))
-("config-elfeed"
+(("config-elfeed"
  (filename . "~/org/elfeed.org")
  (front-context-string . "* Blogs :elfeed:")
  (rear-context-string)
