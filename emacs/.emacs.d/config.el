@@ -45,7 +45,11 @@
 
 (use-package rmsbolt)
 
-
+(use-package good-scroll)
+(global-set-key (kbd "<prior>") 'good-scroll-down)
+(global-set-key (kbd "<next>") 'good-scroll-up)
+(global-set-key (kbd "C-S-n") 'good-scroll-up)
+(global-set-key (kbd "C-S-p") 'good-scroll-down)
 
 (use-package ewal
   :init (setq ewal-use-built-in-always-p nil
@@ -144,14 +148,19 @@
 :bind (("C-c n l" . org-roam-buffer-toggle)
        ("C-c n f" . org-roam-node-find)
        ("C-c n i" . org-roam-node-insert)
-       ("C-c n o" . org-roam-ui-mode))
+       ("C-c n o" . org-roam-ui-mode)
+       ("C-c n z" . org-roam-ui-node-zoom)
+       ("C-c n c" . org-id-get-create))
 :config
 (org-roam-setup))
 
 (use-package org-roam-ui
   :after org-roam
   :config
-  (setq org-roam-ui-open-on-start nil))
+  (setq org-roam-ui-open-on-start nil
+	org-roam-ui-follow t
+	org-roam-ui-sync-theme t
+	org-roam-ui-update-on-save t))
 
 (use-package calfw)
 (use-package calfw-cal)
@@ -173,6 +182,8 @@
 	       :tag "orgroam")
 	(:name "Emacs"
 	       :tag "emacs")
+	(:name "Search"
+	       :tag "search")
 	(:name "Projects"
 	       :tag "projects")))
 (setq org-agenda-remove-tags t)

@@ -1,2 +1,0 @@
-;; Generated package description from xelb.el  -*- no-byte-compile: t -*-
-(define-package "xelb" "0.19" "X protocol Emacs Lisp Binding" '((emacs "27.1")) :commit "3546afe73ef7c65181624da3a99ee6d7d7278582" :authors '(("Chris Feng" . "chris.w.feng@gmail.com")) :maintainer '(("Adrián Medraño Calvo" . "adrian@medranocalvo.com") ("Steven Allen" . "steven@stebalien.com") ("Daniel Mendler" . "mail@daniel-mendler.de")) :keywords '("unix") :url "https://github.com/emacs-exwm/xelb")

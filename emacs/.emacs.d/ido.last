@@ -15,7 +15,7 @@
  ("/home/g/Hakurei/" . "src/")
  ("/home/g/hakurei/hakurei/" . "src/")
  ("/home/g/hakurei/" . "hakurei/")
- ("/home/g/code/c/" . "sorting/")
+ ("/home/g/code/c/" . "include/")
  ("/home/g/code/" . "c/")
  ("/home/g/.icons/" . "default/")
  ("/etc/X11/xinit/" . "xinitrc.d/")
@@ -39,21 +39,24 @@
  ("/home/g/org/roadmap/" . "journal/")
  ("/home/g/org/tasks/" . ".stfolder/")
  ("/home/" . "g/")
- ("/home/g/org/" . "books/")
+ ("/home/g/org/" . "roadmap/")
  ("/" . "etc/")
  ("/home/g/dotfiles/" . "smart/")
  ("/home/g/.config/" . "sway/")
- ("/home/g/" . "org/")
+ ("/home/g/" . "code/")
  ("/home/g/.emacs.d/" . "elpa/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
- "/home/g/org/books/"
+ "/home/g/dotfiles/sway/"
+ "/home/g/code/c/include/"
+ "/home/g/code/c/sorting/"
  "/home/g/org/roadmap/"
+ "/home/g/images/"
+ "/home/g/org/books/"
  "/home/g/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/"
  "/home/g/dotfiles/smart/"
- "/home/g/dotfiles/sway/"
  "/home/g/dotfiles/bspwm/"
  "/home/g/.config/sway/"
  "/home/g/.emacs.d/elpa/spacemacs-theme-20230530.1751/"
@@ -66,7 +69,6 @@
  "/home/g/dotfiles/org/roadmap/"
  "/home/g/dotfiles/org/tasks/"
  "/home/g/org/roam/"
- "/home/g/code/c/sorting/"
  "/home/g/code/c/polynomial/"
  "/home/g/"
  "/etc/sway/"
@@ -97,47 +99,69 @@
  "/home/g/.config/alacritty/"
  "/home/g/.config/fontconfig/"
  "/home/g/.config/"
- "/"
- "/mnt/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "introduction_algorithms.org"
- "todo.org"
- "ewal-spacemacs-themes.el"
- "api"
- "light"
- "colors"
- "bar"
- "dmenu"
- "dmenu_run"
- "ranger"
+ "toggle_floating"
+ "head.h"
+ "heap.c"
+ "heap"
+ "insertion.c"
+ "math.org"
+ "roadmap.org"
+ "cover.png"
+ "comp.org"
+ "ask.org"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/g/" (26236 28904 536289 775000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "2024-06-26_16-39-14_screenshot.png" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" ".bash_history-04155.tmp" "dict/" "../" ".npm/" ".android/" ".bash_history-07644.tmp" ".ssh/" "images/" ".wget-hsts" ".elfeed/" "realsr-ncnn-vulkan/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "upscayl/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".bash_history-15728.tmp" ".bash_history-01913.tmp" ".emacs.d/" "./" ".local/" "pack" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
+ ("/home/g/.config/" (26261 10787 30276 678000) "mimeapps.list" "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "autostart/" "keepassxc/" "../" "htop/" "qBittorrent/" "nextjs-nodejs/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "chromium2/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "Upscayl/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
 
- ("/home/g/.emacs.d/" (26236 24709 561399 97000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+ ("/home/g/.local/share/icons/" (26261 10526 207154 795000) "../" "Classic-Flat-White/" "telegram.png" "default/" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./" "GoogleDot-Black/")
+
+ ("/home/g/Downloads/" (26261 10775 416809 500000) "stage3-amd64-openrc-20240526T163557Z.tar.xz" "security-recommendations-for-tls_v1.1.pdf" "RGS_v-2-00_Corps_du_texte.pdf" "Reterraforged-Mod-Forge-1.19.4.jar" "portage.jpg" "Pacific_North_West.json" "NT_IPsec_EN.pdf" "mage_LE_magic_x2_creativity_74_resemblance_50.png" "mage_LE_auto_x2.png" "mage.png" "linux_configuration-en-v2 (1).pdf" "img/" "gentoo/" "doc/" "DistantHorizons-2.1.2-a-1.19.4-forge-fabric.jar" "DistantHorizons-2.1.2-a-1.19.4-forge-fabric (1).jar" "Common LISP A Gentle Introduction to... (Z-Library).epub" "Chunky-1.3.53.jar" "bg4m2yZSIr4-HD_LE_auto_x2_LE_magic_x2_creativity_74_resemblance_50.png" "63a1178ebc04e3e76457f604526c00a6.png" "6145-45830869.jpg" "vid/" "tx-export-main-2024-07-12.dat" "tx-export-main-2024-07-12 (1).dat" "tx-export-main-2024-07-10.dat" "Terralith_1.19.4_v2.3.12.jar" "Telegram Desktop/" "stage3-amd64-openrc-20240623T164908Z.tar.xz" "../" "./")
+
+ ("/tmp/telegram/" (26261 10817 994409 875000) "./" "../" "Reverse engineering for beginners (Yu... (Z-Library).pdf")
+
+ ("/home/g/code/c/sorting/" (26261 16603 125822 830000) "insertion.c" "merge" "sort.cpp" "heap.c" "../" "sort" "array_int" "merge_sort.c" "./" "heap")
+
+ ("/home/g/code/c/include/" (26229 45679 210857 987000) "../" "head.h" "./")
+
+ ("/home/g/dotfiles/org/roam/" (26258 47350 732822 357000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20240713142658-goals.org" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
+
+ ("/home/g/dotfiles/emacs/.emacs.d/" (26258 49046 172363 967000) "org-download.el" "url/" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "persist/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/dotfiles/org/roadmap/" (26258 49301 122498 25000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/.emacs.d/" (26258 49046 172363 967000) "org-download.el" "url/" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "persist/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
+
+ ("/home/g/org/roam/" (26258 47350 732822 357000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20240713142658-goals.org" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
+
+ ("/home/g/org/roadmap/" (26258 49301 122498 25000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
+
+ ("/home/g/.config/alacritty/" (26257 51945 767302 397000) "alacritty.toml" "../" "./")
+
+ ("/etc/X11/xinit/" (26233 48149 679075 441000) "./" "xserverrc" "../" "xinitrc.d/" "xinitrc")
+
+ ("/home/g/dotfiles/portage/" (26237 49243 643915 341000) "../" "portage/" "package-size" "./")
+
+ ("/home/g/dotfiles/" (26237 49231 847810 645000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "bspwm/" "org/" "polybar/" "installer" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "kernel/" "ranger/" "./" "sxhkd/" "alacritty/")
+
+ ("/etc/sway/" (26233 29520 645193 633000) "./" "../" "config")
+
+ ("/home/g/images/" (26251 23698 899415 128000) "../" "startup.mp4" "covers/" "cover.png" "./")
+
+ ("/home/g/" (26258 41435 34181 861000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".npm/" ".android/" ".mozilla/" ".ssh/" "images/" ".tlauncher/" ".wget-hsts" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "upscayl/" ".bash_history" "2024-13-12-48-05.mkv" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" "2024-13-12-48-42.mkv" ".minecraft/" ".emacs.d/" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
 
  ("/home/g/dotfiles/emacs/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/" (26232 20077 487144 63000) "ewal-spacemacs-modern-theme.el" "../" "ewal-spacemacs-classic-theme.el" "ewal-spacemacs-themes-autoloads.el" "ewal-spacemacs-classic-theme.elc" "./" "ewal-spacemacs-themes.el" "ewal-spacemacs-themes-pkg.el")
 
  ("/home/g/.emacs.d/elpa/" (26236 16258 713529 288000) "ov-20230522.1117/" "archives/" "xelb-0.19.signed" "s-20220902.1511/" "websocket-20230809.305/" "tron-legacy-theme-20230506.1037/" "ht-20230703.558/" "xelb-0.19/" "ewal-20200305.230/" "spacemacs-theme-20230530.1751/" "wfnames-20240418.1005/" "../" "calfw-20180118.45/" "org-journal-20240218.1645/" "f-20240308.906/" "transient-20240525.1118/" "which-key-20240501.1251/" "peg-1.0.1/" "org-ql-20240403.2027/" "org-roam-20240114.1941/" "elfeed-20240331.1348/" "popup-20240101.830/" "nov-20240407.1219/" "peg-1.0.1.signed" "compat-29.1.4.5.signed" "ido-vertical-mode-20210205.436/" "swiper-20240520.1202/" "exwm-0.30.signed" "darcula-theme-20171227.1845/" "org-bullets-20200317.1740/" "ace-window-20220911.358/" "org-download-20220906.1929/" "latex-preview-pane-20181008.1822/" "compat-29.1.4.5/" "org-super-agenda-20240301.1602/" "dash-20240510.1327/" "rmsbolt-20240507.47/" "ewal-spacemacs-themes-20230505.609/" "calfw-org-20170411.220/" "ts-20220822.2313/" "exwm-0.30/" "evm-20141007.1156/" "ivy-20240524.1139/" "elfeed-org-20231009.1125/" "calfw-cal-20170411.220/" "kv-20140108.1534/" "org-roam-ui-20221105.1040/" "./" "async-20240323.1912/" "gnupg/" "esxml-20230308.2254/" "emacsql-20240415.1535/" "simple-httpd-20230821.1458/" "magit-section-20240508.2349/" "good-scroll-20211101.942/" "avy-20230420.404/")
 
- ("/home/g/dotfiles/emacs/.emacs.d/" (26236 20380 737358 84000) "org-download.el" "eln-cache/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" ".org-id-locations" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "nov-places" "config.org" "theme.el" "./" "ss.PNG" "fontpreview-mode.el")
-
- ("/home/g/dotfiles/" (26232 51741 839818 687000) "emacs/" ".gitignore" "../" "portage/" ".git/" "ChromiumPywal/" "etc/" "bspwm/" "org/" "polybar/" "installer" "xorg/" "zathura/" "wal/" "sway/" "fontconfig/" "picom/" "README.md" "smart/" "misc/" "kernel/" "ranger/" "./" "sxhkd/" "alacritty/")
-
- ("/home/g/.config/" (26233 48102 540072 27000) "pulse/" "syncthing/" "gtk-3.0/" "GIMP/" "modprobed.db" "modprobed-db.conf" "keepassxc/" "../" "htop/" "qBittorrent/" "nextjs-nodejs/" "neofetch/" "mpv/" "QtProject.conf" "transmission-daemon/" "bspwm/" "qutebrowser/" "procps/" "chromium2/" "polybar/" "zathura/" "obs-studio/" "libvirt/" "gtk-2.0/" "wal/" "sway/" "fontconfig/" "Upscayl/" "picom/" "glib-2.0/" "flameshot/" "racket/" "vlc/" "dconf/" "chromium/" "ranger/" "./" "pavucontrol.ini" "sxhkd/" "alacritty/" "goldendict/")
-
  ("/home/g/.emacs.d/elpa/spacemacs-theme-20230530.1751/" (26180 54296 577888 55000) "spacemacs-light-theme.el" "../" "spacemacs-dark-theme.elc" "spacemacs-theme.el" "spacemacs-theme-autoloads.el" "spacemacs-light-theme.elc" "spacemacs-theme-pkg.el" "./" "spacemacs-dark-theme.el")
 
  ("/home/g/.emacs.d/elpa/ewal-spacemacs-themes-20230505.609/" (26232 20077 487144 63000) "ewal-spacemacs-modern-theme.el" "../" "ewal-spacemacs-classic-theme.el" "ewal-spacemacs-themes-autoloads.el" "ewal-spacemacs-classic-theme.elc" "./" "ewal-spacemacs-themes.el" "ewal-spacemacs-themes-pkg.el")
-
- ("/home/g/dotfiles/portage/" (26232 19315 969548 304000) "../" "portage/" "package-size" "./")
-
- ("/home/g/.config/alacritty/" (26062 15878 757752 202000) "../" "alacritty.yml" "./")
 
  ("/home/g/.emacs.d/elpa/avy-20230420.404/" (26198 44237 452058 558000) "../" "avy-autoloads.el" "./" "avy.el" "avy-pkg.el" "avy.elc")
 
@@ -157,19 +181,7 @@
 
  ("/usr/share/info/emacs-29/" (26113 36074 539995 922000) "vip.info.bz2" "eudc.info.bz2" "cl.info.bz2" "sieve.info.bz2" "autotype.info.bz2" "rcirc.info.bz2" "eshell.info.bz2" "emacs-mime.info.bz2" "gnus.info.bz2" "mh-e.info.bz2" "ses.info.bz2" "emacs.info.bz2" "vhdl-mode.info.bz2" "srecode.info.bz2" "semantic.info.bz2" "sasl.info.bz2" "viper.info.bz2" "pgg.info.bz2" "woman.info.bz2" "newsticker.info.bz2" "sc.info.bz2" "vtable.info.bz2" "use-package.info.bz2" "epa.info.bz2" "ido.info.bz2" "info.info.bz2" "message.info.bz2" "widget.info.bz2" "reftex.info.bz2" "smtpmail.info.bz2" "dired-x.info.bz2" "ebrowse.info.bz2" "url.info.bz2" "calc.info.bz2" "ede.info.bz2" "octave-mode.info.bz2" "dbus.info.bz2" "wisent.info.bz2" "remember.info.bz2" "erc.info.bz2" "elisp.info.bz2" "htmlfontify.info.bz2" "dir" "eww.info.bz2" "bovine.info.bz2" "emacs-gnutls.info.bz2" "eglot.info.bz2" "efaq.info.bz2" "eintr.info.bz2" "todo-mode.info.bz2" "flymake.info.bz2" "mairix-el.info.bz2" "nxml-mode.info.bz2" "idlwave.info.bz2" "ccmode.info.bz2" "ediff.info.bz2" ".keepinfodir" "speedbar.info.bz2" "eieio.info.bz2" "org.info.bz2" "modus-themes.info.bz2" "forms.info.bz2" "edt.info.bz2" "transient.info.bz2" "./" "tramp.info.bz2" "../" "auth.info.bz2" "pcl-cvs.info.bz2" "ert.info.bz2")
 
- ("/home/g/.local/share/icons/" (26231 33954 242278 463000) "../" "Classic-Flat-White/" "telegram.png" "Simp1e-Gruvbox-Dark/" "Simp1e-Adw-Dark/" "./")
-
- ("/home/g/Downloads/" (26231 31604 623958 500000) "stage3-amd64-openrc-20240526T163557Z.tar.xz" "README (1)" "README" "orb_LE_auto_x2.png" "lunar-lexicon_LE_magic_x2_creativity_74_resemblance_50.png" "img/" "gentoo/" "doc/" "bg4m2yZSIr4-HD_LE_auto_x2_LE_magic_x2_creativity_74_resemblance_50.png" "anki-24.06.2-linux-qt6.tar.zst" "anki-24.06.2-linux-qt5.tar.zst" "anki/" "Akira (1988) [2160p] [4K] [BluRay] [5.1] [YTS.MX]/" "20240414.txt.asc" "vid/" "tx-export-main-2024-06-22.dat" "tx-export-main-2024-06-21.dat" "tx-export-main-2024-06-20.dat" "tx-export-main-2024-06-15.dat" "tx-export-main-2024-06-14.dat" "../" "./")
-
- ("/tmp/telegram/" (26232 4851 827647 845000) "./" "../")
-
- ("/home/g/code/c/sorting/" (26229 45974 225504 12000) "insertion.c" "merge" "sort.cpp" "../" "sort" "array_int" "merge_sort.c" "./")
-
  ("/home/g/dotfiles/org/tasks/" (26231 33658 452992 184000) "birth.org" "../" "tasks.org" "./")
-
- ("/home/g/dotfiles/org/roadmap/" (26231 33827 924300 914000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
-
- ("/home/g/org/roadmap/" (26231 33827 924300 914000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
 
  ("/home/" (26219 49870 168909 962000) "tg/" "g/" "./" "../")
 
@@ -178,8 +190,6 @@
  ("/home/g/code/c/" (26229 45896 210043 271000) "include/" "../" "sorting/" "misc/" "./" "polynomial/")
 
  ("/home/g/code/c/polynomial/" (26229 45867 51981 752000) "../" "array_int" "horner" "./" "horner.c")
-
- ("/home/g/images/" (26205 23399 144333 554000) "../" "cover2.png" "startup.mp4" "covers/" "gifs/" "cover.png" "./")
 
  ("/home/g/.config/bspwm/" (26013 34187 984999 148000) "bspwmrc" "../" "./")
 
@@ -190,8 +200,6 @@
  ("/home/g/dotfiles/org/books/" (26215 22535 442305 606000) "../" "Divide_and_conquer/" "ltximg/" "introduction_algorithms.org" "./")
 
  ("/home/g/org/books/" (26215 22535 442305 606000) "../" "Divide_and_conquer/" "ltximg/" "introduction_algorithms.org" "./")
-
- ("/etc/sway/" (26166 49495 986919 909000) "config" "./" "../")
 
  ("/etc/" (26206 26952 521661 299000) "default/" "pulse/" "ssh/" "revdep-rebuild/" "dispatch-conf.conf~" "systemd/" "rc.conf" "chromium/" "sway/" "lessfilter.d/" "wgetrc" "gshadow-" "mpv/" "polkit-1/" "rpc" "npm/" "tor/" "sudoers.tmp~" "adjtime" "lsb-release" "hostname" "issue" "host.conf" "NaturalDocs/" "netconfig" "ntp.conf" "machine-id" "gai.conf" "inittab.d/" "swtpm_setup.conf" "wireless-regdb/" "ImageMagick-7/" "sgml/" "emacs/" "environment" "dispatch-conf.conf" "sandbox.d/" "timezone" "ssl/" "profile" "subgid" "shells" "environment.d/" "virt-builder/" "rhashrc" "clang/" "libvirt/" "passwd" "group-" "fonts/" "conf.d/" "ld.so.cache" "profile.env" "sudoers.dist" "protocols" "hosts" "DIR_COLORS" "cni/" "subgid-" "metalog.conf" "skel/" "runlevels/" "inputrc" "elogind/" "portage/" "ld.so.conf.d/" "bash/" "swtpm-localca.conf" "eselect/" "xinetd.d/" "inittab" "etc-update.conf" "xdg/" "init.d/" "grub.d/" "login.defs" "local.d/" "gimp/" "sandbox.conf" "ld.so.conf" "sudo.conf" "mime.types" "pam.d/" "swtpm-localca.options" "xml/" "env.d/" "#sudoers.tmp#" "sudoers~" "terminfo/" "sudo_logsrvd.conf" "fstab~" "dhcpcd.conf~" "filesystems" "rsyncd.conf" "fuse.conf" "python-exec/" "ethertypes" "csh.env" "shadow" "sysctl.d/" "man_db.conf" "dbus-1/" "gentoo-release" ".pwd.lock" "sensors3.conf" "#sudoers#" "services" "alsa/" "issue.logo" "X11/" "dnsmasq.conf" "nsswitch.conf" "fstab" "eclean/" "modules-load.d/" "cups/" "cron.daily/" "os-release" "libnl/" "w3m/" "shadow-" "libguestfs-tools.conf" "e2scrub.conf" "qemu/" "paperspecs" "fakechroot/" "gtk-3.0/" "ca-certificates.conf" "security/" "logrotate.d/" "mke2fs.conf" "mtab" "polybar/" "wpa_supplicant/" "locale.gen" "pkcs11/" "subuid-" "gtk-2.0/" "xattr.conf" "udev/" "dhcpcd.conf" "gitconfig" "texmf/" "modprobe.d" "subuid" "sudoers" "vulkan/" "resolv.conf" "issue~" "group" "rmt" "nullmailer/" "networks" "profile.d/" "bindresvport.blacklist" "vdpau_wrapper.cfg" "./" "config-archive/" "gshadow" "localtime" "../" "e2fsck.conf" "passwd-")
 
@@ -210,10 +218,6 @@
  ("/home/g/org/books/ltximg/" (26199 15610 438395 77000) "../" "org-ltximg_9af787b0b480464dc07afdd0c767a571fa5ecc37.png" "org-ltximg_470390e81f9984e761f2920eeba385605baa98e6.png" "./")
 
  ("/home/g/org/" (26199 13119 614164 983000) "books/" ".gitignore" ".stfolder/" "../" "roadmap/" "roam/" "tasks/" "journal/" "./" "elfeed.org")
-
- ("/home/g/dotfiles/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
-
- ("/home/g/org/roam/" (26198 45919 82393 265000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
 
  ("/home/g/.emacs.d/elpa/org-roam-ui-20221105.1040/" (25673 16783 220199 114000) "../" "org-roam-ui-autoloads.el" "org-roam-ui.el" "out/" "org-roam-ui-pkg.el" "./" "org-roam-ui.elc")
 
@@ -285,8 +289,6 @@
 
  ("/etc/X11/xinit/xinitrc.d/" (25926 63200 225997 470000) "00-xhost" "80-dbus" "40-libcanberra-gtk-module" "./" "../")
 
- ("/etc/X11/xinit/" (25926 47292 360997 888000) "xserverrc" "xinitrc" "xinitrc.d/" "./" "../")
-
  ("/etc/X11/Sessions/" (25926 53235 494992 554000) "Xsession" "./" "../" "bspwm")
 
  ("/etc/X11/xorg.conf.d/" (25926 54053 448991 820000) "amd.conf" "./" "../")
@@ -314,8 +316,6 @@
  ("/home/g/dotfiles/alacritty/" (26062 15838 424755 195000) "../" "alacritty.yml" "./")
 
  ("/mnt/hd1/images/" (25981 29335 739717 100000) "wallpapers/" "sc/" "my_prints/" "gifs/" ".stfolder/" "../" "./")
-
- ("/mnt/hd1/" (26168 30198 164563 0) "System Volume Information/" "qemu/" "programs/" "pdfs/" "music/" "images/" "found.000/" "downloads/" "desktop.ini" "camera/" "$RECYCLE.BIN/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

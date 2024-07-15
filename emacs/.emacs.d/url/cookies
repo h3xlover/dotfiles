@@ -1,0 +1,27 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '((".google.com"
+  [url-cookie "NID" "515=JlpMZuAsGxyxdQ9QeSo6dupq_WJ_CivxhfECjng7N85Ujrh5HdLbgDCaFNON8gxnk_3oRBQcPOi1rzsrSt0sQTIVT-QnHMP77sqHxk04G4fv6l8Ov96cjAlrFSm3M1xNI9LYN1XSU0BA5fHACLdHSgwXuPNk3t2JpcBlu2TeWgc" "Wed, 01-Jan-2025 00:35:51 GMT" "/" ".google.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '(("en.wikipedia.org"
+  [url-cookie "WMF-Last-Access" "02-Jul-2024" "Sat, 03 Aug 2024 00:00:00 GMT" "/" "en.wikipedia.org" t]
+  [url-cookie "NetworkProbeLimit" "0.001" "Tue Jul 02 01:36:29 2024 GMT" "/" "en.wikipedia.org" t])
+ (".wikipedia.org"
+  [url-cookie "WMF-Last-Access-Global" "02-Jul-2024" "Sat, 03 Aug 2024 00:00:00 GMT" "/" ".wikipedia.org" t])
+ (".youtube.com"
+  [url-cookie "VISITOR_INFO1_LIVE" "o17Aa4Br_5M" "Sun, 29-Dec-2024 00:37:29 GMT" "/" ".youtube.com" t]
+  [url-cookie "VISITOR_PRIVACY_METADATA" "CgJCUhIEGgAgYw%3D%3D" "Sun, 29-Dec-2024 00:37:29 GMT" "/" ".youtube.com" t])
+ (".google.com"
+  [url-cookie "AEC" "AQTF6HzO2ULJJ0qoGDzSO5ZzPK8Eh5HarZtXHCMyWFSUwHJDOc4wMgGmbQ" "Sun, 29-Dec-2024 00:36:06 GMT" "/" ".google.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; coding: utf-8-emacs-unix
+;; End:
+
+;;; cookies ends here

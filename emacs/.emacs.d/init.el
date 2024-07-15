@@ -9,7 +9,7 @@
  '(org-agenda-files
    '("/home/g/org/roadmap/todo.org" "/home/g/org/tasks/birth.org" "/home/g/org/roadmap/roadmap.org" "/home/g/org/roadmap/math.org" "/home/g/org/roadmap/comp.org" "/home/g/org/roadmap/hardware.org" "/home/g/org/roadmap/physics.org"))
  '(package-selected-packages
-   '(calfw-org calfw-cal calfw rmsbolt ewal-spacemacs-themes ewal evm helm good-scroll org-journal org-download org-roam-ui org-roam latex-preview-pane elfeed-org org-bullets org-ql tron-legacy-theme swiper ivy ace-window avy ido-vertical-mode nov exwm which-key darcula-theme use-package))
+   '(org-roam-ui org-roam ement calfw-org calfw-cal calfw rmsbolt ewal-spacemacs-themes ewal evm helm good-scroll org-journal org-download latex-preview-pane elfeed-org org-bullets org-ql tron-legacy-theme swiper ivy ace-window avy ido-vertical-mode nov exwm which-key darcula-theme use-package))
  '(warning-suppress-log-types '((websocket))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
