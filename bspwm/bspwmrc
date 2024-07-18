@@ -29,7 +29,7 @@ bspc rule -a emacs:Emacs state=tiled
 #sleep 1.9
 #xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --framedrop=vo --no-osc --no-input-builtin-bindings /home/g/images/startup.mp4
 
-nice xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --no-osc --no-input-builtin-bindings --loop --panscan="1.0" "${HOME}/images/gifs/cover.mp4" &
+#nice xwinwrap -b -s -fs -st -sp -nf -ov -fdt -- mpv -wid WID --really-quiet --framedrop=vo --no-audio --no-osc --no-input-builtin-bindings --loop --panscan="1.0" "${HOME}/images/gifs/cover.mp4" &
 
 # load colors (imagemagick necessary)
 wal -c
@@ -41,11 +41,11 @@ wal -n -i ~/images/cover.png
 bspc config presel_feedback_color $color3
 
 # polybar
-python ~/dotfiles/wal/wal-polybar.py
-polybar &
+#python ~/dotfiles/wal/wal-polybar.py
+#polybar &
 
 # compositor and sxhkd
-picom -b
+#picom -b
 sxhkd &
 
 # launch third-party programs
@@ -53,5 +53,5 @@ sxhkd &
 
 # misc
 #setxkbmap -layout us,ru -option "grp:alt_shift_toggle"
-xsetroot -cursor_name left_ptr
-unclutter -jitter 15 -idle 5 -root &
+#xsetroot -cursor_name left_ptr
+#unclutter -jitter 15 -idle 5 -root &
