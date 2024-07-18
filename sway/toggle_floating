@@ -6,9 +6,13 @@ con_ids_hidden=$(swaymsg -t get_workspaces | jq -r '.[] | select(.name=='\"float
 
 # Use con_id to iterate through containers from $con_ids instead of windows
 if [[ $1 = "hide" ]];then
-    for con_id in $con_ids;do
-	swaymsg [con_id="$con_id"] move container to workspace "floating$workspc"
-    done
+    if [[ $2 = "focused" ]];then
+	swaymsg [floating con_id=__focused__] move container to workspace "floating$workspc"
+    else
+	for con_id in $con_ids;do
+	    swaymsg [con_id="$con_id"] move container to workspace "floating$workspc"
+	done
+    fi
     swaymsg workspace "$workspc"
     toggle="show"
 elif [[ $1 = "show" ]];then

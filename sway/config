@@ -1,13 +1,14 @@
-# Dependencies: jq, disable_titlebar.patch, fullscreen.patch, dmenu, alacritty, grim+slurp, setxkbmap, swayfocus, wal, mpvpaper, wl-clipboard
-
 # Borders, titlebars, gaps
 default_border pixel 2
 default_floating_border pixel 2
+
 gaps inner 4
 gaps outer -4
+
 smart_borders on
 titlebar_padding 1
 titlebar_border_thickness 1
+
 # titlebar patch
 disable_titlebar yes
 
@@ -24,6 +25,8 @@ for_window {
 	   [app_id=".*"] opacity 0.95
 	   [app_id="chromium-browser-chromium"] opacity 0.99
 	   [app_id="firefox"] opacity 0.99
+	   [app_id="org.pwmt.zathura"] opacity 0.99
+	   [class="Minecraft*"] opacity 1
 }
 
 ### Variables
@@ -32,16 +35,22 @@ set $left a
 set $down s
 set $up w
 set $right d
+
 # launch app and auto set mode to default
 set $launch ~/dotfiles/sway/launch
+
 # multiple individual scratchpads using marks
 set $scratch ~/dotfiles/sway/floating
 set $move ~/dotfiles/sway/move_float
+
 # Set floating modifier
 floating_modifier $mod normal
 
 # Hide cursor
 seat seat0 hide_cursor 3000
+
+# cursor theme
+seat seat0 xcursor_theme GoogleDot-Black 12
 
 output DP-1 resolution 3440x1440@144Hz
 output * bg ~/images/cover.png fill
@@ -89,7 +98,7 @@ output * bg ~/images/cover.png fill
      bindsym $mod+Shift+$right move right
 
      # Center floating window
-     bindsym $mod+9 move position center
+
 
      # Switch to workspace
      bindsym $mod+1 workspace number 1
@@ -100,24 +109,25 @@ output * bg ~/images/cover.png fill
      bindsym $mod+Shift+1 move container to workspace number 1
      bindsym $mod+Shift+2 move container to workspace number 2
      bindsym $mod+Shift+3 move container to workspace number 3
-     bindsym $mod+Shift+4 move container to workspace number 4
-     bindsym $mod+Shift+5 move container to workspace number 5 
 
      # Split layout
-     bindsym $mod+v splith
      bindsym $mod+c splitv
+     bindsym $mod+v splith
      bindsym $mod+Shift+v split none
+     
+     # Sticky window
      bindsym $mod+y [con_id=__focused__] sticky toggle
+
      # Focus to parent or child container
      bindsym $mod+z exec ~/dotfiles/sway/focus_parent
-     bindsym $mod+Shift+x focus parent
+     bindsym $mod+Alt+x focus parent
      bindsym $mod+x focus child
      # Change layout of container
      bindsym $mod+t layout toggle tabbed split
 
      # Switch between tabs in a container, swayoverfocus
      bindsym $mod+b exec sway-overfocus group-rw group-dw
-
+     bindsym $mod+Alt+b exec sway-overfocus group-lw group-uw
      # Toggle window to fullscreen or floating/non-floating
      bindsym $mod+f fullscreen
      bindsym $mod+r floating toggle
@@ -131,7 +141,7 @@ output * bg ~/images/cover.png fill
      bindsym $mod+Tab exec $scratch toggle
      
      bindsym $mod+4 exec ~/dotfiles/sway/toggle_floating hide
-
+     bindsym $mod+Shift+4 exec ~/dotfiles/sway/toggle_floating hide focused
      bindsym $mod+Alt+a exec $scratch select 1				
      bindsym $mod+Alt+s exec $scratch select 2
      bindsym $mod+Alt+d exec $scratch select 3
@@ -158,6 +168,7 @@ mode "resize" {
     bindsym $mod+Shift+x focus parent
     bindsym $mod+x focus child
 
+    bindsym c move position center	
     bindsym g mode "move"
     bindsym $mod+g mode "move"
     bindsym Ctrl+g mode "default"
@@ -181,6 +192,7 @@ mode "move" {
      bindsym $mod+Shift+x focus parent
      bindsym $mod+x focus child
 
+     bindsym c move position center
      bindsym g mode "resize"
      bindsym $mod+g mode "resize"
      bindsym Ctrl+g mode "default"
@@ -218,8 +230,8 @@ mode "hide" {
 
      bindsym Shift+a exec $scratch move 1 f
      bindsym Shift+s exec $scratch move 2 f
-     bindsym Shift+f exec $scratch move 3 f
-     bindsym Shift+d exec $scratch move 4 f
+     bindsym Shift+d exec $scratch move 3 f
+     bindsym Shift+f exec $scratch move 4 f
      
      bindsym g mode "hide-select"
      bindsym Ctrl+g mode "default"
@@ -262,6 +274,6 @@ bar {
 
 # misc
 exec_always . ~/dotfiles/sway/colors
-
+exec gentoo-pipewire-launcher
 input type:keyboard xkb_layout us
 include /etc/sway/config.d/*

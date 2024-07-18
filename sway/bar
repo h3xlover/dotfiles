@@ -1,6 +1,6 @@
 #!/bin/bash
 
-date=$(date +'%Y-%m-%d %T')
+date=$(date +'%b %a %Y-%m-%d %T')
 space=$(df -h | awk 'NR==2 {print $5}')
 news=$(eselect news count)
 cpu=$(sensors k10temp-pci-00c3 -u | awk 'NR==4 {print $2}')
@@ -20,4 +20,4 @@ else
     scratchpad="no"
 fi
 
-echo "gpu: $gpu | cpu: $cpu | scratchpad: $scratchpad | news: $news | root: $space | mem: $mem | vol: $vol | $date ¯\_(ツ)_/¯"
+echo "[$gpu $cpu] [$scratchpad] [$news] [$space] [$mem] [$vol] [$date] ¯\_(ツ)_/¯"

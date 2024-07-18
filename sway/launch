@@ -1,4 +1,4 @@
 #!/bin/bash
 
 swaymsg mode "default"
-exec "$@"
+exec dbus-launch "$@"
