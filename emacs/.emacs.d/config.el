@@ -18,7 +18,7 @@
 (global-set-key (kbd "<next>") 'good-scroll-up)
 (global-set-key (kbd "C-S-n") 'good-scroll-up)
 (global-set-key (kbd "C-S-p") 'good-scroll-down)
-
+(global-set-key (kbd "C-c n r") 'replace-regexp)
 
 (setq pixel-scroll-precision-large-scroll-height 40.0)
 (pixel-scroll-mode 1)
@@ -53,11 +53,11 @@
 
 (use-package ewal
   :init (setq ewal-use-built-in-always-p nil
-	      ewal-use-built-in-on-failure-p t))
+		ewal-use-built-in-on-failure-p t))
 (use-package ewal-spacemacs-themes
   :config (progn
-	    (load-theme 'ewal-spacemacs-modern t)
-	    (enable-theme 'ewal-spacemacs-modern)))
+	      (load-theme 'ewal-spacemacs-modern t)
+	      (enable-theme 'ewal-spacemacs-modern)))
 ;; config-reload command via sway config
 
 ;;  (use-package tron-legacy-theme
@@ -144,13 +144,13 @@
 (use-package org-roam
 :ensure t
 :custom
-(org-roam-directory "~/org/roam")
+(org-roam-directory "~/org/roam2")
 :bind (("C-c n l" . org-roam-buffer-toggle)
-       ("C-c n f" . org-roam-node-find)
-       ("C-c n i" . org-roam-node-insert)
-       ("C-c n o" . org-roam-ui-mode)
-       ("C-c n z" . org-roam-ui-node-zoom)
-       ("C-c n c" . org-id-get-create))
+	     ("C-c n f" . org-roam-node-find)
+	     ("C-c n i" . org-roam-node-insert)
+	     ("C-c n o" . org-roam-ui-mode)
+	     ("C-c n z" . org-roam-ui-node-zoom)
+	     ("C-c n c" . org-id-get-create))
 :config
 (org-roam-setup))
 
@@ -169,23 +169,23 @@
 (use-package org-super-agenda)
 (org-super-agenda-mode)
 (setq org-super-agenda-groups
-      '(
-	(:name "Morning"
-	       :tag "morning")
-	(:name "Study Today"
-	       :tag "study_today")
-	(:name "Study"
-	       :tag "study")
-	(:name "Night"
-	       :tag "night")
-	(:name "Org Roam"
-	       :tag "orgroam")
-	(:name "Emacs"
-	       :tag "emacs")
-	(:name "Search"
-	       :tag "search")
-	(:name "Projects"
-	       :tag "projects")))
+	'(
+	  (:name "Morning"
+		 :tag "morning")
+	  (:name "Study Today"
+		 :tag "study_today")
+	  (:name "Study"
+		 :tag "study")
+	  (:name "Night"
+		 :tag "night")
+	  (:name "Org Roam"
+		 :tag "orgroam")
+	  (:name "Emacs"
+		 :tag "emacs")
+	  (:name "Search"
+		 :tag "search")
+	  (:name "Projects"
+		 :tag "projects")))
 (setq org-agenda-remove-tags t)
 (setq org-agenda-use-time-grid nil)
 
