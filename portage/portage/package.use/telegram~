@@ -1,0 +1,4 @@
+media-video/ffmpeg vpx
+dev-qt/qtgui jpeg
+dev-qt/qtcore icu
+net-im/telegram-desktop dbus screencast

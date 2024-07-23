@@ -1,0 +1,6 @@
+dev-libs/wayland ~amd64
+dev-util/wayland-scanner ~amd64
+gui-apps/xwaylandvideobridge ~amd64
+x11-base/xwayland ~amd64
+
+

@@ -2,13 +2,13 @@
 # built this stage.
 # Please consult /usr/share/portage/config/make.conf.example for a more
 # detailed example.
-COMMON_FLAGS="-O3 -march=native -pipe"
+COMMON_FLAGS="-O3 -march=native"
 CFLAGS="${COMMON_FLAGS}"
 CXXFLAGS="${COMMON_FLAGS}"
 
 MAKEOPTS="-j4"
 
-USE="-bluetooth -ipv6 -sendmail alsa elogind opengl wayland pulseaudio X vulkan vaapi vdpau truetype"
+USE="-bluetooth -ipv6 -sendmail pipewire alsa elogind opengl wayland pulseaudio X vulkan vaapi vdpau truetype screencast qt6 dbus"
 VIDEO_CARDS="amdgpu radeon radeonsi"
 
 # NOTE: This stage was built with the bindist Use flag enabled
