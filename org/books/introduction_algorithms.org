@@ -42,3 +42,20 @@ method for solving $T(n) = aT(\frac{n}_{b}) + f(n)$ (master recurrence), need to
 using probability to analyze the running time of an algorithm and average case running time, by making an algorithm randomized (behavior determined by a random number generator) we can use probabilistic analysis, running time of a randomized algorithm is the *expected running time*.
 
 the random algorithm needs to generate an uniform random permutation
+
+* Part II (chapter 6-9)
+
+- more sorting algorithms
+- limitations of comparison sort
+- heapsort
+- quicksort
+- counting sort and radix sort (beat lower bound of comparison sort algorithms
+- bubble sort (probabilistic)
+- order statistics
+
+* chapter 7, quicksort
+
+- quicksort and how it works
+- randomized version
+- worst case analysis
+- expected running time analysis
