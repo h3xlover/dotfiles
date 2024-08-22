@@ -6,6 +6,7 @@ fi
 
 if [[ $1 = "reset" ]];then
     swaymsg input type:keyboard xkb_layout "us"
+    swaymsg input '*' xkb_layout caps
     exit
 fi
 
@@ -18,5 +19,4 @@ if [[ -z $kmap ]];then
 fi
 
 #setxkbmap $kmap
-echo a
 swaymsg input type:keyboard xkb_layout "$kmap"
