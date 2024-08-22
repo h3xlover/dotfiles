@@ -1,12 +1,20 @@
 #!/bin/bash
 
-wal -c
-wal -e -n -i ~/images/cover.png
 
-. ~/dotfiles/ChromiumPywal/generate-theme.sh
+
+wal -c
+#wal -e -n -i ~/images/cover.png
+wpg -R ~/images/cover.png
+wpg -s ~/images/cover.png -n --noreload
+
 . ~/.cache/wal/colors.sh
+. ~/dotfiles/ChromiumPywal/generate-theme.sh &
+genzathurarc > ~/.config/zathura/zathurarc
 
 emacsclient --eval "(org-babel-load-file (expand-file-name \"~/.emacs.d/theme.org\")))"
+gsettings set org.gnome.desktop.interface gtk-theme ''
+gsettings set org.gnome.desktop.interface gtk-theme FlatColor
+
 
 swaymsg client.focused "$color0" "$color3" "$color0" "$color0"
 
