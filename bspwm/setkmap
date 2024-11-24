@@ -4,9 +4,14 @@ if [[ -z "$1" ]];then
     exit
 fi
 
+if [[ $1 = "set" ]];then
+    swaymsg input type:keyboard xkb_layout "caps-$2"
+    exit
+fi
+
 if [[ $1 = "reset" ]];then
     swaymsg input type:keyboard xkb_layout "us"
-    swaymsg input '*' xkb_layout caps
+    swaymsg input '*' xkb_layout caps-en
     exit
 fi
 
@@ -19,4 +24,5 @@ if [[ -z $kmap ]];then
 fi
 
 #setxkbmap $kmap
-swaymsg input type:keyboard xkb_layout "$kmap"
+swaymsg input type:keyboard xkb_layout "caps-$kmap"
+#swaymsg input '*' xkb_layout caps
