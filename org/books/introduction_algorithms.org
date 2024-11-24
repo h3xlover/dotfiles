@@ -50,7 +50,7 @@ the random algorithm needs to generate an uniform random permutation
 - heapsort
 - quicksort
 - counting sort and radix sort (beat lower bound of comparison sort algorithms
-- bubble sort (probabilistic)
+- bucket sort (probabilistic)
 - order statistics
 
 * chapter 7, quicksort
@@ -59,3 +59,31 @@ the random algorithm needs to generate an uniform random permutation
 - randomized version
 - worst case analysis
 - expected running time analysis
+
+* chapter 8 sorting in linear time
+
+- sorting in linear time, limitations of comparison sort, decision tree
+- counting sort
+- radix sort, using counting sort
+- bucket sort, depends on uniform random input
+
+  The algorithms presented in this chapter have no comparison routines and have linear time lower bound. The limitation of comparison sort algorithms are explained using a decision tree with a simple proof. Bucket sort uses linked lists and run in linear time if the array has uniform distribution.
+
+* chapter 9, medians and order stat
+
+- order statistics (ith smallest element of an array) using select-randomized (similar to quicksort)
+- find max and min simultaneously (faster than sorting and finding)
+
+* chapter 10 elementary DS
+
+- stacks and queues (using arrays), linked lists
+- rooted trees (binary trees, unbounded branching)
+
+  These data structures will be used in other algorithms later.
+
+* chapter 11 hash tables
+
+- direct address tables and hash tables
+- collision resolution (chaining, linked lists) and complexity time
+- hash functions (family of hash functions, random)
+- 
