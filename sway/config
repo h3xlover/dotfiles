@@ -60,6 +60,8 @@ seat seat0 hide_cursor 3000
 seat seat0 xcursor_theme hack
 
 output DP-1 resolution 3440x1440@144Hz
+output HDMI-A-1 2560x1600@120Hz
+
 output * bg ~/images/cover.png fill
 #exec mpvpaper -vs -o "no-audio loop" DP-1 ~/images/gifs/cover.mp4
 

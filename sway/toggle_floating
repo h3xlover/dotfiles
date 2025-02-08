@@ -18,10 +18,10 @@ if [[ $1 = "hide" ]];then
 elif [[ $1 = "show" ]];then
     for con_id_h in $con_ids_hidden;do
 	swaymsg [con_id="$con_id_h"] move container to workspace "$workspc"
+	swaymsg focus floating
     done
-    swaymsg focus floating
     toggle="hide"
 fi
-
+swaymsg focus floating
 swaymsg mode "default"
-swaymsg bindsym Mod4+4 exec ~/dotfiles/sway/toggle_floating "$toggle"
+swaymsg bindsym Mod5+c exec ~/dotfiles/sway/toggle_floating "$toggle"
