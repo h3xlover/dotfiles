@@ -1,2 +1,10 @@
 neofetch
 neofetch 
+cd mnt/hd2
+cd /mnt/hd2
+ls
+cd monastery/
+ls
+tree
+swaymsg input
+swaymsg input '*' xkb_layout caps-en

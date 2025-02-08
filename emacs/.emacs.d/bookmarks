@@ -2,34 +2,13 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org-capture-last-stored"
- (filename . "~/org/roam/20240715130431-heapsort.org")
- (front-context-string)
- (rear-context-string . "title: heapsort\n")
- (position . 86)
- (last-modified 26261 18577 434417 402000))
-("config-elfeed"
- (filename . "~/org/elfeed.org")
- (front-context-string . "* Blogs :elfeed:")
- (rear-context-string)
- (position . 1)
- (last-modified 26170 30132 878671 85000))
-("config-sway"
- (filename . "~/.config/sway/config")
- (front-context-string . "# Default config")
- (rear-context-string)
- (position . 1)
- (last-modified 26170 30078 451700 236000))
-("config-emacs"
- (filename . "~/.emacs.d/config.org")
- (front-context-string . "*  Settings\n** G")
- (rear-context-string)
- (position . 1)
- (last-modified 26170 30066 452549 84000))
-("images"
- (filename . "/mnt/hd1/images/")
- (front-context-string . "gifs\n  drwxrwxrw")
- (rear-context-string . "96 Nov 20 22:18 ")
- (position . 139)
- (last-modified 26170 29954 278720 609000))
+(("todo.org" (filename . "~/org/roadmap/todo.org")
+ (front-context-string . "* TODOs\n\n** misc") (rear-context-string)
+ (position . 1) (last-modified 26294 34065 24122 125000))
+("config-sway" (filename . "~/.config/sway/config")
+ (front-context-string . "# Default config") (rear-context-string)
+ (position . 1) (last-modified 26170 30078 451700 236000))
+("config-emacs" (filename . "~/.emacs.d/config.org")
+ (front-context-string . "*  Settings\n** G") (rear-context-string)
+ (position . 1) (last-modified 26170 30066 452549 84000))
 )

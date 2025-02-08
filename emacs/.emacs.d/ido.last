@@ -2,61 +2,213 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("/home/g/git/portfolio/" . "blog/")
+ ("/etc/portage/patches/gui-wm/" . "sway/")
+ ("/etc/portage/patches/" . "gui-wm/")
+ ("/etc/portage/" . "patches/")
+ ("/etc/" . "portage/")
+ ("/" . "etc/")
+ ("/home/g/org/books/" . "ltximg/")
+ ("/home/g/.xkb/" . "symbols/")
+ ("/home/g/dotfiles/" . "sway/")
+ ("/home/g/.config/" . "sway/")
+ ("/home/g/git/algorithms/c/" . "quicksort/")
+ ("/home/g/git/algorithms/" . "c/")
+ ("/home/g/org/roam/comp/" . "algorithms/")
+ ("/home/g/org/roam/" . "comp/")
+ ("/home/g/dotfiles/org/" . "roadmap/")
+ ("/home/g/git/swaypatched/sway/" . "commands/")
+ ("/home/g/git/swaypatched/" . "sway/")
+ ("/home/g/git/sway/include/sway/" . "tree/")
+ ("/home/g/git/sway/include/" . "sway/")
+ ("/home/g/git/sway/sway/" . "config/")
+ ("/home/g/git/sway/" . "include/")
  ("/home/g/.local/lib/python3.12/site-packages/" . "lastfmcollagegenerator/")
  ("/home/g/.local/lib/python3.12/" . "site-packages/")
  ("/home/g/.local/lib/" . "python3.12/")
- ("/home/g/.local/" . "lib/")
+ ("/home/g/.local/" . "bin/")
  ("/home/g/git/lastfm-collage-generator/src/" . "lastfmcollagegenerator/")
  ("/home/g/git/lastfm-collage-generator/" . "src/")
- ("/home/g/git/" . "lastfm-collage-generator/")
+ ("/home/g/git/" . "portfolio/")
  ("/home/tg/.local/lib/python3.12/site-packages/" . "lastfmcollagegenerator/")
  ("/home/tg/.local/lib/python3.12/" . "site-packages/")
  ("/home/tg/.local/lib/" . "python3.12/")
  ("/home/tg/.local/" . "lib/")
  ("/home/tg/" . ".local/")
- ("/home/" . "tg/")
+ ("/home/" . "g/")
  ("/home/g/.emacs.d/elpa/" . "org-download-20220906.1929/")
  ("/home/g/.emacs.d/" . "elpa/")
  ("/home/g/code/c/" . "sorting/")
  ("/home/g/code/" . "c/")
- ("/home/g/" . "git/")
+ ("/home/g/" . ".local/")
  ("/home/g/org/" . "roadmap/")
 )
 
 ;; ----- ido-work-directory-list -----
 (
+ "/home/g/.local/bin/"
+ "/home/g/org/roadmap/"
+ "/home/g/"
+ "/home/g/org/journal/"
+ "/home/g/git/portfolio/blog/"
+ "/etc/portage/patches/gui-wm/sway/"
+ "/home/g/dotfiles/sway/"
+ "/home/g/dotfiles/bspwm/"
+ "/home/g/org/books/"
+ "/home/g/.config/sway/"
+ "/home/g/git/algorithms/c/"
+ "/home/g/git/algorithms/c/quicksort/"
+ "/home/g/dotfiles/org/roadmap/"
+ "/home/g/.xkb/symbols/"
+ "/home/g/git/Zathura-Pywal/"
+ "/home/g/.config/zathura/"
+ "/home/g/git/sway/include/sway/"
+ "/home/g/git/sway/sway/"
+ "/home/g/git/"
+ "/home/g/org/roam/comp/algorithms/"
+ "/home/g/git/sway/sway/tree/"
+ "/home/g/git/sway/sway/commands/"
+ "/home/g/git/swaypatched/sway/commands/"
+ "/home/g/git/swaypatched/sway/tree/"
+ "/home/g/git/sway/include/sway/tree/"
+ "/home/g/git/sway/sway/input/"
+ "/home/g/git/sway/include/"
+ "/home/g/.emacs.d/"
  "/home/g/git/lastfm-collage-generator/"
  "/home/g/git/lastfm-collage-generator/src/lastfmcollagegenerator/"
  "/home/tg/.local/lib/python3.12/site-packages/lastfmcollagegenerator/"
  "/home/g/.local/lib/python3.12/site-packages/lastfmcollagegenerator/"
  "/home/g/.emacs.d/elpa/org-download-20220906.1929/"
  "/home/g/code/c/sorting/"
- "/home/g/org/roadmap/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "README.md"
- "collage.py"
- "org-download.el"
- "heap.c"
+ "sw"
+ "comp.org"
  "monastery.org"
- "langs.org"
  "todo.org"
- "articles.org"
+ "temp.org"
+ "20240621"
+ "app.js"
+ "fullscreen.patch"
+ "colors"
+ "setkmap"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("/home/g/git/lastfm-collage-generator/src/lastfmcollagegenerator/" (26265 16285 77700 436000) "fonts/" "../" "__init__.py" "lastfm/" "collage.py" "constants.py" "./" "collage_generator.py")
+ ("/home/g/" (26530 55277 723330 274000) ".elfeed/" "git/" ".themes/" ".dbus/" "temp/" ".gitconfig" "../" "./" "last.py" ".bash_history" ".mplayer/" ".bash_profile" "install-amd64-minimal-20250119T170328Z.iso" ".bash_history-05512.tmp" ".java/" ".cache/" ".minecraft/" "Win10_22H2_English_x64v1.iso" ".xinitrc" ".bash_history-02609.tmp" ".config/" ".npm/" ".bash_history-04914.tmp" "firmware-security-training/" "dotfiles/" ".bash_history-01766.tmp" ".xkb/" ".mozilla/" "dict/" ".bash_history-02108.tmp" "ventoy-1.0.99/" ".bash_history-06217.tmp" ".pki/" ".tlauncher/" ".ssh/" ".anthy/" ".fehbg" ".bash_history-02158.tmp" "Downloads" "images/" "org/" ".yarn/" "ventoy-1.0.99-linux.tar.gz" ".bash_history-17340.tmp" ".emacs.d/" "wayneko/" ".bashrc" "obsidian/" "temp.org" ".local/")
+
+ ("/home/g/dotfiles/org/journal/" (26458 20288 35217 159000) "../" "./" "20240621" "20241211")
+
+ ("/home/g/org/journal/" (26294 33462 458291 179000) "../" "./" "20240621")
+
+ ("/home/g/.emacs.d/" (26435 18615 949374 113000) "config.org" "ss.PNG" "../" "./" "init.el" "games/" "fontpreview-mode.el" "nov-places" ".org-id-locations" "transient/" "ss-error.PNG" "elpa/" "theme.el" "eshell/" "persist/" "bookmarks" "config.el" "theme.org" "url/" "ido.last" "auto-save-list/" "org-download.el" "org-roam.db" "tutorial/")
+
+ ("/home/g/.local/bin/" (26424 45503 309785 319000) "../" "./" "wal" "tg" "find_last" "pomatez" "zathura" "pomatez-bin/" "anki-dir/" "genzathurarc" "excalidraw-git/" "anki" "minecraft" "wpg" "lorien" "Telegram/" "excalidraw" "tlauncher/" "g" "sw" "httpx")
+
+ ("/home/g/git/portfolio/blog/" (26450 27901 104314 858000) "schemes/" "../" "./" "app.js" "public/" "views/" "routes/" "node_modules/" "controllers/" "posts/" "package.json" "package-lock.json" "bin/")
+
+ ("/home/g/git/portfolio/" (26450 27901 104314 858000) "../" "./" ".git/" "locallibrary/" "blog/")
+
+ ("/home/g/git/" (26450 27895 580267 894000) "../" "./" "sway/" "algorithms/" "portfolio/" "p-repo/" "Zathura-Pywal/" "lastfm-collage-generator/" "goldendict/")
+
+ ("/etc/portage/patches/gui-wm/sway/" (26294 55409 814410 918000) "./" "../" "disable_titlebar.patch" "fullscreen.patch" "focus_container.patch")
+
+ ("/etc/portage/patches/gui-wm/" (26279 64784 868434 114000) "./" "../" "sway/")
+
+ ("/etc/portage/patches/" (26233 27087 54017 385000) "./" "../" "x11-terms/" "gui-wm/")
+
+ ("/etc/portage/" (26281 42393 254937 938000) "./" "package.mask/" "../" "make.conf~" "package.license/" "repos.conf/" "patches/" "make.profile/" "env/" "package.accept_keywords/" "package.use/" "make.conf" "profile/" "binrepos.conf/" "savedconfig/")
+
+ ("/etc/" (26435 18331 637999 952000) "xml/" "./" "cron.daily/" "ld.so.cache" "gshadow-" "udev/" "rsyncd.conf" "sudo_logsrvd.conf" "default/" "paperspecs" "../" "dbus-1/" "protocols" "security/" ".pwd.lock" "group-" "skel/" "man_db.conf" "ld.so.conf.d/" "ssl/" "swtpm-localca.conf" "sysctl.d/" "dhcpcd.conf" "sandbox.conf" "lsb-release" "inittab.d/" "mailutils.d/" "sensors3.conf" "gai.conf" "npm/" "qemu/" "locale.gen" "fonts/" "dmtab" "sysstat.ioconf" "gitconfig" "gshadow" "hostname" "xattr.conf" "config-archive/" "libvirt/" "modules-load.d/" "netconfig" "sandbox.d/" "subuid" "rmt" "host.conf" "eb.conf" "nsswitch.conf" "cups/" "arp-scan/" "rpc" "sgml/" "gtk-3.0/" "ImageMagick-7/" "cron.monthly/" "rc.conf" "pulse/" "chromium/" "libnl/" "alsa/" "X11/" "xinetd.d/" "crossdev/" "wireplumber/" "sysstat" "environment" "wgetrc" "resolv.conf" "vulkan/" "systemd/" "environment.d/" "vdpau_wrapper.cfg" "mailutils.conf" "python-exec/" "lessfilter.d/" "swtpm_setup.conf" "xdg/" "portage/" "pam.d/" "machine-id" "smartd_warning.sh" "grub.d/" "localtime" "java-config-2/" "bindresvport.blacklist" "conf.d/" "group" "timezone" "ntp.conf" "login.defs" "ca-certificates/" "sudo.conf" "fstab" "env.d/" "fuse.conf" "smartd.conf" "emacs/" "revdep-rebuild/" "e2scrub.conf" "clang/" "pkcs11/" "mime.types" "inputrc" "dnsmasq.conf" "os-release" "swtpm-localca.options" "profile.env" "polkit-1/" "metalog.conf" "ca-certificates.conf" "init.d/" "e2fsck.conf" "ufw/" "mtab" "mplayer/" "sway/" "sudoers" "gtk-2.0/" "shadow-" "elogind/" "mpv/" "shadow" "hosts" "logrotate.d/" "passwd-" "networks" "subuid-" "runlevels/" "eclean/" "filesystems" "etc-update.conf" "local.d/" "fstab~" "shells" "sudoers.dist" "DIR_COLORS" "gimp/" "subgid-" "eselect/" "subgid" "inittab" "issue" "mke2fs.conf" "services" "ssh/" "profile" "issue.logo" "passwd" "ethertypes" "gentoo-release" "csh.env" "w3m/" "dispatch-conf.conf" "profile.d/" "rhashrc" "ld.so.conf" "bash/" "nullmailer/")
+
+ ("/home/g/org/books/ltximg/" (26294 33462 458291 179000) "../" "./" "org-ltximg_3a3981cafcfb876730ed9459e139c63ab609b2d3.png" "org-ltximg_cbcb7167a27214cb456e9366cf2fb85f757a8471.png" "org-ltximg_299de5e1b92dc23a1a19336ecd897a5f266d9557.png" "org-ltximg_470390e81f9984e761f2920eeba385605baa98e6.png" "org-ltximg_9af787b0b480464dc07afdd0c767a571fa5ecc37.png")
+
+ ("/home/g/.config/sway/" (26294 30081 678057 506000) "../" "./" "config")
+
+ ("/home/g/.config/" (26388 38176 556864 407000) "pulse/" "../" "./" "dconf/" "wal/" "seergdb/" "gtk-3.0/" "sway/" "sxhkd/" "fontconfig/" "pomatez/" "zathura/" "btop/" "neofetch/" "xournalpp/" "pavucontrol.ini" "wpg/" "ranger/" "goldendict/" "bspwm/" "htop/" "mpv/" "chromium/" "mimeapps.list" "QtProject.conf")
+
+ ("/home/g/git/algorithms/c/" (26365 42400 130598 410000) "counting.c" "../" "./" "array.h" "test.h" "create_array.c" "command.h" "array.c" "a" "counting.h" "quicksort/" "create" "command.c" "test.c" "array")
+
+ ("/home/g/.xkb/symbols/" (26352 49973 649457 684000) "caps-ru" "../" "./" "caps-en")
+
+ ("/home/g/.xkb/" (26295 27785 729531 577000) "../" "./" "symbols/")
+
+ ("/home/g/dotfiles/sxhkd/" (26294 29423 562553 524000) "../" "./" "sxhkdrc")
+
+ ("/home/g/git/lastfm-collage-generator/src/lastfmcollagegenerator/" (26323 20857 241804 473000) "__init__.py" "../" "./" "fonts/" "collage.py" "constants.py" "__pycache__/" "lastfm/" "collage_generator.py")
+
+ ("/home/g/git/lastfm-collage-generator/" (26323 20772 77187 709000) "../" "./" "pyproject.toml" ".gitignore" "MANIFEST.in" "setup.cfg" "tests/" ".git/" "README.md" "src/" "LICENSE")
+
+ ("/home/g/dotfiles/" (26311 31501 305634 602000) "../" "./" ".gitignore" "wal/" ".git/" "README.md" "sway/" "misc/" "sxhkd/" "fontconfig/" "zathura/" "installer" "polybar/" "ChromiumPywal/" "ranger/" "emacs/" "bspwm/" "org/" "picom/" "portage/" "alacritty/" "xorg/" "kernel/")
+
+ ("/home/g/dotfiles/bspwm/" (26294 29423 441551 222000) "temp" "center_window" "../" "./" "tesseract" "toggle_layer" "dmenu" "toggle_border_width" "kill_window" "toggle_floating_window" "toggle_tiled_window" "dmenu_run" "notification_info" "xclip" "resize_window" "marked_nodes" "list_hidden_windows" "ranger" "bspwmrc" "setkmap" "nodes")
+
+ ("/home/g/git/Zathura-Pywal/" (26307 22790 961260 700000) "../" "./" ".git/" "README.md" "zathura" "genzathurarc" "install.sh")
+
+ ("/home/g/dotfiles/zathura/" (26294 29423 562553 524000) "../" "./" "zathurarc")
+
+ ("/home/g/.config/zathura/" (26294 29423 562553 524000) "../" "./" "zathurarc")
+
+ ("/home/g/git/sway/include/" (26303 45305 520390 437000) "ipc.h" "meson.build" "../" "./" "pool-buffer.h" "stringop.h" "cairo_util.h" "sway/" "log.h" "gesture.h" "swaybar/" "util.h" "swaynag/" "list.h" "ipc-client.h" "pango.h" "loop.h")
+
+ ("/home/g/git/sway/sway/input/" (26303 45305 525390 483000) "input-manager.c" "../" "./" "seatop_down.c" "cursor.c" "seatop_resize_floating.c" "seatop_move_floating.c" "text_input.c" "seatop_resize_tiling.c" "keyboard.c" "switch.c" "tablet.c" "seatop_default.c" "seat.c" "seatop_move_tiling.c" "libinput.c")
+
+ ("/home/g/git/sway/include/sway/tree/" (26303 45305 519390 427000) "../" "./" "arrange.h" "workspace.h" "node.h" "root.h" "container.h" "view.h")
+
+ ("/home/g/git/sway/include/sway/" (26303 45305 519390 427000) "../" "./" "tree/" "output.h" "swaynag.h" "server.h" "criteria.h" "ipc-json.h" "commands.h" "xdg_decoration.h" "input/" "scene_descriptor.h" "ipc-server.h" "xwayland.h" "config.h" "layers.h" "decoration.h" "desktop/" "sway_text_node.h")
+
+ ("/home/g/git/sway/sway/commands/" (26303 45305 523390 464000) "unmark.c" "exit.c" "include.c" "../" "bar/" "layout.c" "bind.c" "./" "new_float.c" "default_floating_border.c" "focus.c" "floating.c" "for_window.c" "title_format.c" "sticky.c" "create_output.c" "xwayland.c" "mark.c" "tiling_drag_threshold.c" "mode.c" "show_marks.c" "force_display_urgency_hint.c" "border.c" "nop.c" "move.c" "input/" "titlebar_border_thickness.c" "rename.c" "kill.c" "floating_minmax_size.c" "exec_always.c" "hide_edge_borders.c" "max_render_time.c" "input.c" "smart_gaps.c" "new_window.c" "mouse_warping.c" "focus_wrapping.c" "shortcuts_inhibitor.c" "popup_during_fullscreen.c" "assign.c" "scratchpad.c" "tiling_drag.c" "titlebar_padding.c" "no_focus.c" "title_align.c" "reload.c" "allow_tearing.c" "smart_borders.c" "fullscreen.c" "exec.c" "ws_auto_back_and_forth.c" "primary_selection.c" "urgent.c" "opacity.c" "set.c" "swaybg_command.c" "output/" "workspace_layout.c" "force_focus_wrapping.c" "gaps.c" "bar.c" "workspace.c" "font.c" "default_orientation.c" "focus_follows_mouse.c" "split.c" "resize.c" "floating_modifier.c" "client.c" "swap.c" "inhibit_idle.c" "swaynag_command.c" "seat/" "seat.c" "focus_on_window_activation.c" "default_border.c" "gesture.c" "output.c")
+
+ ("/home/g/org/roam/comp/algorithms/" (26302 26751 283166 443000) "../" "./" "20240524163457-divide_and_conquer_algorithms.org" "20240524152342-merge_sort.org" "20240715130431-heapsort.org" "20240529014641-algorithms.org" "algorithms.excalidraw" "Heaps/" "Heapsort/" "20240529014724-insertion_sort.org" "20240524163311-recurrence.org")
+
+ ("/home/g/git/sway/sway/config/" (26303 45305 524390 474000) "../" "./" "input.c" "bar.c" "seat.c" "output.c")
+
+ ("/home/g/git/sway/sway/tree/" (26303 45305 527390 502000) "root.c" "../" "./" "view.c" "arrange.c" "node.c" "workspace.c" "container.c" "output.c")
+
+ ("/home/g/git/sway/sway/" (26303 45305 527390 502000) "sway_text_node.c" "meson.build" "../" "config.c" "./" "tree/" "xdg_decoration.c" "sway.1.scd" "commands.c" "ipc-server.c" "sway-ipc.7.scd" "scene_descriptor.c" "commands/" "main.c" "sway-output.5.scd" "config/" "input/" "server.c" "realtime.c" "xdg_activation_v1.c" "ipc-json.c" "sway-input.5.scd" "criteria.c" "lock.c" "desktop/" "sway-bar.5.scd" "swaynag.c" "decoration.c" "sway.5.scd")
+
+ ("/home/g/git/sway/" (26303 45305 528390 511000) "README.es.md" "README.zh-TW.md" ".builds/" "meson.build" "../" "./" "README.hi.md" ".gitignore" "include/" "README.hu.md" "README.dk.md" ".git/" ".editorconfig" "README.md" "sway.desktop" "README.ko.md" "README.it.md" "sway/" "assets/" "completions/" "README.fr.md" "config.in" "README.ro.md" "README.uk.md" "README.ge.md" "client/" "README.cs.md" "README.ru.md" "README.tr.md" "README.nl.md" "README.pl.md" "README.pt.md" "swaymsg/" "meson_options.txt" "README.sv.md" "swaybar/" "release.sh" "README.ja.md" ".mailmap" "swaynag/" "common/" "README.de.md" "CONTRIBUTING.md" "README.no.md" "README.zh-CN.md" "LICENSE" "README.gr.md" "README.ir.md" "protocols/" ".github/" "README.ar.md")
+
+ ("/home/g/git/algorithms/c/quicksort/" (26303 44779 926496 636000) "../" "./" "quick.h" "quick.c")
+
+ ("/home/g/git/algorithms/" (26303 44711 899863 239000) "../" "./" "c/")
+
+ ("/home/g/org/roam/comp/" (26294 33462 459291 198000) "../" "./" "algorithms/" "automata_theory/")
+
+ ("/home/g/org/roam/" (26294 33462 465291 312000) "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "../" "./" "languages/" "psycho/" "math/" "2023-05-12_19-28-40_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240713142658-goals.org" "physics/" "2023-04-26_14-20-35_screenshot.png" "2023-05-16_10-20-09_screenshot.png" "comp/" "2023-04-29_13-02-30_screenshot.png" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg")
+
+ ("/home/g/dotfiles/org/roadmap/" (26294 33462 458291 179000) "physics.org" "../" "./" "comp.org" "langs.org" "monastery.org" "todo.org" "hardware.org" "ask.org" "articles.org" "math.org")
+
+ ("/home/g/dotfiles/org/" (26294 33462 465291 312000) ".stfolder/" "../" "journal/" "./" ".gitignore" "tasks/" "books/" "roam/" "roadmap/" "elfeed.org")
+
+ ("/home/g/dotfiles/org/books/" (26294 33462 458291 179000) "../" "./" "Divide_and_conquer/" "ltximg/" "introduction_algorithms.org")
+
+ ("/home/g/org/books/" (26294 33462 458291 179000) "../" "./" "Divide_and_conquer/" "ltximg/" "introduction_algorithms.org")
+
+ ("/home/g/git/swaypatched/sway/tree/" (26294 54871 622185 483000) "root.c" "../" "./" "view.c" "arrange.c" "node.c" "workspace.c" "container.c" "output.c")
+
+ ("/home/g/git/swaypatched/sway/commands/" (26294 54871 619185 426000) "unmark.c" "exit.c" "include.c" "../" "bar/" "layout.c" "bind.c" "./" "new_float.c" "default_floating_border.c" "focus.c" "floating.c" "for_window.c" "title_format.c" "sticky.c" "create_output.c" "xwayland.c" "mark.c" "tiling_drag_threshold.c" "mode.c" "show_marks.c" "force_display_urgency_hint.c" "border.c" "nop.c" "move.c" "input/" "titlebar_border_thickness.c" "rename.c" "kill.c" "floating_minmax_size.c" "exec_always.c" "hide_edge_borders.c" "max_render_time.c" "input.c" "smart_gaps.c" "new_window.c" "mouse_warping.c" "focus_wrapping.c" "shortcuts_inhibitor.c" "popup_during_fullscreen.c" "assign.c" "scratchpad.c" "tiling_drag.c" "titlebar_padding.c" "no_focus.c" "title_align.c" "reload.c" "allow_tearing.c" "smart_borders.c" "fullscreen.c" "exec.c" "ws_auto_back_and_forth.c" "primary_selection.c" "urgent.c" "opacity.c" "set.c" "swaybg_command.c" "output/" "workspace_layout.c" "force_focus_wrapping.c" "gaps.c" "bar.c" "workspace.c" "font.c" "default_orientation.c" "focus_follows_mouse.c" "split.c" "resize.c" "floating_modifier.c" "client.c" "swap.c" "inhibit_idle.c" "swaynag_command.c" "seat/" "seat.c" "focus_on_window_activation.c" "default_border.c" "gesture.c" "output.c")
+
+ ("/home/g/git/swaypatched/sway/" (26294 54871 622185 483000) "sway_text_node.c" "meson.build" "../" "config.c" "./" "tree/" "xdg_decoration.c" "sway.1.scd" "commands.c" "ipc-server.c" "sway-ipc.7.scd" "scene_descriptor.c" "commands/" "main.c" "sway-output.5.scd" "config/" "input/" "server.c" "realtime.c" "xdg_activation_v1.c" "ipc-json.c" "sway-input.5.scd" "criteria.c" "lock.c" "desktop/" "sway-bar.5.scd" "swaynag.c" "decoration.c" "sway.5.scd")
+
+ ("/home/g/git/swaypatched/" (26294 55470 768569 31000) "README.es.md" "README.zh-TW.md" ".builds/" "meson.build" "../" "./" "README.hi.md" "include/" "README.hu.md" "README.dk.md" ".editorconfig" "README.md" "sway.desktop" "README.ko.md" "README.it.md" "sway/" "assets/" "completions/" "README.fr.md" "config.in" "README.ro.md" "README.uk.md" "README.ge.md" "client/" "README.cs.md" "README.ru.md" "README.tr.md" "README.nl.md" "README.pl.md" "README.pt.md" "swaymsg/" "meson_options.txt" "README.sv.md" "swaybar/" "release.sh" "README.ja.md" ".mailmap" "swaynag/" "common/" "README.de.md" "CONTRIBUTING.md" "README.no.md" "README.zh-CN.md" "LICENSE" "README.gr.md" "README.ir.md" "protocols/" "README.ar.md")
+
+ ("/home/g/org/roadmap/" (26294 33462 458291 179000) "physics.org" "../" "./" "comp.org" "langs.org" "monastery.org" "todo.org" "hardware.org" "ask.org" "articles.org" "math.org")
+
+ ("/home/g/.emacs.d/elpa/org-download-20220906.1929/" (26294 30176 337856 4000) "../" "./" "org-download.elc" "org-download-pkg.el" "org-download-autoloads.el" "org-download.el")
+
+ ("/home/g/git/sway/include/sway/desktop/" (26294 45352 826467 327000) "../" "./" "transaction.h" "launcher.h" "idle_inhibit_v1.h")
+
+ ("/home/g/org/" (26294 33462 465291 312000) ".stfolder/" "../" "journal/" "./" ".gitignore" "tasks/" "books/" "roam/" "roadmap/" "elfeed.org")
+
+ ("/home/g/.local/" (26294 30267 44579 400000) "../" "./" "lib/" "state/" "share/" "bin/")
+
+ ("/home/g/dotfiles/sway/" (26294 29423 561553 505000) "move_float" "../" "bar" "./" "toggle_floating" "launch" "config" "focus_parent" "floating" "colors")
 
  ("/home/g/git/lastfm-collage-generator/src/" (26265 16285 74700 423000) "../" "lastfmcollagegenerator/" "./")
-
- ("/home/g/git/lastfm-collage-generator/" (26265 16285 77700 436000) "MANIFEST.in" ".gitignore" "../" ".git/" "LICENSE" "tests/" "README.md" "pyproject.toml" "setup.cfg" "./" "src/")
-
- ("/home/g/git/" (26265 16277 467667 147000) "p-repo/" "../" "lastfm-collage-generator/" "./")
-
- ("/home/g/" (26265 20868 391541 743000) ".cache/" ".bash_profile" ".yarn/" ".w3m/" "dotfiles/" ".icons/" "Downloads/" ".gitconfig" "dict/" "../" ".npm/" ".android/" ".mozilla/" ".ssh/" ".python_history" "images/" "last.py" ".tlauncher/" ".wget-hsts" "enem.pdf" ".elfeed/" "org/" "code/" ".pyglossary/" ".texlive/" ".config/" ".cargo/" "git/" ".bash_history" ".java/" "maomempcdmkfcjgeabecfpkebghcigac/" ".Xresources" ".xinitrc" ".asoundrc" ".minecraft/" ".emacs.d/" "5x5 album collage.png" "17x17.png" "./" ".local/" ".syncserver/" ".pki/" ".dbus/" ".bashrc")
 
  ("/home/tg/.local/lib/python3.12/site-packages/lastfmcollagegenerator/" (26244 48907 939916 853000) "./" "../" "fonts/" "__init__.py" "collage.py" "__pycache__/" "collage_generator.py" "collage_generator.py~" "collage.py~" "constants.py" "lastfm/")
 
@@ -72,8 +224,6 @@
 
  ("/home/" (26236 53253 672843 341000) "./" "../" "g/" "tg/")
 
- ("/home/g/.local/" (26173 43927 598691 58000) "../" "lib/" "share/" "bin/" "state/" "./")
-
  ("/home/g/.local/lib/" (26201 26666 76751 692000) "python3.11/" "../" "./" "python3.12/")
 
  ("/home/g/.local/lib/python3.12/" (26201 26666 76751 692000) "../" "site-packages/" "./")
@@ -82,11 +232,7 @@
 
  ("/home/g/.local/lib/python3.12/site-packages/lastfmcollagegenerator/" (26265 16539 160811 880000) "fonts/" "../" "__init__.py" "lastfm/" "__pycache__/" "collage.py" "constants.py" "./" "collage_generator.py")
 
- ("/home/g/.emacs.d/elpa/org-download-20220906.1929/" (26264 3703 670177 313000) "org-download.el" "../" "org-download-autoloads.el" "org-download-pkg.el" "./" "org-download.elc")
-
  ("/home/g/.emacs.d/elpa/" (26263 3579 310288 130000) "compat-30.0.0.0/" "archives/" "s-20220902.1511/" "websocket-20230809.305/" "magit-section-20240713.1925/" "spacemacs-theme-20240715.1440/" "ht-20230703.558/" "ewal-20200305.230/" "async-20240714.709/" "../" "calfw-20180118.45/" "compat-30.0.0.0.signed" "org-journal-20240218.1645/" "elfeed-20240331.1348/" "ido-vertical-mode-20210205.436/" "org-roam-20240715.1750/" "swiper-20240520.1202/" "org-bullets-20200317.1740/" "ace-window-20220911.358/" "org-download-20220906.1929/" "which-key-20240620.2145/" "dash-20240510.1327/" "ewal-spacemacs-themes-20230505.609/" "calfw-org-20170411.220/" "ts-20220822.2313/" "ivy-20240524.1139/" "rmsbolt-20240622.1704/" "elfeed-org-20231009.1125/" "calfw-cal-20170411.220/" "emacsql-20240714.1824/" "org-roam-ui-20221105.1040/" "./" "org-super-agenda-20240630.18/" "gnupg/" "simple-httpd-20230821.1458/" "good-scroll-20211101.942/" "avy-20230420.404/")
-
- ("/home/g/.emacs.d/" (26264 7186 802416 657000) "org-download.el" "url/" "../" "init.el" "tutorial/" "elpa/" "org-roam.db" "bookmarks" "auto-save-list/" "ss-error.PNG" "transient/" "config.el" "theme.org" "eshell/" "ido.last" "games/" "persist/" "nov-places" "config.org" "./" "ss.PNG" "fontpreview-mode.el")
 
  ("/home/g/code/c/sorting/" (26261 16603 125822 830000) "insertion.c" "merge" "sort.cpp" "heap.c" "../" "sort" "array_int" "merge_sort.c" "./" "heap")
 
@@ -95,10 +241,6 @@
  ("/home/g/code/" (26186 36305 661088 610000) "kicad/" "vl/" "../" "c/" "./")
 
  ("/home/g/org/roam2/" (26263 5146 871146 247000) "20230508101457-legendre_polynomials.org" "20230509220516-de_novo_protein_synthesis_theory.org" "how_to_find_critical_points/" "20230507184728-cross_product.org" "20230428211841-semantic_priming.org" "20240524152342-merge_sort.org" "20230508205715-synaptic_plasticity.org" "Hyperboloid/" "20230428204925-negative_priming.org" "20230809072026-swedish.org" "2023-05-16_10-30-44_screenshot.png" "Length_of_parametric_equations/" "20230426133749-polar_coordinates.org" "20230429123049-polar_decomposition.org" "20230730164148-multivariable_functions.org" "Definition/" "2023-04-29_12-44-44_screenshot.png" "2023-04-27_14-50-06_screenshot.png" "20240529014641-algorithms.org" "20230507194343-equation_of_a_plane_in_3d.org" "Area_of_a_polar_equation/" "20230508084309-discrete_fourier_transform.org" "20230429102930-norm.org" "20230516101540-cylindrical_coordinates.org" "Linearity_on_calculus/" "20230427141026-pca.org" "Cones/" "20240713142658-goals.org" "20230428204510-perceptual_priming.org" "Example/" "20230426122923-algebra.org" "20230430212254-hippocampus.org" "20230529133329-basal_ganglia.org" "20230504154325-jordan_matrix.org" "Calculus_of_vector_functions/" "Examples/" "20230428102130-polar_equations.org" "Example_of_SVD/" "Linearity_of_transformations/" "2023-04-27_15-17-26_paste-6092c9483ff0ebb56a0b8c48db7b0beeb52cb967.jpg" "20230426125715-series.org" "absolute_maximum_and_minimum/" "Techniques_of_integration/" "The_Geometry_of_SVD/" "Limits_of_multivariable_functions/" "20230509221322-dna_methylation.org" "20230426123042-automata_theory.org" "2023-04-27_15-23-15_screenshot.png" "Graphing_vector_functions/" "2023-04-27_15-12-58_screenshot.png" "Properties/" "20230428145823-trapezoidal_rule.org" "2023-05-04_19-32-18_screenshot.png" "Composite_Simpson's_rule/" "20230429092659-singular_value.org" "ltximg/" "20230428204640-positive_priming.org" "20230613195236-projectile_motion.org" "2023-04-29_13-08-18_screenshot.png" "2023-05-16_21-01-19_screenshot.png" "20230430211957-long_term_potentiation.org" "20230427120341-spacing_effect.org" "Perpendicular_Least_Squares/" "20230428204206-priming.org" "20230428143710-analysis.org" "2023-05-04_19-31-42_screenshot.png" "Heaps/" "20230501084323-linear_transformation.org" "20230427154818-covariance_matrix.org" "Types_of_memory/" "2023-04-28_08-43-53_screenshot.png" "20230516201507-spherical_coordinates.org" "20230429125823-pseudoinverse.org" "20240524163457-divide_and_conquer_algorithms.org" "20230429160234-numerical_analysis.org" "20230429102657-norm_of_a_matrix.org" "20230918221631-electrodynamics.org" "20230514222409-episodic_memory.org" "Sample_Correlation_Matrix/" "2023-04-29_13-02-30_screenshot.png" "integration.org" "Limit_of_a_vector_function/" "20230508101953-orthogonal_polynomials.org" "Graph/" "20230514220621-frontal_lobe.org" "2023-04-27_20-47-59_screenshot.png" "20230426123513-linear_algebra.org" "20230427112815-svd.org" "20230606205236-tnb_frames.org" "20240715130431-heapsort.org" "2023-05-01_10-36-25_screenshot.png" "20230913222720-maxima_minima_of_functions.org" "20230917191349-lagrange_multipliers.org" "20230429153017-least_squares.org" "20230426125920-parametric_equations.org" "20230513083043-surfaces.org" "Double_Integrals/" "20230428214035-memory.org" "2023-04-26_14-20-35_screenshot.png" "spectral_norm/" "Least_squares_with_dependent_columns/" "Osculating_Circle/" "2023-05-12_19-28-40_screenshot.png" "Domain/" "2023-05-16_10-20-09_screenshot.png" "Ellipsoids/" "20230428195208-enconding.org" "Matrix_of_a_linear_transformation/" "Relations_with_surfaces/" "20230427205910-covariancea.org" "20230428152412-simpsons_rule.org" "Matrix_norm/" "Ellipse/" "Relations_with_cylinders/" "20230428143244-numerical_integration.org" "20240529014724-insertion_sort.org" "Paraboloids/" "20230522130531-gram_schmidt.org" "Arc_length_of_a_polar_equation/" "20230507192103-equation_of_line_in_3d.org" "20230514222356-semantic_memory.org" "20230430205601-amygdala.org" "2023-05-16_21-29-40_paste-996edcea5854c02b9d5103217f50f93e2cc6d015.jpg" "20230521164850-vector_functions.org" "2023-04-29_13-05-52_screenshot.png" "20230512192133-cylinders.org" "20230428204529-conceptual_priming.org" "20230529133307-cerebellum.org" "20230426123025-calculus.org" "20230508104523-chebyshev_polynomials.org" "20240524163311-recurrence.org" "20230913224932-partial_derivatives.org" "../" "./")
-
- ("/home/g/org/roadmap/" (26258 49301 122498 25000) "langs.org" "../" "ask.org" "physics.org" "comp.org" "roadmap.org" "todo.org" "hardware.org" "./" "math.org" "monastery.org" "articles.org")
-
- ("/home/g/org/" (26261 59181 33017 795000) "books/" ".gitignore" ".stfolder/" "roam2/" "../" "roadmap/" "tasks/" "journal/" "./" "elfeed.org")
 )
 
 ;; ----- ido-unc-hosts-cache -----

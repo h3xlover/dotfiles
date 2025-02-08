@@ -19,7 +19,8 @@
 (global-set-key (kbd "C-S-n") 'good-scroll-up)
 (global-set-key (kbd "C-S-p") 'good-scroll-down)
 (global-set-key (kbd "C-c n r") 'replace-regexp)
-
+(global-set-key (kbd "C-<tab>") 'tab-recent)
+(global-set-key (kbd "C-S-<tab>") 'tab-next)
 (setq pixel-scroll-precision-large-scroll-height 40.0)
 (pixel-scroll-mode 1)
 (good-scroll-mode 1)
@@ -113,7 +114,7 @@
 	'(("archive.org" :maxlevel . 1)))
   (advice-add 'org-refile :after 'org-save-all-org-buffers)
   (setq org-todo-keywords
-	'((sequence "TODO(t)" "ROUTINE(r)" "ROAM" "BOOK(b)" "NEXT(n)" "|" "DONE(d)")))
+	'((sequence "TODO(t)" "GOALS(g)" "BOOK(b)" "HABIT(h)" "|" "DONE(d)")))
 (add-to-list 'org-structure-template-alist '("em" . "src emacs-lisp"))
 :bind
 (("C-c a" . org-agenda)
@@ -144,7 +145,7 @@
 (use-package org-roam
 :ensure t
 :custom
-(org-roam-directory "~/org/roam2")
+(org-roam-directory "~/org/roam")
 :bind (("C-c n l" . org-roam-buffer-toggle)
 	     ("C-c n f" . org-roam-node-find)
 	     ("C-c n i" . org-roam-node-insert)
@@ -172,20 +173,29 @@
 	'(
 	  (:name "Morning"
 		 :tag "morning")
-	  (:name "Study Today"
-		 :tag "study_today")
+	  (:name "Do Today"
+		 :tag "do_today")
 	  (:name "Study"
 		 :tag "study")
 	  (:name "Night"
 		 :tag "night")
-	  (:name "Org Roam"
-		 :tag "orgroam")
 	  (:name "Emacs"
 		 :tag "emacs")
 	  (:name "Search"
-		 :tag "search")
+		 :tag "search_misc")
+	  (:name "Questions"
+		 :tag "search_questions")
 	  (:name "Projects"
-		 :tag "projects")))
+		 :tag "projects")
+	  (:name "comp"
+		 :tag "comp_org")
+	  (:name "math"
+		 :tag "math_org")
+	  (:name "hardware"
+		 :tag "hard_org")
+	  (:name "physics"
+		 :tag "phy_org")
+	  ))
 (setq org-agenda-remove-tags t)
 (setq org-agenda-use-time-grid nil)
 
